@@ -1,0 +1,14 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env*
+!.env.example
+private/
+coverage/
+*.log
+
+# Local build metadata and private prototype fixtures
+*.tsbuildinfo
+tests/parser.private.test.cjs
+reference/

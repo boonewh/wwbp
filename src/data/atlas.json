@@ -1,0 +1,6865 @@
+{
+  "AAL": {
+    "name": "Algeria",
+    "x": 910,
+    "y": 610,
+    "surface": [
+      "AMO",
+      "AMR",
+      "AMI",
+      "ANR",
+      "ALI",
+      "ATU",
+      "WWM"
+    ],
+    "air": [
+      "AWS",
+      "ASE",
+      "AGU",
+      "AIV",
+      "ABF",
+      "ATO",
+      "ANA",
+      "ACH",
+      "ASU",
+      "AEG",
+      "EAR",
+      "EGI",
+      "ESA",
+      "ELY",
+      "EIT",
+      "ESI",
+      "WEM",
+      "WMA",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "AAN": {
+    "name": "Angola",
+    "x": 994,
+    "y": 835,
+    "surface": [
+      "AZR",
+      "AZA",
+      "ANM",
+      "WSA"
+    ],
+    "air": [
+      "ACO",
+      "ACA",
+      "ASU",
+      "AUG",
+      "ATA",
+      "AMW",
+      "AMZ",
+      "AZI",
+      "ABO",
+      "ASA"
+    ],
+    "canals": []
+  },
+  "ABF": {
+    "name": "Burkina Faso",
+    "x": 897,
+    "y": 701,
+    "surface": [
+      "AIV",
+      "AMI",
+      "ANR",
+      "ATO",
+      "AGH"
+    ],
+    "air": [
+      "ASL",
+      "AGU",
+      "ASE",
+      "AMR",
+      "AAL",
+      "ALI",
+      "ACH",
+      "ANA",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "ABO": {
+    "name": "Botswana",
+    "x": 1022,
+    "y": 882,
+    "surface": [
+      "ANM",
+      "AZI",
+      "ASA"
+    ],
+    "air": [
+      "AAN",
+      "AZA",
+      "AMZ",
+      "WSA",
+      "WIN"
+    ],
+    "canals": []
+  },
+  "ACA": {
+    "name": "Central Africa",
+    "x": 1006,
+    "y": 732,
+    "surface": [
+      "ACM",
+      "ACH",
+      "ASU",
+      "AZR",
+      "ACO"
+    ],
+    "air": [
+      "ANA",
+      "ANR",
+      "ALI",
+      "AEG",
+      "AET",
+      "AKE",
+      "AUG",
+      "ATA",
+      "AZA",
+      "AAN",
+      "AGA",
+      "WSA",
+      "WRS"
+    ],
+    "canals": []
+  },
+  "ACH": {
+    "name": "Chad",
+    "x": 999,
+    "y": 681,
+    "surface": [
+      "ALI",
+      "ASU",
+      "ACA",
+      "ACM",
+      "ANA",
+      "ANR"
+    ],
+    "air": [
+      "ATU",
+      "AAL",
+      "AMI",
+      "ABF",
+      "ATO",
+      "AGA",
+      "ACO",
+      "AZR",
+      "AUG",
+      "AKE",
+      "AET",
+      "AEG",
+      "WRS",
+      "WEM",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "ACI": {
+    "name": "Canary Islands",
+    "x": 807,
+    "y": 616,
+    "surface": [
+      "WCA",
+      "WMA",
+      "WSA"
+    ],
+    "air": [
+      "AWS",
+      "AMO",
+      "EAZ"
+    ],
+    "canals": []
+  },
+  "ACM": {
+    "name": "Cameroon",
+    "x": 966,
+    "y": 741,
+    "surface": [
+      "ANA",
+      "ACH",
+      "ACA",
+      "ACO",
+      "AGA",
+      "WSA"
+    ],
+    "air": [
+      "ATO",
+      "ANR",
+      "ALI",
+      "ASU",
+      "AZR"
+    ],
+    "canals": []
+  },
+  "ACO": {
+    "name": "Congo",
+    "x": 975,
+    "y": 767,
+    "surface": [
+      "AGA",
+      "ACM",
+      "ACA",
+      "AZR",
+      "WSA"
+    ],
+    "air": [
+      "ANA",
+      "ACH",
+      "ASU",
+      "AUG",
+      "ATA",
+      "AZA",
+      "AAN"
+    ],
+    "canals": []
+  },
+  "AEG": {
+    "name": "Egypt",
+    "x": 1042,
+    "y": 635,
+    "surface": [
+      "ALI",
+      "ASU",
+      "MIS",
+      "WEM",
+      "WRS",
+      "MWS"
+    ],
+    "air": [
+      "ATU",
+      "AAL",
+      "ANR",
+      "ACH",
+      "ACA",
+      "AET",
+      "AZR",
+      "AUG",
+      "AKE",
+      "MYE",
+      "ASO",
+      "MSY",
+      "MJO",
+      "MIQ",
+      "MES",
+      "ESI",
+      "EIT",
+      "EYU",
+      "EAL",
+      "EGR",
+      "ETU",
+      "ECR",
+      "ECY"
+    ],
+    "canals": []
+  },
+  "AET": {
+    "name": "Ethiopia",
+    "x": 1090,
+    "y": 734,
+    "surface": [
+      "ASU",
+      "AKE",
+      "ASO",
+      "WRS"
+    ],
+    "air": [
+      "AEG",
+      "ALI",
+      "ACH",
+      "ACA",
+      "AZR",
+      "AUG",
+      "ATA",
+      "MYE",
+      "MWS",
+      "WIN"
+    ],
+    "canals": []
+  },
+  "AGA": {
+    "name": "Gabon",
+    "x": 961,
+    "y": 762,
+    "surface": [
+      "ACM",
+      "ACO",
+      "WSA"
+    ],
+    "air": [
+      "ANA",
+      "ACH",
+      "ACA",
+      "AZR"
+    ],
+    "canals": []
+  },
+  "AGH": {
+    "name": "Ghana",
+    "x": 894,
+    "y": 728,
+    "surface": [
+      "AIV",
+      "ABF",
+      "ATO",
+      "WSA"
+    ],
+    "air": [
+      "ASL",
+      "AGU",
+      "AMI",
+      "ANR",
+      "ANA"
+    ],
+    "canals": []
+  },
+  "AGU": {
+    "name": "Guinea",
+    "x": 842,
+    "y": 710,
+    "surface": [
+      "ASE",
+      "AMI",
+      "AIV",
+      "ASL",
+      "WSA"
+    ],
+    "air": [
+      "AMR",
+      "AAL",
+      "ANR",
+      "ABF",
+      "AGH"
+    ],
+    "canals": []
+  },
+  "AIV": {
+    "name": "Ivory Coast",
+    "x": 870,
+    "y": 724,
+    "surface": [
+      "ASL",
+      "AGU",
+      "AMI",
+      "ABF",
+      "AGH",
+      "WSA"
+    ],
+    "air": [
+      "ASE",
+      "AMR",
+      "AAL",
+      "ANR",
+      "ATO"
+    ],
+    "canals": []
+  },
+  "AKE": {
+    "name": "Kenya",
+    "x": 1090,
+    "y": 779,
+    "surface": [
+      "ATA",
+      "AUG",
+      "ASU",
+      "AET",
+      "ASO",
+      "WIN"
+    ],
+    "air": [
+      "AMZ",
+      "AMW",
+      "AZA",
+      "AZR",
+      "ACA",
+      "ACH",
+      "ALI",
+      "AEG",
+      "WRS"
+    ],
+    "canals": []
+  },
+  "ALI": {
+    "name": "Libya",
+    "x": 984,
+    "y": 625,
+    "surface": [
+      "ATU",
+      "AAL",
+      "ANR",
+      "ACH",
+      "ASU",
+      "AEG",
+      "WEM"
+    ],
+    "air": [
+      "AMO",
+      "AMR",
+      "AMI",
+      "ABF",
+      "ATO",
+      "ANA",
+      "ACM",
+      "ACA",
+      "AZR",
+      "AUG",
+      "AKE",
+      "AET",
+      "MIS",
+      "MWS",
+      "ESI",
+      "EIT",
+      "EYU",
+      "EAL",
+      "EGR",
+      "ETU",
+      "MSY",
+      "ECR",
+      "ECY",
+      "WWM",
+      "WRS"
+    ],
+    "canals": []
+  },
+  "AMD": {
+    "name": "Madagascar",
+    "x": 1130,
+    "y": 868,
+    "surface": [
+      "WIN"
+    ],
+    "air": [
+      "AMZ"
+    ],
+    "canals": []
+  },
+  "AMI": {
+    "name": "Mali",
+    "x": 888,
+    "y": 666,
+    "surface": [
+      "ASE",
+      "AMR",
+      "AAL",
+      "ANR",
+      "ABF",
+      "AIV",
+      "AGU"
+    ],
+    "air": [
+      "AWS",
+      "AMO",
+      "ATU",
+      "ALI",
+      "ACH",
+      "ANA",
+      "ATO",
+      "AGH",
+      "ASL",
+      "WWM",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "AMO": {
+    "name": "Morocco",
+    "x": 854,
+    "y": 611,
+    "surface": [
+      "AWS",
+      "AMR",
+      "AAL",
+      "WWM",
+      "WMA"
+    ],
+    "air": [
+      "ASE",
+      "AMI",
+      "ANR",
+      "ALI",
+      "ATU",
+      "EAR",
+      "ELY",
+      "EIT",
+      "ESA",
+      "ESI",
+      "EGI",
+      "ACI",
+      "EAZ",
+      "ENA",
+      "EPR",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "AMR": {
+    "name": "Mauritania",
+    "x": 855,
+    "y": 661,
+    "surface": [
+      "AWS",
+      "AMO",
+      "AAL",
+      "AMI",
+      "ASE",
+      "WSA"
+    ],
+    "air": [
+      "ATU",
+      "ALI",
+      "ANR",
+      "ABF",
+      "AIV",
+      "AGU",
+      "WWM",
+      "WMA"
+    ],
+    "canals": []
+  },
+  "AMW": {
+    "name": "Malawi",
+    "x": 1074,
+    "y": 831,
+    "surface": [
+      "AMZ",
+      "AZA",
+      "ATA"
+    ],
+    "air": [
+      "ASA",
+      "AZI",
+      "ANM",
+      "AAN",
+      "AZR",
+      "AUG",
+      "AKE",
+      "WIN"
+    ],
+    "canals": []
+  },
+  "AMZ": {
+    "name": "Mozambique",
+    "x": 1091,
+    "y": 841,
+    "surface": [
+      "ASA",
+      "AZI",
+      "AZA",
+      "AMW",
+      "ATA",
+      "WIN"
+    ],
+    "air": [
+      "ABO",
+      "ANM",
+      "AAN",
+      "AZR",
+      "AUG",
+      "AKE",
+      "AMD",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "ANA": {
+    "name": "Nigeria",
+    "x": 948,
+    "y": 720,
+    "surface": [
+      "ATO",
+      "ANR",
+      "ACH",
+      "ACM",
+      "WSA"
+    ],
+    "air": [
+      "AGH",
+      "ABF",
+      "AMI",
+      "AAL",
+      "ALI",
+      "ASU",
+      "ACA",
+      "ACO",
+      "AGA"
+    ],
+    "canals": []
+  },
+  "ANR": {
+    "name": "Niger",
+    "x": 948,
+    "y": 677,
+    "surface": [
+      "ANA",
+      "ATO",
+      "ABF",
+      "AMI",
+      "AAL",
+      "ALI",
+      "ACH"
+    ],
+    "air": [
+      "AGH",
+      "AIV",
+      "AGU",
+      "ASE",
+      "AMR",
+      "AMO",
+      "ATU",
+      "AEG",
+      "ASU",
+      "ACA",
+      "ACM",
+      "WEM",
+      "WWM",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "ANM": {
+    "name": "Namibia",
+    "x": 987,
+    "y": 877,
+    "surface": [
+      "AAN",
+      "AZA",
+      "AZI",
+      "ABO",
+      "ASA",
+      "WSA"
+    ],
+    "air": [
+      "AZR",
+      "ATA",
+      "AMW",
+      "AMZ",
+      "WIN"
+    ],
+    "canals": []
+  },
+  "ASA": {
+    "name": "South Africa",
+    "x": 1025,
+    "y": 917,
+    "surface": [
+      "ANM",
+      "ABO",
+      "AZI",
+      "AMZ",
+      "WSA",
+      "WIN"
+    ],
+    "air": [
+      "AAN",
+      "AZA",
+      "AMW",
+      "ATA"
+    ],
+    "canals": []
+  },
+  "ASE": {
+    "name": "Senegal",
+    "x": 830,
+    "y": 687,
+    "surface": [
+      "AMR",
+      "AMI",
+      "AGU",
+      "WSA"
+    ],
+    "air": [
+      "AWS",
+      "AMO",
+      "AAL",
+      "ANR",
+      "ABF",
+      "AIV",
+      "ASL"
+    ],
+    "canals": []
+  },
+  "ASL": {
+    "name": "Sierra Leone",
+    "x": 850,
+    "y": 725,
+    "surface": [
+      "AGU",
+      "AIV",
+      "WSA"
+    ],
+    "air": [
+      "ASE",
+      "AMI",
+      "ABF",
+      "AGH"
+    ],
+    "canals": []
+  },
+  "ASO": {
+    "name": "Somalia",
+    "x": 1129,
+    "y": 749,
+    "surface": [
+      "AKE",
+      "AET",
+      "WRS",
+      "WIN"
+    ],
+    "air": [
+      "ATA",
+      "AUG",
+      "ASU",
+      "AEG",
+      "MWS",
+      "MYE"
+    ],
+    "canals": []
+  },
+  "ASU": {
+    "name": "Sudan",
+    "x": 1059,
+    "y": 674,
+    "surface": [
+      "AEG",
+      "ALI",
+      "ACH",
+      "ACA",
+      "AZR",
+      "AUG",
+      "AKE",
+      "AET",
+      "WRS"
+    ],
+    "air": [
+      "MIS",
+      "ATU",
+      "AAL",
+      "ANR",
+      "ANA",
+      "ACM",
+      "ACO",
+      "AAN",
+      "AZA",
+      "ATA",
+      "ASO",
+      "WSA",
+      "MWS",
+      "MYE",
+      "WEM",
+      "WIN"
+    ],
+    "canals": []
+  },
+  "ATA": {
+    "name": "Tanzania",
+    "x": 1075,
+    "y": 799,
+    "surface": [
+      "AMZ",
+      "AMW",
+      "AZA",
+      "AZR",
+      "AUG",
+      "AKE",
+      "WIN"
+    ],
+    "air": [
+      "ASA",
+      "AZI",
+      "ANM",
+      "AAN",
+      "ACO",
+      "ACA",
+      "ASU",
+      "AET",
+      "ASO",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "ATO": {
+    "name": "Togo",
+    "x": 912,
+    "y": 720,
+    "surface": [
+      "AGH",
+      "ABF",
+      "ANR",
+      "ANA",
+      "WSA"
+    ],
+    "air": [
+      "AIV",
+      "AMI",
+      "AAL",
+      "ALI",
+      "ACH",
+      "ACM"
+    ],
+    "canals": []
+  },
+  "ATU": {
+    "name": "Tunisia",
+    "x": 946,
+    "y": 588,
+    "surface": [
+      "AAL",
+      "ALI",
+      "WWM",
+      "WEM"
+    ],
+    "air": [
+      "AEG",
+      "ASU",
+      "ACH",
+      "ANR",
+      "AMI",
+      "AMR",
+      "AMO",
+      "EGI",
+      "EAR",
+      "ELY",
+      "EIT",
+      "ESA",
+      "ESI",
+      "EYU",
+      "EAL",
+      "EGR",
+      "ETU",
+      "ECR",
+      "ECY",
+      "MSY",
+      "MIS"
+    ],
+    "canals": []
+  },
+  "AUG": {
+    "name": "Uganda",
+    "x": 1058,
+    "y": 775,
+    "surface": [
+      "ATA",
+      "AZR",
+      "ASU",
+      "AKE"
+    ],
+    "air": [
+      "AMZ",
+      "AMW",
+      "AZA",
+      "AAN",
+      "ACO",
+      "ACA",
+      "ACH",
+      "ALI",
+      "AEG",
+      "AET",
+      "ASO",
+      "WRS",
+      "WSA",
+      "WIN"
+    ],
+    "canals": []
+  },
+  "AWS": {
+    "name": "Western Sahara",
+    "x": 831,
+    "y": 641,
+    "surface": [
+      "AMO",
+      "AMR",
+      "WMA",
+      "WSA"
+    ],
+    "air": [
+      "AAL",
+      "AMI",
+      "ASE",
+      "ACI",
+      "WWM"
+    ],
+    "canals": []
+  },
+  "AZA": {
+    "name": "Zambia",
+    "x": 1034,
+    "y": 832,
+    "surface": [
+      "AAN",
+      "AZR",
+      "ATA",
+      "AMW",
+      "AMZ",
+      "AZI",
+      "ANM"
+    ],
+    "air": [
+      "ABO",
+      "ASA",
+      "AKE",
+      "AUG",
+      "ASU",
+      "ACA",
+      "ACO",
+      "WIN",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "AZI": {
+    "name": "Zimbabwe",
+    "x": 1057,
+    "y": 866,
+    "surface": [
+      "ASA",
+      "ABO",
+      "ANM",
+      "AZA",
+      "AMZ"
+    ],
+    "air": [
+      "AAN",
+      "AZR",
+      "ATA",
+      "AMW",
+      "WIN",
+      "WSA"
+    ],
+    "canals": []
+  },
+  "AZR": {
+    "name": "Zaire",
+    "x": 1010,
+    "y": 775,
+    "surface": [
+      "ACO",
+      "ACA",
+      "ASU",
+      "AUG",
+      "ATA",
+      "AZA",
+      "AAN",
+      "WSA"
+    ],
+    "air": [
+      "AGA",
+      "ACM",
+      "ACH",
+      "ALI",
+      "AEG",
+      "AET",
+      "AKE",
+      "AMW",
+      "AMZ",
+      "AZI",
+      "ANM",
+      "WRS",
+      "WIN"
+    ],
+    "canals": []
+  },
+  "CBU": {
+    "name": "Burma",
+    "x": 1368,
+    "y": 637,
+    "surface": [
+      "IBD",
+      "IBE",
+      "CYU",
+      "CLA",
+      "CTH",
+      "WBB"
+    ],
+    "air": [
+      "IMA",
+      "IRA",
+      "IPU",
+      "INE",
+      "CTI",
+      "CSI",
+      "CGU",
+      "CVN",
+      "CCA",
+      "PMP",
+      "ISL",
+      "PSU",
+      "WSC"
+    ],
+    "canals": []
+  },
+  "CCA": {
+    "name": "Cambodia",
+    "x": 1413,
+    "y": 699,
+    "surface": [
+      "CTH",
+      "CLA",
+      "CVN",
+      "WSC"
+    ],
+    "air": [
+      "PMP",
+      "CBU",
+      "CYU",
+      "CGU",
+      "CTA",
+      "PLU",
+      "PMI",
+      "PCE",
+      "PJA",
+      "PSU",
+      "PSA",
+      "PBO",
+      "WBB"
+    ],
+    "canals": []
+  },
+  "CFU": {
+    "name": "Fujian",
+    "x": 1482,
+    "y": 590,
+    "surface": [
+      "CGU",
+      "CHU",
+      "CSH",
+      "WPI"
+    ],
+    "air": [
+      "CVN",
+      "CYU",
+      "CSI",
+      "CHE",
+      "CIM",
+      "CMA",
+      "WJA",
+      "WSC"
+    ],
+    "canals": []
+  },
+  "CGU": {
+    "name": "Guangzhou",
+    "x": 1466,
+    "y": 641,
+    "surface": [
+      "CVN",
+      "CYU",
+      "CSI",
+      "CHU",
+      "CFU",
+      "WPI",
+      "WSC"
+    ],
+    "air": [
+      "CCA",
+      "CLA",
+      "CBU",
+      "IBE",
+      "CTI",
+      "CQI",
+      "CHE",
+      "CSH",
+      "CTA",
+      "PLU",
+      "PMI",
+      "PCE",
+      "PBO",
+      "PJA",
+      "PSU",
+      "PMP",
+      "PSA",
+      "CTH"
+    ],
+    "canals": []
+  },
+  "CHE": {
+    "name": "Henan",
+    "x": 1428,
+    "y": 568,
+    "surface": [
+      "CSH",
+      "CIM",
+      "CQI",
+      "CSI",
+      "CHU"
+    ],
+    "air": [
+      "CMA",
+      "CMO",
+      "CXU",
+      "CTI",
+      "CYU",
+      "CGU",
+      "CFU",
+      "WJA",
+      "WPI"
+    ],
+    "canals": []
+  },
+  "CHO": {
+    "name": "Hokkaido",
+    "x": 1605,
+    "y": 525,
+    "surface": [
+      "WJA",
+      "WOK"
+    ],
+    "air": [
+      "RKM",
+      "RCH",
+      "RYA",
+      "CMA",
+      "CSH",
+      "CKO",
+      "CKY",
+      "CJA"
+    ],
+    "canals": []
+  },
+  "CHU": {
+    "name": "Hunan",
+    "x": 1440,
+    "y": 590,
+    "surface": [
+      "CFU",
+      "CSH",
+      "CHE",
+      "CSI",
+      "CGU"
+    ],
+    "air": [
+      "CMA",
+      "CIM",
+      "CQI",
+      "CTI",
+      "CYU",
+      "CVN",
+      "WSC",
+      "WPI",
+      "WJA"
+    ],
+    "canals": []
+  },
+  "CIM": {
+    "name": "Inner Mongolia",
+    "x": 1466,
+    "y": 517,
+    "surface": [
+      "CMO",
+      "CMA",
+      "CSH",
+      "CHE",
+      "CQI",
+      "CXU"
+    ],
+    "air": [
+      "CKO",
+      "CFU",
+      "CHU",
+      "CSI",
+      "CTI",
+      "IPU",
+      "IPK",
+      "RSA",
+      "RIR",
+      "RYA",
+      "WJA",
+      "WPI"
+    ],
+    "canals": []
+  },
+  "CJA": {
+    "name": "Japan",
+    "x": 1575,
+    "y": 573,
+    "surface": [
+      "WJA",
+      "WOK"
+    ],
+    "air": [
+      "CKY",
+      "CSH",
+      "CMA",
+      "CKO",
+      "RYA",
+      "RCH",
+      "RKM",
+      "CHO"
+    ],
+    "canals": []
+  },
+  "CKO": {
+    "name": "Korea",
+    "x": 1533,
+    "y": 570,
+    "surface": [
+      "CMA",
+      "WJA"
+    ],
+    "air": [
+      "RYA",
+      "CMO",
+      "CIM",
+      "CSH",
+      "RCH",
+      "RKM",
+      "CHO",
+      "CJA",
+      "CKY"
+    ],
+    "canals": []
+  },
+  "CKY": {
+    "name": "Kyushu",
+    "x": 1545,
+    "y": 590,
+    "surface": [
+      "WPI",
+      "WJA"
+    ],
+    "air": [
+      "CJA",
+      "CHO",
+      "RKM",
+      "RCH",
+      "RYA",
+      "CMA",
+      "CKO",
+      "CSH"
+    ],
+    "canals": []
+  },
+  "CLA": {
+    "name": "Laos",
+    "x": 1404,
+    "y": 654,
+    "surface": [
+      "CCA",
+      "CTH",
+      "CBU",
+      "CYU",
+      "CVN"
+    ],
+    "air": [
+      "PMP",
+      "IBD",
+      "IBE",
+      "CTI",
+      "CSI",
+      "CGU",
+      "WSC",
+      "WBB"
+    ],
+    "canals": []
+  },
+  "CMA": {
+    "name": "Manchuria",
+    "x": 1527,
+    "y": 520,
+    "surface": [
+      "RYA",
+      "CMO",
+      "CIM",
+      "CSH",
+      "CKO",
+      "WJA"
+    ],
+    "air": [
+      "RCH",
+      "RIR",
+      "CXU",
+      "CQI",
+      "CHE",
+      "CHU",
+      "CFU",
+      "CKY",
+      "CJA",
+      "CHO",
+      "RKM",
+      "WPI"
+    ],
+    "canals": []
+  },
+  "CMO": {
+    "name": "Mongolia",
+    "x": 1408,
+    "y": 507,
+    "surface": [
+      "CMA",
+      "CIM",
+      "CXU",
+      "RIR",
+      "RYA"
+    ],
+    "air": [
+      "CKO",
+      "CSH",
+      "CHE",
+      "CQI",
+      "CTI",
+      "IPU",
+      "IPK",
+      "RSA",
+      "RKZ",
+      "RCS",
+      "RVE",
+      "RCH",
+      "WJA"
+    ],
+    "canals": []
+  },
+  "CQI": {
+    "name": "Qinghai",
+    "x": 1378,
+    "y": 554,
+    "surface": [
+      "CIM",
+      "CHE",
+      "CSI",
+      "CTI",
+      "CXU"
+    ],
+    "air": [
+      "CMO",
+      "CMA",
+      "CSH",
+      "CHU",
+      "CGU",
+      "CYU",
+      "IBE",
+      "INE",
+      "IPU",
+      "IPK",
+      "RSA",
+      "RIR"
+    ],
+    "canals": []
+  },
+  "CSH": {
+    "name": "Shandong",
+    "x": 1478,
+    "y": 574,
+    "surface": [
+      "CMA",
+      "CIM",
+      "CHE",
+      "CHU",
+      "CFU",
+      "WJA",
+      "WPI"
+    ],
+    "air": [
+      "CGU",
+      "CSI",
+      "CQI",
+      "CXU",
+      "CMO",
+      "RYA",
+      "CKO",
+      "CKY",
+      "CJA",
+      "CHO",
+      "RKM",
+      "RCH"
+    ],
+    "canals": []
+  },
+  "CSI": {
+    "name": "Sichuan",
+    "x": 1400,
+    "y": 586,
+    "surface": [
+      "CYU",
+      "CTI",
+      "CQI",
+      "CHE",
+      "CHU",
+      "CGU"
+    ],
+    "air": [
+      "CVN",
+      "CLA",
+      "CBU",
+      "IBE",
+      "INE",
+      "IPU",
+      "CXU",
+      "CIM",
+      "CSH",
+      "CFU",
+      "WSC",
+      "WPI"
+    ],
+    "canals": []
+  },
+  "CTA": {
+    "name": "Taiwan",
+    "x": 1498,
+    "y": 642,
+    "surface": [
+      "WPI",
+      "WSC"
+    ],
+    "air": [
+      "CGU",
+      "CVN",
+      "CCA",
+      "CTH",
+      "PMP",
+      "PSU",
+      "PJA",
+      "PSA",
+      "PBO",
+      "PCE",
+      "PMI",
+      "PLU"
+    ],
+    "canals": []
+  },
+  "CTH": {
+    "name": "Thailand",
+    "x": 1399,
+    "y": 683,
+    "surface": [
+      "CBU",
+      "CLA",
+      "CCA",
+      "PMP",
+      "WSC",
+      "WBB"
+    ],
+    "air": [
+      "IBD",
+      "IBE",
+      "CYU",
+      "CVN",
+      "IMA",
+      "ISL",
+      "PSU",
+      "PJA",
+      "PBO",
+      "PCE",
+      "PMI",
+      "PLU",
+      "CTA",
+      "CGU",
+      "PSA"
+    ],
+    "canals": []
+  },
+  "CTI": {
+    "name": "Tibet",
+    "x": 1313,
+    "y": 592,
+    "surface": [
+      "IBE",
+      "INE",
+      "IPU",
+      "CXU",
+      "CQI",
+      "CSI",
+      "CYU"
+    ],
+    "air": [
+      "IMA",
+      "IRA",
+      "IPK",
+      "RSA",
+      "CIM",
+      "CHE",
+      "CHU",
+      "CGU",
+      "CVN",
+      "CLA",
+      "CBU",
+      "RIR",
+      "CMO",
+      "IBD",
+      "WBB"
+    ],
+    "canals": []
+  },
+  "CVN": {
+    "name": "Vietnam",
+    "x": 1420,
+    "y": 659,
+    "surface": [
+      "CGU",
+      "CYU",
+      "CLA",
+      "CCA",
+      "WSC"
+    ],
+    "air": [
+      "CFU",
+      "CHU",
+      "CSI",
+      "CTI",
+      "IBE",
+      "CBU",
+      "CTH",
+      "PMP",
+      "PSU",
+      "PJA",
+      "PSA",
+      "PBO",
+      "PCE",
+      "PMI",
+      "PLU",
+      "CTA",
+      "WPI"
+    ],
+    "canals": []
+  },
+  "CYU": {
+    "name": "Yunnan",
+    "x": 1402,
+    "y": 637,
+    "surface": [
+      "CSI",
+      "CGU",
+      "CVN",
+      "CLA",
+      "CBU",
+      "IBE",
+      "CTI"
+    ],
+    "air": [
+      "CCA",
+      "CTH",
+      "IBD",
+      "IMA",
+      "IRA",
+      "IPU",
+      "INE",
+      "CXU",
+      "CQI",
+      "CHE",
+      "CHU",
+      "CFU",
+      "WSC",
+      "WBB",
+      "WPI"
+    ],
+    "canals": []
+  },
+  "CXU": {
+    "name": "Xinjiang Uygur",
+    "x": 1328,
+    "y": 525,
+    "surface": [
+      "CTI",
+      "IPU",
+      "IPK",
+      "RSA",
+      "RIR",
+      "CMO",
+      "CIM",
+      "CQI"
+    ],
+    "air": [
+      "IBE",
+      "INE",
+      "IRA",
+      "MIN",
+      "IAF",
+      "RTU",
+      "RKZ",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RYA",
+      "CMA",
+      "CSH",
+      "CHE",
+      "CSI",
+      "CYU",
+      "WAR"
+    ],
+    "canals": []
+  },
+  "EAL": {
+    "name": "Albania",
+    "x": 999,
+    "y": 537,
+    "surface": [
+      "EYU",
+      "EGR",
+      "WEM"
+    ],
+    "air": [
+      "EIT",
+      "EAU",
+      "EHU",
+      "ERO",
+      "EBU",
+      "ETU",
+      "ECY",
+      "ECR",
+      "ESI",
+      "ATU",
+      "ALI",
+      "AEG",
+      "MIS",
+      "MSY"
+    ],
+    "canals": []
+  },
+  "EAU": {
+    "name": "Austria",
+    "x": 974,
+    "y": 491,
+    "surface": [
+      "ESZ",
+      "EWG",
+      "ECZ",
+      "EHU",
+      "EYU",
+      "EIT"
+    ],
+    "air": [
+      "ELY",
+      "EFR",
+      "ELU",
+      "EBE",
+      "ENE",
+      "EDE",
+      "EEG",
+      "EPD",
+      "RRU",
+      "ERO",
+      "EBU",
+      "EGR",
+      "EAL",
+      "WEM",
+      "WWM",
+      "WBT",
+      "WNS"
+    ],
+    "canals": []
+  },
+  "EAR": {
+    "name": "Aragon",
+    "x": 887,
+    "y": 558,
+    "surface": [
+      "EGI",
+      "ENA",
+      "ELY",
+      "WWM"
+    ],
+    "air": [
+      "EPR",
+      "EFR",
+      "ESZ",
+      "EIT",
+      "ESA",
+      "ESI",
+      "ATU",
+      "AAL",
+      "AMO",
+      "WMA"
+    ],
+    "canals": []
+  },
+  "EAZ": {
+    "name": "Azores",
+    "x": 755,
+    "y": 562,
+    "surface": [
+      "WMA",
+      "WNA",
+      "WCA"
+    ],
+    "air": [
+      "EPR",
+      "ACI",
+      "AMO",
+      "ENA"
+    ],
+    "canals": []
+  },
+  "EBE": {
+    "name": "Belgium",
+    "x": 920,
+    "y": 473,
+    "surface": [
+      "ENE",
+      "EWG",
+      "ELU",
+      "EFR",
+      "WNS"
+    ],
+    "air": [
+      "ELY",
+      "ENA",
+      "EDE",
+      "EEG",
+      "ECZ",
+      "EAU",
+      "ESZ",
+      "ENO",
+      "ESW",
+      "EGB",
+      "ESC",
+      "ENI",
+      "EIR",
+      "EIC",
+      "WBT",
+      "WMA"
+    ],
+    "canals": []
+  },
+  "EBU": {
+    "name": "Bulgaria",
+    "x": 1024,
+    "y": 528,
+    "surface": [
+      "ERO",
+      "EYU",
+      "EGR",
+      "ETU",
+      "WBK"
+    ],
+    "air": [
+      "EAL",
+      "EIT",
+      "EAU",
+      "EHU",
+      "RRU",
+      "RUK",
+      "MSY",
+      "RCA",
+      "MIN",
+      "MIQ",
+      "WEM"
+    ],
+    "canals": []
+  },
+  "ECR": {
+    "name": "Crete",
+    "x": 1019,
+    "y": 579,
+    "surface": [
+      "WEM"
+    ],
+    "air": [
+      "EIT",
+      "EYU",
+      "EAL",
+      "EGR",
+      "ETU",
+      "ECY",
+      "MSY",
+      "MIS",
+      "AEG",
+      "ALI",
+      "ATU",
+      "ESI"
+    ],
+    "canals": []
+  },
+  "ECY": {
+    "name": "Cyprus",
+    "x": 1065,
+    "y": 579,
+    "surface": [
+      "WEM"
+    ],
+    "air": [
+      "ECR",
+      "ESI",
+      "EIT",
+      "EYU",
+      "EAL",
+      "EGR",
+      "ETU",
+      "MSY",
+      "MIS",
+      "AEG",
+      "ALI",
+      "ATU"
+    ],
+    "canals": []
+  },
+  "ECZ": {
+    "name": "Czechoslovakia",
+    "x": 982,
+    "y": 477,
+    "surface": [
+      "EPD",
+      "RRU",
+      "EHU",
+      "EAU",
+      "EWG",
+      "EEG"
+    ],
+    "air": [
+      "EDE",
+      "ENE",
+      "EBE",
+      "ELU",
+      "EFR",
+      "ESZ",
+      "EIT",
+      "EYU",
+      "ERO",
+      "RUK",
+      "RUR",
+      "RMU",
+      "RBA",
+      "WBT",
+      "WNS"
+    ],
+    "canals": []
+  },
+  "EDE": {
+    "name": "Denmark",
+    "x": 947,
+    "y": 432,
+    "surface": [
+      "EWG",
+      "WBT",
+      "WNS"
+    ],
+    "air": [
+      "EEG",
+      "ECZ",
+      "EAU",
+      "ESZ",
+      "EFR",
+      "ELU",
+      "EBE",
+      "ENE",
+      "ENO",
+      "ESW",
+      "EFI",
+      "RBA",
+      "EPD",
+      "EGB",
+      "ESC",
+      "ENI",
+      "EIR",
+      "EIC"
+    ],
+    "canals": []
+  },
+  "EEG": {
+    "name": "East Germany",
+    "x": 965,
+    "y": 457,
+    "surface": [
+      "EWG",
+      "ECZ",
+      "EPD",
+      "WBT"
+    ],
+    "air": [
+      "EDE",
+      "ENE",
+      "EBE",
+      "ELU",
+      "EFR",
+      "ESZ",
+      "EAU",
+      "EHU",
+      "RRU",
+      "RBA",
+      "EFI",
+      "ESW",
+      "WNS"
+    ],
+    "canals": []
+  },
+  "EFI": {
+    "name": "Finland",
+    "x": 1027,
+    "y": 380,
+    "surface": [
+      "ESW",
+      "ENO",
+      "RMU",
+      "RBA",
+      "WBT"
+    ],
+    "air": [
+      "EPD",
+      "RRU",
+      "EEG",
+      "EWG",
+      "EDE",
+      "WBR",
+      "WNS"
+    ],
+    "canals": []
+  },
+  "EFR": {
+    "name": "France",
+    "x": 901,
+    "y": 503,
+    "surface": [
+      "EBE",
+      "ELU",
+      "EWG",
+      "ESZ",
+      "ELY",
+      "ENA",
+      "WMA",
+      "WNS"
+    ],
+    "air": [
+      "ENE",
+      "EDE",
+      "EEG",
+      "ECZ",
+      "EAU",
+      "EIT",
+      "EAR",
+      "EGB",
+      "EIR",
+      "EPR",
+      "WWM",
+      "ESC",
+      "EGI",
+      "ENI",
+      "EIC",
+      "ENO",
+      "ESW",
+      "WBT"
+    ],
+    "canals": []
+  },
+  "EGB": {
+    "name": "Great Britain",
+    "x": 887,
+    "y": 458,
+    "surface": [
+      "ESC",
+      "WNS",
+      "WMA"
+    ],
+    "air": [
+      "ENA",
+      "EIR",
+      "ENI",
+      "EIC",
+      "ENO",
+      "EDE",
+      "EWG",
+      "ENE",
+      "EBE",
+      "EFR",
+      "ESW"
+    ],
+    "canals": []
+  },
+  "EGI": {
+    "name": "Gibraltar",
+    "x": 855,
+    "y": 574,
+    "surface": [
+      "ENA",
+      "EAR",
+      "WWM"
+    ],
+    "air": [
+      "EPR",
+      "EFR",
+      "ELY",
+      "EIT",
+      "ESA",
+      "ESI",
+      "ATU",
+      "AAL",
+      "AMO",
+      "WMA"
+    ],
+    "canals": []
+  },
+  "EGR": {
+    "name": "Greece",
+    "x": 1013,
+    "y": 555,
+    "surface": [
+      "EAL",
+      "EYU",
+      "EBU",
+      "ETU",
+      "WEM"
+    ],
+    "air": [
+      "EIT",
+      "EAU",
+      "EHU",
+      "ERO",
+      "RCA",
+      "MIN",
+      "ECY",
+      "ECR",
+      "ESI",
+      "ATU",
+      "ALI",
+      "AEG",
+      "MIS",
+      "MIQ",
+      "MSY",
+      "WBK"
+    ],
+    "canals": []
+  },
+  "EHU": {
+    "name": "Hungary",
+    "x": 996,
+    "y": 495,
+    "surface": [
+      "EAU",
+      "ECZ",
+      "RRU",
+      "ERO",
+      "EYU"
+    ],
+    "air": [
+      "ESZ",
+      "EWG",
+      "EEG",
+      "EPD",
+      "RBA",
+      "RMU",
+      "RUR",
+      "RUK",
+      "EBU",
+      "EGR",
+      "EAL",
+      "EIT",
+      "WEM",
+      "WBK"
+    ],
+    "canals": []
+  },
+  "EIC": {
+    "name": "Iceland",
+    "x": 800,
+    "y": 330,
+    "surface": [
+      "WNS",
+      "WGR"
+    ],
+    "air": [
+      "ENO",
+      "EDE",
+      "ESW",
+      "EWG",
+      "ENE",
+      "EBE",
+      "EFR",
+      "EGB",
+      "ESC",
+      "EIR",
+      "ENI",
+      "NGR"
+    ],
+    "canals": []
+  },
+  "EIR": {
+    "name": "Ireland",
+    "x": 855,
+    "y": 452,
+    "surface": [
+      "ENI",
+      "WGR",
+      "WMA",
+      "WNS"
+    ],
+    "air": [
+      "ESC",
+      "EGB",
+      "EFR",
+      "EIC",
+      "ENO",
+      "ESW",
+      "EDE",
+      "EWG",
+      "ENE",
+      "EBE"
+    ],
+    "canals": []
+  },
+  "EIT": {
+    "name": "Italy",
+    "x": 960,
+    "y": 522,
+    "surface": [
+      "ELY",
+      "ESZ",
+      "EAU",
+      "EYU",
+      "WWM",
+      "WEM"
+    ],
+    "air": [
+      "EAR",
+      "ENA",
+      "EFR",
+      "EWG",
+      "ECZ",
+      "EHU",
+      "ERO",
+      "EBU",
+      "EGR",
+      "EAL",
+      "ESA",
+      "ESI",
+      "ATU",
+      "AAL",
+      "AMO",
+      "EGI",
+      "ETU",
+      "ECY",
+      "ECR",
+      "MSY",
+      "MIS",
+      "AEG",
+      "ALI"
+    ],
+    "canals": []
+  },
+  "ELU": {
+    "name": "Luxembourg",
+    "x": 932,
+    "y": 485,
+    "surface": [
+      "EFR",
+      "EBE",
+      "EWG"
+    ],
+    "air": [
+      "ENA",
+      "ELY",
+      "ESZ",
+      "EAU",
+      "ECZ",
+      "EEG",
+      "EDE",
+      "ENE",
+      "WNS",
+      "WMA",
+      "WBT"
+    ],
+    "canals": []
+  },
+  "ELY": {
+    "name": "Lyons",
+    "x": 925,
+    "y": 520,
+    "surface": [
+      "EAR",
+      "ENA",
+      "EFR",
+      "ESZ",
+      "EIT",
+      "WWM"
+    ],
+    "air": [
+      "EPR",
+      "EGI",
+      "EBE",
+      "ELU",
+      "EWG",
+      "EAU",
+      "EYU",
+      "ESA",
+      "ESI",
+      "ATU",
+      "AAL",
+      "AMO",
+      "WMA",
+      "WNS",
+      "WEM"
+    ],
+    "canals": []
+  },
+  "ENA": {
+    "name": "Navarre",
+    "x": 878,
+    "y": 546,
+    "surface": [
+      "EPR",
+      "EGI",
+      "EFR",
+      "ELY",
+      "EAR",
+      "WMA"
+    ],
+    "air": [
+      "EAZ",
+      "EBE",
+      "EGB",
+      "ELU",
+      "EWG",
+      "ESZ",
+      "EIT",
+      "AMO",
+      "WNS",
+      "WWM"
+    ],
+    "canals": []
+  },
+  "ENE": {
+    "name": "Netherlands",
+    "x": 928,
+    "y": 459,
+    "surface": [
+      "EWG",
+      "EBE",
+      "WNS"
+    ],
+    "air": [
+      "EDE",
+      "EEG",
+      "ECZ",
+      "EAU",
+      "ESZ",
+      "ELU",
+      "EFR",
+      "ESW",
+      "ENO",
+      "EIC",
+      "ESC",
+      "EGB",
+      "ENI",
+      "EIR",
+      "WBT"
+    ],
+    "canals": []
+  },
+  "ENI": {
+    "name": "Northern Ireland",
+    "x": 861,
+    "y": 438,
+    "surface": [
+      "EIR",
+      "WGR",
+      "WNS"
+    ],
+    "air": [
+      "EIC",
+      "ESC",
+      "EGB",
+      "ENO",
+      "ESW",
+      "EDE",
+      "EWG",
+      "ENE",
+      "EBE",
+      "EFR",
+      "WMA"
+    ],
+    "canals": []
+  },
+  "ENO": {
+    "name": "Norway",
+    "x": 941,
+    "y": 380,
+    "surface": [
+      "RMU",
+      "EFI",
+      "ESW",
+      "WBR",
+      "WNS"
+    ],
+    "air": [
+      "RRU",
+      "RBA",
+      "EDE",
+      "EWG",
+      "ENE",
+      "EBE",
+      "EFR",
+      "EGB",
+      "ESC",
+      "EIR",
+      "ENI",
+      "EIC",
+      "WBT"
+    ],
+    "canals": []
+  },
+  "EPD": {
+    "name": "Poland",
+    "x": 995,
+    "y": 458,
+    "surface": [
+      "EEG",
+      "ECZ",
+      "RRU",
+      "RBA",
+      "WBT"
+    ],
+    "air": [
+      "EWG",
+      "EAU",
+      "EHU",
+      "ERO",
+      "RUK",
+      "RUR",
+      "RMU",
+      "EFI",
+      "ESW",
+      "EDE"
+    ],
+    "canals": []
+  },
+  "EPR": {
+    "name": "Portugal",
+    "x": 857,
+    "y": 553,
+    "surface": [
+      "ENA",
+      "WMA"
+    ],
+    "air": [
+      "EFR",
+      "ELY",
+      "EAR",
+      "EGI",
+      "EAZ",
+      "AMO"
+    ],
+    "canals": []
+  },
+  "ERO": {
+    "name": "Romania",
+    "x": 1022,
+    "y": 506,
+    "surface": [
+      "RRU",
+      "EHU",
+      "EYU",
+      "EBU",
+      "RUK",
+      "WBK"
+    ],
+    "air": [
+      "RUR",
+      "RCA",
+      "ETU",
+      "EGR",
+      "EAL",
+      "EIT",
+      "EAU",
+      "ECZ",
+      "EPD",
+      "RBA",
+      "RMU",
+      "WEM"
+    ],
+    "canals": []
+  },
+  "ESA": {
+    "name": "Sardinia",
+    "x": 951,
+    "y": 544,
+    "surface": [
+      "WWM"
+    ],
+    "air": [
+      "EGI",
+      "EAR",
+      "ELY",
+      "EIT",
+      "ESI",
+      "ATU",
+      "AAL",
+      "AMO"
+    ],
+    "canals": []
+  },
+  "ESC": {
+    "name": "Scotland",
+    "x": 873,
+    "y": 415,
+    "surface": [
+      "EGB",
+      "WNS"
+    ],
+    "air": [
+      "ENI",
+      "EIR",
+      "EIC",
+      "ENO",
+      "ESW",
+      "EDE",
+      "EWG",
+      "ENE",
+      "EBE",
+      "EFR",
+      "WMA"
+    ],
+    "canals": []
+  },
+  "ESI": {
+    "name": "Sicily",
+    "x": 977,
+    "y": 565,
+    "surface": [
+      "WWM",
+      "WEM"
+    ],
+    "air": [
+      "EGI",
+      "EAR",
+      "ELY",
+      "EIT",
+      "ESA",
+      "ATU",
+      "AAL",
+      "AMO",
+      "EYU",
+      "EAL",
+      "EGR",
+      "ETU",
+      "ECR",
+      "ECY",
+      "MSY",
+      "MIS",
+      "AEG",
+      "ALI"
+    ],
+    "canals": []
+  },
+  "ESW": {
+    "name": "Sweden",
+    "x": 995,
+    "y": 345,
+    "surface": [
+      "ENO",
+      "EFI",
+      "WBT",
+      "WNS"
+    ],
+    "air": [
+      "RMU",
+      "RBA",
+      "EPD",
+      "EEG",
+      "EWG",
+      "EDE",
+      "ENE",
+      "EBE",
+      "EFR",
+      "EGB",
+      "ESC",
+      "EIR",
+      "ENI",
+      "EIC",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "ESZ": {
+    "name": "Switzerland",
+    "x": 941,
+    "y": 501,
+    "surface": [
+      "ELY",
+      "EFR",
+      "EWG",
+      "EAU",
+      "EIT"
+    ],
+    "air": [
+      "EAR",
+      "ENA",
+      "EBE",
+      "ELU",
+      "ENE",
+      "EDE",
+      "EEG",
+      "ECZ",
+      "EHU",
+      "EYU",
+      "WMA",
+      "WNS",
+      "WBT",
+      "WWM",
+      "WEM"
+    ],
+    "canals": []
+  },
+  "ETU": {
+    "name": "Turkey",
+    "x": 1088,
+    "y": 557,
+    "surface": [
+      "EGR",
+      "EBU",
+      "RCA",
+      "MIN",
+      "MIQ",
+      "MSY",
+      "WBK",
+      "WEM"
+    ],
+    "air": [
+      "EAL",
+      "EYU",
+      "ERO",
+      "RUK",
+      "RUR",
+      "RWS",
+      "RKZ",
+      "RTU",
+      "IAF",
+      "IPK",
+      "MES",
+      "MWS",
+      "MJO",
+      "MIS",
+      "EIT",
+      "ESI",
+      "ECR",
+      "ECY",
+      "ATU",
+      "ALI",
+      "AEG",
+      "WAR"
+    ],
+    "canals": []
+  },
+  "EWG": {
+    "name": "West Germany",
+    "x": 952,
+    "y": 465,
+    "surface": [
+      "EDE",
+      "ENE",
+      "EBE",
+      "ELU",
+      "EFR",
+      "ESZ",
+      "EAU",
+      "ECZ",
+      "EEG",
+      "WBT",
+      "WNS"
+    ],
+    "air": [
+      "ENA",
+      "ELY",
+      "EIT",
+      "EYU",
+      "EHU",
+      "RRU",
+      "EPD",
+      "RBA",
+      "EFI",
+      "ESW",
+      "ENO",
+      "EIC",
+      "ENI",
+      "EIR",
+      "ESC",
+      "EGB",
+      "WMA"
+    ],
+    "canals": []
+  },
+  "EYU": {
+    "name": "Yugoslavia",
+    "x": 997,
+    "y": 526,
+    "surface": [
+      "EIT",
+      "EAU",
+      "EHU",
+      "ERO",
+      "EBU",
+      "EGR",
+      "EAL",
+      "WEM"
+    ],
+    "air": [
+      "ELY",
+      "ESZ",
+      "EWG",
+      "ECZ",
+      "RRU",
+      "RUK",
+      "ETU",
+      "ATU",
+      "ALI",
+      "AEG",
+      "MIS",
+      "MSY",
+      "ESI",
+      "ECR",
+      "ECY",
+      "WBK",
+      "WWM"
+    ],
+    "canals": []
+  },
+  "IAF": {
+    "name": "Afghanistan",
+    "x": 1217,
+    "y": 575,
+    "surface": [
+      "MIN",
+      "RTU",
+      "RSA",
+      "IPK"
+    ],
+    "air": [
+      "MIQ",
+      "ETU",
+      "RCA",
+      "RKZ",
+      "RIR",
+      "CXU",
+      "IPU",
+      "IRA",
+      "WAR"
+    ],
+    "canals": []
+  },
+  "IBD": {
+    "name": "Bangladesh",
+    "x": 1342,
+    "y": 643,
+    "surface": [
+      "IBE",
+      "CBU",
+      "WBB"
+    ],
+    "air": [
+      "IMA",
+      "IRA",
+      "IPU",
+      "INE",
+      "CTI",
+      "CYU",
+      "CLA",
+      "CTH",
+      "ISL",
+      "PSU",
+      "PMP"
+    ],
+    "canals": []
+  },
+  "IBE": {
+    "name": "Bengal",
+    "x": 1301,
+    "y": 639,
+    "surface": [
+      "IMA",
+      "IRA",
+      "IPU",
+      "INE",
+      "CTI",
+      "CYU",
+      "CBU",
+      "IBD",
+      "WBB"
+    ],
+    "air": [
+      "IPK",
+      "CXU",
+      "CQI",
+      "CSI",
+      "CGU",
+      "CVN",
+      "CLA",
+      "CTH",
+      "ISL",
+      "PSU",
+      "PMP",
+      "WAR",
+      "WIN"
+    ],
+    "canals": []
+  },
+  "IMA": {
+    "name": "Madras",
+    "x": 1281,
+    "y": 691,
+    "surface": [
+      "IRA",
+      "IBE",
+      "WAR",
+      "WIN",
+      "WBB"
+    ],
+    "air": [
+      "IPK",
+      "IPU",
+      "INE",
+      "CTI",
+      "CYU",
+      "CBU",
+      "IBD",
+      "ISL",
+      "MIN",
+      "MIQ",
+      "MES",
+      "MOM",
+      "MYE",
+      "PSU",
+      "PMP",
+      "CTH"
+    ],
+    "canals": []
+  },
+  "INE": {
+    "name": "Nepal",
+    "x": 1312,
+    "y": 615,
+    "surface": [
+      "IBE",
+      "IPU",
+      "CTI"
+    ],
+    "air": [
+      "IMA",
+      "IBD",
+      "IRA",
+      "IPK",
+      "CXU",
+      "CQI",
+      "CSI",
+      "CYU",
+      "CBU",
+      "WBB"
+    ],
+    "canals": []
+  },
+  "IPK": {
+    "name": "Pakistan",
+    "x": 1231,
+    "y": 622,
+    "surface": [
+      "MIN",
+      "IAF",
+      "RSA",
+      "CXU",
+      "IPU",
+      "IRA",
+      "WAR"
+    ],
+    "air": [
+      "MIQ",
+      "ETU",
+      "RCA",
+      "RTU",
+      "RKZ",
+      "RIR",
+      "CMO",
+      "CIM",
+      "CQI",
+      "CTI",
+      "INE",
+      "IBE",
+      "IMA",
+      "MES",
+      "MOM",
+      "MYE"
+    ],
+    "canals": []
+  },
+  "IPU": {
+    "name": "Punjab",
+    "x": 1282,
+    "y": 602,
+    "surface": [
+      "IRA",
+      "IPK",
+      "CXU",
+      "CTI",
+      "INE",
+      "IBE"
+    ],
+    "air": [
+      "IMA",
+      "MIN",
+      "IAF",
+      "RSA",
+      "RIR",
+      "CMO",
+      "CIM",
+      "CQI",
+      "CSI",
+      "CYU",
+      "CBU",
+      "IBD",
+      "WAR",
+      "WBB"
+    ],
+    "canals": []
+  },
+  "IRA": {
+    "name": "Rajput",
+    "x": 1259,
+    "y": 639,
+    "surface": [
+      "IPK",
+      "IPU",
+      "IBE",
+      "IMA",
+      "WAR"
+    ],
+    "air": [
+      "MIN",
+      "IAF",
+      "RSA",
+      "CXU",
+      "CTI",
+      "INE",
+      "CYU",
+      "CBU",
+      "IBD",
+      "MIQ",
+      "MES",
+      "MOM",
+      "MYE",
+      "WBB",
+      "WIN"
+    ],
+    "canals": []
+  },
+  "ISL": {
+    "name": "Sri Lanka",
+    "x": 1302,
+    "y": 728,
+    "surface": [
+      "WIN",
+      "WBB",
+      "WTI"
+    ],
+    "air": [
+      "IMA",
+      "IBE",
+      "IBD",
+      "CBU",
+      "CTH",
+      "PMP",
+      "PSU"
+    ],
+    "canals": []
+  },
+  "MES": {
+    "name": "Saudi Arabia",
+    "x": 1147,
+    "y": 654,
+    "surface": [
+      "MOM",
+      "MYE",
+      "MWS",
+      "MIQ",
+      "WAR"
+    ],
+    "air": [
+      "MJO",
+      "MSY",
+      "ETU",
+      "MIN",
+      "IPK",
+      "IRA",
+      "IMA",
+      "AEG",
+      "MIS",
+      "WRS"
+    ],
+    "canals": []
+  },
+  "MIQ": {
+    "name": "Iraq",
+    "x": 1118,
+    "y": 579,
+    "surface": [
+      "MES",
+      "MWS",
+      "MJO",
+      "MSY",
+      "ETU",
+      "MIN",
+      "WAR"
+    ],
+    "air": [
+      "MOM",
+      "MYE",
+      "MIS",
+      "AEG",
+      "EGR",
+      "EBU",
+      "RCA",
+      "RTU",
+      "IRA",
+      "IMA",
+      "IAF",
+      "IPK",
+      "WBK",
+      "WEM",
+      "WRS"
+    ],
+    "canals": []
+  },
+  "MIN": {
+    "name": "Iran",
+    "x": 1152,
+    "y": 582,
+    "surface": [
+      "MIQ",
+      "ETU",
+      "RCA",
+      "RTU",
+      "IAF",
+      "IPK",
+      "WAR"
+    ],
+    "air": [
+      "MOM",
+      "MES",
+      "MWS",
+      "MJO",
+      "MSY",
+      "EGR",
+      "EBU",
+      "RUK",
+      "RUR",
+      "RWS",
+      "RKZ",
+      "RSA",
+      "MYE",
+      "IMA",
+      "CXU",
+      "IPU",
+      "IRA",
+      "WBK",
+      "WEM"
+    ],
+    "canals": []
+  },
+  "MIS": {
+    "name": "Israel",
+    "x": 1080,
+    "y": 600,
+    "surface": [
+      "AEG",
+      "MJO",
+      "MSY",
+      "MWS",
+      "WEM"
+    ],
+    "air": [
+      "ALI",
+      "ASU",
+      "MYE",
+      "MES",
+      "MIQ",
+      "ETU",
+      "EGR",
+      "ECY",
+      "ECR",
+      "EAL",
+      "EYU",
+      "EIT",
+      "ESI",
+      "ATU",
+      "WRS"
+    ],
+    "canals": []
+  },
+  "MJO": {
+    "name": "Jordan",
+    "x": 1094,
+    "y": 606,
+    "surface": [
+      "MIS",
+      "MSY",
+      "MIQ",
+      "MWS"
+    ],
+    "air": [
+      "AEG",
+      "ETU",
+      "MIN",
+      "MES",
+      "MYE",
+      "WEM",
+      "WRS",
+      "WAR"
+    ],
+    "canals": []
+  },
+  "MOM": {
+    "name": "Oman",
+    "x": 1185,
+    "y": 657,
+    "surface": [
+      "MYE",
+      "MES",
+      "WAR"
+    ],
+    "air": [
+      "MIN",
+      "MIQ",
+      "MWS",
+      "IPK",
+      "IRA",
+      "IMA",
+      "WRS"
+    ],
+    "canals": []
+  },
+  "MSY": {
+    "name": "Syria",
+    "x": 1094,
+    "y": 578,
+    "surface": [
+      "MIS",
+      "MJO",
+      "MIQ",
+      "ETU",
+      "WEM"
+    ],
+    "air": [
+      "AEG",
+      "MWS",
+      "MES",
+      "MIN",
+      "RCA",
+      "EBU",
+      "EGR",
+      "ECY",
+      "ECR",
+      "EAL",
+      "EYU",
+      "EIT",
+      "ESI",
+      "ATU",
+      "ALI",
+      "WBK",
+      "WAR"
+    ],
+    "canals": []
+  },
+  "MWS": {
+    "name": "Western Saudi Arabia",
+    "x": 1100,
+    "y": 635,
+    "surface": [
+      "MYE",
+      "MES",
+      "MIQ",
+      "MJO",
+      "MIS",
+      "AEG",
+      "WRS"
+    ],
+    "air": [
+      "ALI",
+      "ASU",
+      "AET",
+      "ASO",
+      "MSY",
+      "ETU",
+      "MIN",
+      "MOM",
+      "WAR",
+      "WEM"
+    ],
+    "canals": []
+  },
+  "MYE": {
+    "name": "Yemen",
+    "x": 1128,
+    "y": 685,
+    "surface": [
+      "MWS",
+      "MES",
+      "MOM",
+      "WRS",
+      "WAR"
+    ],
+    "air": [
+      "AEG",
+      "MIS",
+      "MJO",
+      "MIQ",
+      "MIN",
+      "IPK",
+      "IRA",
+      "IMA",
+      "ASU",
+      "AET",
+      "ASO"
+    ],
+    "canals": []
+  },
+  "NAK": {
+    "name": "Alaska",
+    "x": 150,
+    "y": 332,
+    "surface": [
+      "NYK",
+      "NBC",
+      "WBE",
+      "WNP"
+    ],
+    "air": [
+      "NMK",
+      "NAL",
+      "NGW",
+      "RKM",
+      "NYK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "NAL": {
+    "name": "Alberta",
+    "x": 333,
+    "y": 459,
+    "surface": [
+      "NBC",
+      "NMK",
+      "NSK",
+      "NDA",
+      "NGW"
+    ],
+    "air": [
+      "NAK",
+      "NYK",
+      "NVI",
+      "NKE",
+      "NMN",
+      "NGL",
+      "NMW",
+      "NTX",
+      "NCA",
+      "WNP"
+    ],
+    "canals": []
+  },
+  "NBC": {
+    "name": "British Columbia",
+    "x": 280,
+    "y": 450,
+    "surface": [
+      "NAK",
+      "NYK",
+      "NMK",
+      "NAL",
+      "NGW",
+      "WNP"
+    ],
+    "air": [
+      "NVI",
+      "NKE",
+      "NSK",
+      "NDA",
+      "NCA",
+      "WBE"
+    ],
+    "canals": []
+  },
+  "NBE": {
+    "name": "Belize",
+    "x": 455,
+    "y": 681,
+    "surface": [
+      "NYC",
+      "NGU",
+      "NHO",
+      "WCR"
+    ],
+    "air": [
+      "NTB",
+      "NOA",
+      "NES",
+      "NWN",
+      "NEN",
+      "NCU",
+      "NJA",
+      "NHA",
+      "NPR",
+      "SGU",
+      "SVE",
+      "SEC",
+      "NPA",
+      "WCP",
+      "WGM"
+    ],
+    "canals": []
+  },
+  "NBF": {
+    "name": "Baffin Island",
+    "x": 555,
+    "y": 348,
+    "surface": [
+      "NKE",
+      "NQU",
+      "NNF",
+      "WBF"
+    ],
+    "air": [
+      "NVI",
+      "NMK",
+      "NSK",
+      "NMN",
+      "NON",
+      "NNY",
+      "NNE",
+      "NNB",
+      "NGR",
+      "NAK",
+      "NYK",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WGR",
+      "WNS",
+      "WBR",
+      "WWA"
+    ],
+    "canals": []
+  },
+  "NBJ": {
+    "name": "Baja California",
+    "x": 335,
+    "y": 621,
+    "surface": [
+      "NCA",
+      "NSO",
+      "WCP"
+    ],
+    "air": [
+      "NGW",
+      "NDA",
+      "NTX",
+      "NCH",
+      "NJL",
+      "WNP"
+    ],
+    "canals": []
+  },
+  "NCA": {
+    "name": "California",
+    "x": 333,
+    "y": 574,
+    "surface": [
+      "NGW",
+      "NDA",
+      "NTX",
+      "NSO",
+      "NBJ",
+      "WNP",
+      "WCP"
+    ],
+    "air": [
+      "NBC",
+      "NAL",
+      "NSK",
+      "NMN",
+      "NGL",
+      "NMW",
+      "NDS",
+      "NVC",
+      "NCH",
+      "NJL",
+      "PHI",
+      "WGM"
+    ],
+    "canals": []
+  },
+  "NCH": {
+    "name": "Chihuahua",
+    "x": 383,
+    "y": 629,
+    "surface": [
+      "NSO",
+      "NTX",
+      "NVC",
+      "NMX",
+      "NJL"
+    ],
+    "air": [
+      "NBJ",
+      "NCA",
+      "NDA",
+      "NMW",
+      "NDS",
+      "NTB",
+      "NOA",
+      "WGM",
+      "WCP"
+    ],
+    "canals": []
+  },
+  "NCU": {
+    "name": "Cuba",
+    "x": 513,
+    "y": 661,
+    "surface": [
+      "WGM",
+      "WWA",
+      "WCR"
+    ],
+    "air": [
+      "NDS",
+      "NTX",
+      "NVC",
+      "NTB",
+      "NYC",
+      "NBE",
+      "NHO",
+      "NEN",
+      "NPA",
+      "SEC",
+      "SVE",
+      "SGU",
+      "NPR",
+      "NHA",
+      "NJA"
+    ],
+    "canals": []
+  },
+  "NDA": {
+    "name": "Dakota",
+    "x": 395,
+    "y": 543,
+    "surface": [
+      "NGW",
+      "NAL",
+      "NSK",
+      "NMN",
+      "NGL",
+      "NMW",
+      "NTX",
+      "NCA"
+    ],
+    "air": [
+      "NBC",
+      "NMK",
+      "NKE",
+      "NON",
+      "NPE",
+      "NVA",
+      "NDS",
+      "NVC",
+      "NCH",
+      "NSO",
+      "NBJ",
+      "WNP",
+      "WCP",
+      "WGM"
+    ],
+    "canals": []
+  },
+  "NDS": {
+    "name": "Deep South",
+    "x": 474,
+    "y": 605,
+    "surface": [
+      "NTX",
+      "NMW",
+      "NVA",
+      "WWA",
+      "WGM"
+    ],
+    "air": [
+      "NPE",
+      "NGL",
+      "NDA",
+      "NCA",
+      "NSO",
+      "NCH",
+      "NVC",
+      "NTB",
+      "NYC",
+      "NCU"
+    ],
+    "canals": []
+  },
+  "NEN": {
+    "name": "Nicaragua",
+    "x": 482,
+    "y": 705,
+    "surface": [
+      "NHO",
+      "NWN",
+      "NPA",
+      "WCR"
+    ],
+    "air": [
+      "NBE",
+      "NGU",
+      "NES",
+      "SWC",
+      "SEC",
+      "NYC",
+      "NCU",
+      "NJA",
+      "NHA",
+      "NPR",
+      "SGU",
+      "SVE",
+      "WCP"
+    ],
+    "canals": []
+  },
+  "NES": {
+    "name": "El Salvador",
+    "x": 460,
+    "y": 697,
+    "surface": [
+      "NGU",
+      "NHO",
+      "NWN",
+      "WCP"
+    ],
+    "air": [
+      "NOA",
+      "NYC",
+      "NBE",
+      "NEN",
+      "NPA",
+      "WCR"
+    ],
+    "canals": []
+  },
+  "NGL": {
+    "name": "Great Lakes",
+    "x": 476,
+    "y": 531,
+    "surface": [
+      "NDA",
+      "NMN",
+      "NON",
+      "NPE",
+      "NMW"
+    ],
+    "air": [
+      "NTX",
+      "NCA",
+      "NGW",
+      "NAL",
+      "NSK",
+      "NKE",
+      "NQU",
+      "NNY",
+      "NVA",
+      "NDS",
+      "WWA"
+    ],
+    "canals": []
+  },
+  "NGR": {
+    "name": "Greenland",
+    "x": 680,
+    "y": 320,
+    "surface": [
+      "WBF",
+      "WGR"
+    ],
+    "air": [
+      "NBF",
+      "NNF",
+      "EIC",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "NGU": {
+    "name": "Guatemala",
+    "x": 445,
+    "y": 691,
+    "surface": [
+      "NOA",
+      "NYC",
+      "NBE",
+      "NHO",
+      "NES",
+      "WCP"
+    ],
+    "air": [
+      "NJL",
+      "NMX",
+      "NVC",
+      "NTB",
+      "NEN",
+      "NWN",
+      "WCR",
+      "WGM"
+    ],
+    "canals": []
+  },
+  "NGW": {
+    "name": "Northwest US",
+    "x": 323,
+    "y": 527,
+    "surface": [
+      "NBC",
+      "NAL",
+      "NDA",
+      "NCA",
+      "WNP"
+    ],
+    "air": [
+      "NAK",
+      "NYK",
+      "NMK",
+      "NSK",
+      "NMN",
+      "NGL",
+      "NMW",
+      "NTX",
+      "NSO",
+      "NBJ",
+      "WCP"
+    ],
+    "canals": []
+  },
+  "NHA": {
+    "name": "Haiti",
+    "x": 555,
+    "y": 671,
+    "surface": [
+      "WWA",
+      "WCR"
+    ],
+    "air": [
+      "NCU",
+      "NJA",
+      "NPR",
+      "NYC",
+      "NBE",
+      "NHO",
+      "NEN",
+      "NPA",
+      "SEC",
+      "SVE",
+      "SGU"
+    ],
+    "canals": []
+  },
+  "NHO": {
+    "name": "Honduras",
+    "x": 479,
+    "y": 690,
+    "surface": [
+      "NES",
+      "NGU",
+      "NBE",
+      "NEN",
+      "NWN",
+      "WCR"
+    ],
+    "air": [
+      "NYC",
+      "NOA",
+      "NPA",
+      "NCU",
+      "NJA",
+      "NHA",
+      "NPR",
+      "SGU",
+      "SVE",
+      "SEC",
+      "WCP"
+    ],
+    "canals": []
+  },
+  "NJA": {
+    "name": "Jamaica",
+    "x": 513,
+    "y": 686,
+    "surface": [
+      "WCR"
+    ],
+    "air": [
+      "NCU",
+      "NHA",
+      "NPR",
+      "SGU",
+      "SVE",
+      "SEC",
+      "NPA",
+      "NEN",
+      "NHO",
+      "NBE",
+      "NYC"
+    ],
+    "canals": []
+  },
+  "NJL": {
+    "name": "Jalisco",
+    "x": 391,
+    "y": 657,
+    "surface": [
+      "NSO",
+      "NCH",
+      "NMX",
+      "NOA",
+      "WCP"
+    ],
+    "air": [
+      "NBJ",
+      "NCA",
+      "NTX",
+      "NVC",
+      "NTB",
+      "NYC",
+      "NGU"
+    ],
+    "canals": []
+  },
+  "NKE": {
+    "name": "Keewatin",
+    "x": 420,
+    "y": 352,
+    "surface": [
+      "NVI",
+      "NMK",
+      "NSK",
+      "NMN",
+      "NBF"
+    ],
+    "air": [
+      "NYK",
+      "NBC",
+      "NAL",
+      "NDA",
+      "NGL",
+      "NON",
+      "NQU",
+      "NNF",
+      "WBF",
+      "NAK",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "NMK": {
+    "name": "Mackenzie",
+    "x": 320,
+    "y": 365,
+    "surface": [
+      "NYK",
+      "NBC",
+      "NAL",
+      "NSK",
+      "NKE",
+      "NVI"
+    ],
+    "air": [
+      "NAK",
+      "NGW",
+      "NDA",
+      "NMN",
+      "NBF",
+      "WNP",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "NMN": {
+    "name": "Manitoba",
+    "x": 443,
+    "y": 467,
+    "surface": [
+      "NKE",
+      "NSK",
+      "NDA",
+      "NGL",
+      "NON"
+    ],
+    "air": [
+      "NVI",
+      "NMK",
+      "NAL",
+      "NGW",
+      "NCA",
+      "NTX",
+      "NMW",
+      "NPE",
+      "NNY",
+      "NQU",
+      "NBF"
+    ],
+    "canals": []
+  },
+  "NMW": {
+    "name": "Midwest US",
+    "x": 476,
+    "y": 559,
+    "surface": [
+      "NDA",
+      "NGL",
+      "NPE",
+      "NVA",
+      "NDS",
+      "NTX"
+    ],
+    "air": [
+      "NGW",
+      "NCA",
+      "NSO",
+      "NCH",
+      "NVC",
+      "NNY",
+      "NON",
+      "NMN",
+      "NSK",
+      "NAL",
+      "WWA",
+      "WGM"
+    ],
+    "canals": []
+  },
+  "NMX": {
+    "name": "Mexico",
+    "x": 409,
+    "y": 665,
+    "surface": [
+      "NJL",
+      "NCH",
+      "NVC",
+      "NOA"
+    ],
+    "air": [
+      "NSO",
+      "NTX",
+      "NTB",
+      "NYC",
+      "NGU",
+      "WCP",
+      "WGM"
+    ],
+    "canals": []
+  },
+  "NNB": {
+    "name": "New Brunswick",
+    "x": 583,
+    "y": 510,
+    "surface": [
+      "NNE",
+      "NQU",
+      "WWA"
+    ],
+    "air": [
+      "NNF",
+      "NBF",
+      "NON",
+      "NNY"
+    ],
+    "canals": []
+  },
+  "NNE": {
+    "name": "New England",
+    "x": 547,
+    "y": 508,
+    "surface": [
+      "NNB",
+      "NQU",
+      "NNY",
+      "WWA"
+    ],
+    "air": [
+      "NNF",
+      "NBF",
+      "NON",
+      "NPE"
+    ],
+    "canals": []
+  },
+  "NNF": {
+    "name": "Newfoundland",
+    "x": 613,
+    "y": 484,
+    "surface": [
+      "NBF",
+      "NQU",
+      "WBF",
+      "WWA"
+    ],
+    "air": [
+      "NKE",
+      "NON",
+      "NNY",
+      "NNE",
+      "NNB",
+      "NGR"
+    ],
+    "canals": []
+  },
+  "NNY": {
+    "name": "New York",
+    "x": 539,
+    "y": 533,
+    "surface": [
+      "NNE",
+      "NQU",
+      "NON",
+      "NPE",
+      "WWA"
+    ],
+    "air": [
+      "NNB",
+      "NNF",
+      "NBF",
+      "NMN",
+      "NGL",
+      "NMW",
+      "NVA"
+    ],
+    "canals": []
+  },
+  "NOA": {
+    "name": "Oaxaca",
+    "x": 422,
+    "y": 680,
+    "surface": [
+      "NJL",
+      "NMX",
+      "NVC",
+      "NTB",
+      "NYC",
+      "NGU",
+      "WCP"
+    ],
+    "air": [
+      "NSO",
+      "NCH",
+      "NTX",
+      "NBE",
+      "NHO",
+      "NES",
+      "WGM",
+      "WCR"
+    ],
+    "canals": []
+  },
+  "NON": {
+    "name": "Ontario",
+    "x": 493,
+    "y": 478,
+    "surface": [
+      "NMN",
+      "NGL",
+      "NPE",
+      "NNY",
+      "NQU"
+    ],
+    "air": [
+      "NKE",
+      "NSK",
+      "NDA",
+      "NMW",
+      "NVA",
+      "NNE",
+      "NNB",
+      "NNF",
+      "NBF",
+      "WWA"
+    ],
+    "canals": []
+  },
+  "NPA": {
+    "name": "Panama",
+    "x": 489,
+    "y": 732,
+    "surface": [
+      "NEN",
+      "NWN",
+      "SWC",
+      "SEC",
+      "WCR",
+      "WCP"
+    ],
+    "air": [
+      "NES",
+      "NHO",
+      "SED",
+      "SPE",
+      "SWB",
+      "SVE",
+      "NBE",
+      "NYC",
+      "NCU",
+      "NJA",
+      "NHA",
+      "NPR",
+      "SGU",
+      "WSP"
+    ],
+    "canals": []
+  },
+  "NPE": {
+    "name": "Pennsylvania",
+    "x": 515,
+    "y": 544,
+    "surface": [
+      "NNY",
+      "NON",
+      "NGL",
+      "NMW",
+      "NVA",
+      "WWA"
+    ],
+    "air": [
+      "NNE",
+      "NQU",
+      "NMN",
+      "NDA",
+      "NTX",
+      "NDS"
+    ],
+    "canals": []
+  },
+  "NPR": {
+    "name": "Puerto Rico",
+    "x": 595,
+    "y": 672,
+    "surface": [
+      "WWA",
+      "WCR"
+    ],
+    "air": [
+      "NHA",
+      "NCU",
+      "NJA",
+      "NYC",
+      "NBE",
+      "NHO",
+      "NEN",
+      "NPA",
+      "SEC",
+      "SVE",
+      "SGU"
+    ],
+    "canals": []
+  },
+  "NQU": {
+    "name": "Quebec",
+    "x": 541,
+    "y": 463,
+    "surface": [
+      "NBF",
+      "NNF",
+      "NNB",
+      "NNE",
+      "NNY",
+      "NON",
+      "WWA"
+    ],
+    "air": [
+      "NKE",
+      "NMN",
+      "NGL",
+      "NPE",
+      "WBF"
+    ],
+    "canals": []
+  },
+  "NSK": {
+    "name": "Saskatchewan",
+    "x": 393,
+    "y": 443,
+    "surface": [
+      "NAL",
+      "NMK",
+      "NKE",
+      "NMN",
+      "NDA"
+    ],
+    "air": [
+      "NBC",
+      "NYK",
+      "NVI",
+      "NBF",
+      "NON",
+      "NGL",
+      "NMW",
+      "NTX",
+      "NCA",
+      "NGW"
+    ],
+    "canals": []
+  },
+  "NSO": {
+    "name": "Sonora",
+    "x": 365,
+    "y": 635,
+    "surface": [
+      "NBJ",
+      "NCA",
+      "NTX",
+      "NCH",
+      "NJL",
+      "WCP"
+    ],
+    "air": [
+      "NGW",
+      "NDA",
+      "NMW",
+      "NDS",
+      "NVC",
+      "NMX",
+      "NOA",
+      "WNP",
+      "WGM"
+    ],
+    "canals": []
+  },
+  "NTB": {
+    "name": "Tabasco",
+    "x": 433,
+    "y": 670,
+    "surface": [
+      "NVC",
+      "NOA",
+      "NYC",
+      "WGM"
+    ],
+    "air": [
+      "NTX",
+      "NCH",
+      "NMX",
+      "NJL",
+      "NGU",
+      "NBE",
+      "NCU",
+      "NDS",
+      "WCR",
+      "WCP"
+    ],
+    "canals": []
+  },
+  "NTX": {
+    "name": "Texas",
+    "x": 398,
+    "y": 584,
+    "surface": [
+      "NDS",
+      "NMW",
+      "NDA",
+      "NCA",
+      "NSO",
+      "NCH",
+      "NVC",
+      "WGM"
+    ],
+    "air": [
+      "NVA",
+      "NPE",
+      "NGL",
+      "NMN",
+      "NSK",
+      "NAL",
+      "NGW",
+      "NBJ",
+      "NJL",
+      "NMX",
+      "NOA",
+      "NTB",
+      "NYC",
+      "NCU",
+      "WWA",
+      "WCP",
+      "WNP"
+    ],
+    "canals": []
+  },
+  "NVA": {
+    "name": "Virginia",
+    "x": 503,
+    "y": 561,
+    "surface": [
+      "NPE",
+      "NMW",
+      "NDS",
+      "WWA"
+    ],
+    "air": [
+      "NNY",
+      "NON",
+      "NGL",
+      "NDA",
+      "NTX",
+      "WGM"
+    ],
+    "canals": []
+  },
+  "NVC": {
+    "name": "Veracruz",
+    "x": 407,
+    "y": 644,
+    "surface": [
+      "NTX",
+      "NCH",
+      "NMX",
+      "NOA",
+      "NTB",
+      "WGM"
+    ],
+    "air": [
+      "NDS",
+      "NMW",
+      "NDA",
+      "NCA",
+      "NSO",
+      "NJL",
+      "NGU",
+      "NYC",
+      "NCU",
+      "WCP"
+    ],
+    "canals": []
+  },
+  "NVI": {
+    "name": "Victoria Island",
+    "x": 350,
+    "y": 270,
+    "surface": [
+      "NMK",
+      "NKE"
+    ],
+    "air": [
+      "NYK",
+      "NBC",
+      "NAL",
+      "NSK",
+      "NMN",
+      "NBF",
+      "NAK",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "NWN": {
+    "name": "Western Nicaragua",
+    "x": 473,
+    "y": 706,
+    "surface": [
+      "NES",
+      "NHO",
+      "NEN",
+      "NPA",
+      "WCP"
+    ],
+    "air": [
+      "NGU",
+      "NBE",
+      "SEC",
+      "SWC",
+      "WCR"
+    ],
+    "canals": []
+  },
+  "NYC": {
+    "name": "Yucatan",
+    "x": 459,
+    "y": 669,
+    "surface": [
+      "NTB",
+      "NOA",
+      "NGU",
+      "NBE",
+      "WGM",
+      "WCR"
+    ],
+    "air": [
+      "NVC",
+      "NMX",
+      "NJL",
+      "NES",
+      "NHO",
+      "NTX",
+      "NDS",
+      "NCU",
+      "NJA",
+      "NHA",
+      "NPR",
+      "NEN",
+      "NPA",
+      "SEC",
+      "SVE",
+      "SGU",
+      "WCP"
+    ],
+    "canals": []
+  },
+  "NYK": {
+    "name": "Yukon",
+    "x": 230,
+    "y": 340,
+    "surface": [
+      "NAK",
+      "NBC",
+      "NMK"
+    ],
+    "air": [
+      "NGW",
+      "NAL",
+      "NSK",
+      "NKE",
+      "NVI",
+      "NBF",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR",
+      "WNP"
+    ],
+    "canals": []
+  },
+  "PBO": {
+    "name": "Borneo",
+    "x": 1465,
+    "y": 765,
+    "surface": [
+      "PSA",
+      "WSC"
+    ],
+    "air": [
+      "CTA",
+      "PLU",
+      "PMI",
+      "PCE",
+      "PJA",
+      "PSU",
+      "PMP",
+      "CTH",
+      "CCA",
+      "CVN",
+      "CGU"
+    ],
+    "canals": []
+  },
+  "PCE": {
+    "name": "Celebes",
+    "x": 1492,
+    "y": 768,
+    "surface": [
+      "WSC",
+      "WTI"
+    ],
+    "air": [
+      "PIG",
+      "PNT",
+      "PWA",
+      "PJA",
+      "PSU",
+      "PMP",
+      "CTH",
+      "CCA",
+      "CVN",
+      "CGU",
+      "CTA",
+      "PLU",
+      "PMI",
+      "PSA",
+      "PBO"
+    ],
+    "canals": []
+  },
+  "PHI": {
+    "name": "Hawaii",
+    "x": 115,
+    "y": 660,
+    "surface": [
+      "WNP",
+      "WMP",
+      "WCP"
+    ],
+    "air": [
+      "PMD",
+      "PSM",
+      "NCA"
+    ],
+    "canals": []
+  },
+  "PIG": {
+    "name": "Western New Guinea",
+    "x": 1580,
+    "y": 780,
+    "surface": [
+      "PPG",
+      "WTI"
+    ],
+    "air": [
+      "PQU",
+      "PNT",
+      "PCE",
+      "PMI",
+      "WCO"
+    ],
+    "canals": []
+  },
+  "PJA": {
+    "name": "Java",
+    "x": 1445,
+    "y": 797,
+    "surface": [
+      "WTI",
+      "WSC"
+    ],
+    "air": [
+      "PWA",
+      "PNT",
+      "PCE",
+      "PMI",
+      "PLU",
+      "CTA",
+      "CGU",
+      "CVN",
+      "CCA",
+      "CTH",
+      "PMP",
+      "PSU",
+      "PSA",
+      "PBO"
+    ],
+    "canals": []
+  },
+  "PLU": {
+    "name": "Luzon",
+    "x": 1502,
+    "y": 693,
+    "surface": [
+      "WPI",
+      "WSC"
+    ],
+    "air": [
+      "CTA",
+      "CGU",
+      "CVN",
+      "CCA",
+      "CTH",
+      "PMP",
+      "PSU",
+      "PJA",
+      "PCE",
+      "PMI",
+      "PSA",
+      "PBO"
+    ],
+    "canals": []
+  },
+  "PMD": {
+    "name": "Midway",
+    "x": 47,
+    "y": 613,
+    "surface": [
+      "WPI",
+      "WNP",
+      "WMP"
+    ],
+    "air": [
+      "PHI",
+      "PSM"
+    ],
+    "canals": []
+  },
+  "PMI": {
+    "name": "Mindanao",
+    "x": 1519,
+    "y": 724,
+    "surface": [
+      "WSC",
+      "WPI"
+    ],
+    "air": [
+      "PIG",
+      "PCE",
+      "PJA",
+      "PSU",
+      "PMP",
+      "CTH",
+      "CCA",
+      "CVN",
+      "CGU",
+      "CTA",
+      "PLU",
+      "PSA",
+      "PBO"
+    ],
+    "canals": []
+  },
+  "PMP": {
+    "name": "Malay Peninsula",
+    "x": 1405,
+    "y": 738,
+    "surface": [
+      "CTH",
+      "WSC",
+      "WBB"
+    ],
+    "air": [
+      "CBU",
+      "CLA",
+      "CCA",
+      "CVN",
+      "CGU",
+      "CTA",
+      "PLU",
+      "PMI",
+      "PCE",
+      "PJA",
+      "PSU",
+      "PSA",
+      "PBO",
+      "ISL",
+      "IMA",
+      "IBE",
+      "IBD"
+    ],
+    "canals": []
+  },
+  "PNT": {
+    "name": "Northern Territory",
+    "x": 1545,
+    "y": 854,
+    "surface": [
+      "PWA",
+      "PSO",
+      "PQU",
+      "WTI"
+    ],
+    "air": [
+      "PVI",
+      "PSW",
+      "PPG",
+      "PIG",
+      "PCE",
+      "PJA",
+      "WCO"
+    ],
+    "canals": []
+  },
+  "PNZ": {
+    "name": "New Zealand",
+    "x": 1763,
+    "y": 974,
+    "surface": [
+      "WCO"
+    ],
+    "air": [
+      "PSM",
+      "PSZ",
+      "PTS",
+      "PVI",
+      "PSW",
+      "PQU",
+      "PPG"
+    ],
+    "canals": []
+  },
+  "PPG": {
+    "name": "Papua New Guinea",
+    "x": 1612,
+    "y": 795,
+    "surface": [
+      "PIG",
+      "WCO",
+      "WTI"
+    ],
+    "air": [
+      "PNT",
+      "PQU",
+      "PSM",
+      "PSW",
+      "PVI",
+      "PTS",
+      "PSZ",
+      "PNZ"
+    ],
+    "canals": []
+  },
+  "PQU": {
+    "name": "Queensland",
+    "x": 1604,
+    "y": 870,
+    "surface": [
+      "PNT",
+      "PSO",
+      "PSW",
+      "WCO",
+      "WTI"
+    ],
+    "air": [
+      "PWA",
+      "PVI",
+      "PPG",
+      "PIG",
+      "PSM",
+      "PNZ",
+      "PSZ",
+      "PTS"
+    ],
+    "canals": []
+  },
+  "PSA": {
+    "name": "Sarawak",
+    "x": 1470,
+    "y": 736,
+    "surface": [
+      "PBO",
+      "WSC"
+    ],
+    "air": [
+      "PCE",
+      "PJA",
+      "PSU",
+      "PMP",
+      "CTH",
+      "CCA",
+      "CVN",
+      "CGU",
+      "CTA",
+      "PLU",
+      "PMI"
+    ],
+    "canals": []
+  },
+  "PSM": {
+    "name": "Samoa",
+    "x": 1827,
+    "y": 835,
+    "surface": [
+      "WMP",
+      "WCO",
+      "WSP"
+    ],
+    "air": [
+      "PHI",
+      "PMD",
+      "PPG",
+      "PNZ",
+      "PSZ",
+      "PTS",
+      "PVI",
+      "PSW",
+      "PQU"
+    ],
+    "canals": []
+  },
+  "PSO": {
+    "name": "South Australia",
+    "x": 1586,
+    "y": 929,
+    "surface": [
+      "PWA",
+      "PNT",
+      "PQU",
+      "PSW",
+      "PVI",
+      "WTI"
+    ],
+    "air": [
+      "WCO"
+    ],
+    "canals": []
+  },
+  "PSU": {
+    "name": "Sumatra",
+    "x": 1406,
+    "y": 777,
+    "surface": [
+      "WBB",
+      "WSC",
+      "WTI"
+    ],
+    "air": [
+      "ISL",
+      "IMA",
+      "IBE",
+      "IBD",
+      "CBU",
+      "CTH",
+      "PMP",
+      "CCA",
+      "CVN",
+      "CGU",
+      "CTA",
+      "PLU",
+      "PMI",
+      "PCE",
+      "PJA",
+      "PSA",
+      "PBO"
+    ],
+    "canals": []
+  },
+  "PSW": {
+    "name": "New South Wales",
+    "x": 1624,
+    "y": 933,
+    "surface": [
+      "PQU",
+      "PSO",
+      "PVI",
+      "WCO"
+    ],
+    "air": [
+      "PNT",
+      "PWA",
+      "PTS",
+      "PSZ",
+      "PNZ",
+      "PSM",
+      "PPG",
+      "WTI"
+    ],
+    "canals": []
+  },
+  "PSZ": {
+    "name": "South New Zealand",
+    "x": 1730,
+    "y": 1015,
+    "surface": [
+      "WCO"
+    ],
+    "air": [
+      "PNZ",
+      "PTS",
+      "PVI",
+      "PSW",
+      "PQU",
+      "PPG",
+      "PSM"
+    ],
+    "canals": []
+  },
+  "PTS": {
+    "name": "Tasmania",
+    "x": 1618,
+    "y": 990,
+    "surface": [
+      "WTI",
+      "WCO"
+    ],
+    "air": [
+      "PVI",
+      "PSZ",
+      "PSW",
+      "PQU",
+      "PPG",
+      "PSM",
+      "PNZ"
+    ],
+    "canals": []
+  },
+  "PVI": {
+    "name": "Victoria",
+    "x": 1614,
+    "y": 955,
+    "surface": [
+      "PSW",
+      "PSO",
+      "WCO",
+      "WTI"
+    ],
+    "air": [
+      "PQU",
+      "PNT",
+      "PWA",
+      "PTS",
+      "PSZ",
+      "PNZ",
+      "PSM",
+      "PPG"
+    ],
+    "canals": []
+  },
+  "PWA": {
+    "name": "Western Australia",
+    "x": 1491,
+    "y": 913,
+    "surface": [
+      "PNT",
+      "PSO",
+      "WTI"
+    ],
+    "air": [
+      "PQU",
+      "PSW",
+      "PVI",
+      "PCE",
+      "PJA"
+    ],
+    "canals": []
+  },
+  "RBA": {
+    "name": "Baltic States",
+    "x": 1015,
+    "y": 435,
+    "surface": [
+      "EFI",
+      "RMU",
+      "RRU",
+      "EPD",
+      "WBT"
+    ],
+    "air": [
+      "ESW",
+      "ENO",
+      "RUR",
+      "RUK",
+      "ERO",
+      "EHU",
+      "ECZ",
+      "EEG",
+      "EDE",
+      "EWG",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "RCA": {
+    "name": "Caucasus",
+    "x": 1118,
+    "y": 498,
+    "surface": [
+      "RUK",
+      "RUR",
+      "RWS",
+      "RKZ",
+      "RTU",
+      "MIN",
+      "ETU",
+      "WBK"
+    ],
+    "air": [
+      "ERO",
+      "RRU",
+      "RCS",
+      "RIR",
+      "RSA",
+      "IAF",
+      "IPK",
+      "MIQ",
+      "MSY",
+      "EBU",
+      "EGR",
+      "WEM",
+      "WAR"
+    ],
+    "canals": []
+  },
+  "RCH": {
+    "name": "Gurev",
+    "x": 1593,
+    "y": 345,
+    "surface": [
+      "RVE",
+      "RIR",
+      "RYA",
+      "RKM",
+      "WJA"
+    ],
+    "air": [
+      "RCS",
+      "RKZ",
+      "RSA",
+      "CXU",
+      "CMO",
+      "CMA",
+      "CHO",
+      "CJA",
+      "CKY",
+      "CSH",
+      "CKO",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR",
+      "WOK"
+    ],
+    "canals": []
+  },
+  "RCS": {
+    "name": "Central Siberian Upland",
+    "x": 1300,
+    "y": 365,
+    "surface": [
+      "RWS",
+      "RKZ",
+      "RIR",
+      "RVE"
+    ],
+    "air": [
+      "RUR",
+      "RCA",
+      "RTU",
+      "RSA",
+      "CXU",
+      "CMO",
+      "RYA",
+      "RCH",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RKM",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "RIR": {
+    "name": "Irkutsk",
+    "x": 1338,
+    "y": 444,
+    "surface": [
+      "RVE",
+      "RCS",
+      "RKZ",
+      "RSA",
+      "CXU",
+      "CMO",
+      "RYA",
+      "RCH"
+    ],
+    "air": [
+      "RWS",
+      "RCA",
+      "RTU",
+      "IAF",
+      "IPK",
+      "IPU",
+      "CTI",
+      "CQI",
+      "CIM",
+      "CMA",
+      "RKM",
+      "WJA"
+    ],
+    "canals": []
+  },
+  "RKM": {
+    "name": "Kamchatka",
+    "x": 1700,
+    "y": 307,
+    "surface": [
+      "RCH",
+      "WJA",
+      "WOK",
+      "WBE"
+    ],
+    "air": [
+      "RVE",
+      "RIR",
+      "RYA",
+      "CMA",
+      "CKO",
+      "CSH",
+      "CKY",
+      "CJA",
+      "CHO",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "RKZ": {
+    "name": "Kazakh",
+    "x": 1227,
+    "y": 470,
+    "surface": [
+      "RTU",
+      "RCA",
+      "RWS",
+      "RCS",
+      "RIR",
+      "RSA"
+    ],
+    "air": [
+      "RUR",
+      "RUK",
+      "ETU",
+      "MIN",
+      "IAF",
+      "IPK",
+      "CXU",
+      "CMO",
+      "RYA",
+      "RCH",
+      "RVE",
+      "WBK"
+    ],
+    "canals": []
+  },
+  "RMU": {
+    "name": "Murmansk",
+    "x": 1060,
+    "y": 345,
+    "surface": [
+      "ENO",
+      "EFI",
+      "RBA",
+      "RRU",
+      "WBR"
+    ],
+    "air": [
+      "ESW",
+      "EPD",
+      "ECZ",
+      "EHU",
+      "ERO",
+      "RUK",
+      "RUR",
+      "WBT",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WNS",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "RRU": {
+    "name": "Russia",
+    "x": 1080,
+    "y": 420,
+    "surface": [
+      "RMU",
+      "RBA",
+      "EPD",
+      "ECZ",
+      "EHU",
+      "ERO",
+      "RUK",
+      "RUR"
+    ],
+    "air": [
+      "ENO",
+      "EFI",
+      "EEG",
+      "EWG",
+      "EAU",
+      "EYU",
+      "EBU",
+      "RCA",
+      "RWS",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBK",
+      "WBR",
+      "WBT",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS"
+    ],
+    "canals": []
+  },
+  "RSA": {
+    "name": "Samarkand",
+    "x": 1278,
+    "y": 496,
+    "surface": [
+      "RKZ",
+      "RTU",
+      "IAF",
+      "IPK",
+      "CXU",
+      "RIR"
+    ],
+    "air": [
+      "RVE",
+      "RCS",
+      "RWS",
+      "RCA",
+      "MIN",
+      "IRA",
+      "IPU",
+      "CTI",
+      "CQI",
+      "CIM",
+      "CMO",
+      "RYA",
+      "RCH",
+      "WAR"
+    ],
+    "canals": []
+  },
+  "RTU": {
+    "name": "Turkmen",
+    "x": 1183,
+    "y": 507,
+    "surface": [
+      "RCA",
+      "RKZ",
+      "RSA",
+      "IAF",
+      "MIN"
+    ],
+    "air": [
+      "RUK",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RIR",
+      "CXU",
+      "IPK",
+      "MIQ",
+      "ETU",
+      "WBK",
+      "WAR"
+    ],
+    "canals": []
+  },
+  "RUK": {
+    "name": "Ukraine",
+    "x": 1100,
+    "y": 456,
+    "surface": [
+      "RUR",
+      "RRU",
+      "ERO",
+      "RCA",
+      "WBK"
+    ],
+    "air": [
+      "RMU",
+      "RBA",
+      "EPD",
+      "ECZ",
+      "EHU",
+      "EYU",
+      "EBU",
+      "ETU",
+      "RWS",
+      "RKZ",
+      "RTU",
+      "MIN"
+    ],
+    "canals": []
+  },
+  "RUR": {
+    "name": "Urals",
+    "x": 1163,
+    "y": 368,
+    "surface": [
+      "RRU",
+      "RUK",
+      "RCA",
+      "RWS"
+    ],
+    "air": [
+      "RMU",
+      "RBA",
+      "EPD",
+      "ECZ",
+      "EHU",
+      "ERO",
+      "ETU",
+      "MIN",
+      "RTU",
+      "RKZ",
+      "RCS",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBK",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "RVE": {
+    "name": "Verkhoyansk",
+    "x": 1444,
+    "y": 286,
+    "surface": [
+      "RCS",
+      "RIR",
+      "RCH"
+    ],
+    "air": [
+      "RWS",
+      "RKZ",
+      "RSA",
+      "CXU",
+      "CMO",
+      "RYA",
+      "RKM",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RUR",
+      "WJA",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "RWS": {
+    "name": "West Siberian Lowlands",
+    "x": 1227,
+    "y": 333,
+    "surface": [
+      "RUR",
+      "RCA",
+      "RKZ",
+      "RCS"
+    ],
+    "air": [
+      "RRU",
+      "RUK",
+      "ETU",
+      "MIN",
+      "RTU",
+      "RSA",
+      "RIR",
+      "RVE",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RMU",
+      "RCH",
+      "RKM",
+      "WBK",
+      "WBE",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "RYA": {
+    "name": "Yakutsk",
+    "x": 1532,
+    "y": 408,
+    "surface": [
+      "RCH",
+      "RIR",
+      "CMO",
+      "CMA",
+      "WJA"
+    ],
+    "air": [
+      "RKM",
+      "RVE",
+      "RCS",
+      "RKZ",
+      "RSA",
+      "CXU",
+      "CIM",
+      "CSH",
+      "CKO",
+      "CHO",
+      "CJA",
+      "CKY"
+    ],
+    "canals": []
+  },
+  "SAM": {
+    "name": "Amazon",
+    "x": 635,
+    "y": 781,
+    "surface": [
+      "SFG",
+      "SSU",
+      "SGU",
+      "SVE",
+      "SWB",
+      "SCB",
+      "SEB",
+      "WWA"
+    ],
+    "air": [
+      "SEC",
+      "SWC",
+      "SPE",
+      "SBO",
+      "SPA",
+      "SSP",
+      "SRJ",
+      "WMG",
+      "WCR"
+    ],
+    "canals": []
+  },
+  "SBO": {
+    "name": "Bolivia",
+    "x": 585,
+    "y": 852,
+    "surface": [
+      "SWB",
+      "SCB",
+      "SPA",
+      "SNA",
+      "SNC",
+      "SPE"
+    ],
+    "air": [
+      "SED",
+      "SWC",
+      "SEC",
+      "SVE",
+      "SAM",
+      "SEB",
+      "SRJ",
+      "SSP",
+      "SUR",
+      "SSA",
+      "SSC",
+      "WSP",
+      "WMG"
+    ],
+    "canals": []
+  },
+  "SCB": {
+    "name": "Central Brazil",
+    "x": 636,
+    "y": 832,
+    "surface": [
+      "SWB",
+      "SAM",
+      "SEB",
+      "SRJ",
+      "SSP",
+      "SPA",
+      "SBO"
+    ],
+    "air": [
+      "SFG",
+      "SSU",
+      "SGU",
+      "SVE",
+      "SEC",
+      "SWC",
+      "SPE",
+      "SNC",
+      "SNA",
+      "SUR",
+      "WMG",
+      "WWA"
+    ],
+    "canals": []
+  },
+  "SEB": {
+    "name": "East Brazil",
+    "x": 692,
+    "y": 817,
+    "surface": [
+      "SAM",
+      "SCB",
+      "SRJ",
+      "WMG",
+      "WWA"
+    ],
+    "air": [
+      "SFG",
+      "SSU",
+      "SGU",
+      "SVE",
+      "SWB",
+      "SBO",
+      "SPA",
+      "SSP"
+    ],
+    "canals": []
+  },
+  "SEC": {
+    "name": "Eastern Colombia",
+    "x": 548,
+    "y": 745,
+    "surface": [
+      "SVE",
+      "SWB",
+      "SWC",
+      "NPA",
+      "WCR"
+    ],
+    "air": [
+      "SGU",
+      "SAM",
+      "SCB",
+      "SBO",
+      "SPE",
+      "SED",
+      "NWN",
+      "NEN",
+      "NHO",
+      "NBE",
+      "NYC",
+      "NCU",
+      "NHA",
+      "NPR",
+      "NJA",
+      "WCP",
+      "WSP",
+      "WCR"
+    ],
+    "canals": []
+  },
+  "SED": {
+    "name": "Ecuador",
+    "x": 510,
+    "y": 777,
+    "surface": [
+      "SWC",
+      "SPE",
+      "WSP"
+    ],
+    "air": [
+      "NPA",
+      "SEC",
+      "SWB",
+      "SBO",
+      "SNC",
+      "WCP"
+    ],
+    "canals": []
+  },
+  "SFA": {
+    "name": "Falkland Islands",
+    "x": 604,
+    "y": 1066,
+    "surface": [
+      "WMG",
+      "WSP"
+    ],
+    "air": [
+      "SSA",
+      "SSC"
+    ],
+    "canals": []
+  },
+  "SFG": {
+    "name": "French Guiana",
+    "x": 644,
+    "y": 753,
+    "surface": [
+      "SSU",
+      "SAM",
+      "WWA"
+    ],
+    "air": [
+      "SGU",
+      "SVE",
+      "SWB",
+      "SCB",
+      "SEB"
+    ],
+    "canals": []
+  },
+  "SGU": {
+    "name": "Guyana",
+    "x": 603,
+    "y": 743,
+    "surface": [
+      "SVE",
+      "SAM",
+      "SSU",
+      "WWA",
+      "WCR"
+    ],
+    "air": [
+      "SEC",
+      "SWB",
+      "SCB",
+      "SEB",
+      "SFG",
+      "NPR",
+      "NHA",
+      "NCU",
+      "NJA",
+      "NYC",
+      "NBE",
+      "NHO",
+      "NEN",
+      "NPA"
+    ],
+    "canals": []
+  },
+  "SNA": {
+    "name": "Northern Argentina",
+    "x": 582,
+    "y": 923,
+    "surface": [
+      "SUR",
+      "SSP",
+      "SPA",
+      "SBO",
+      "SNC",
+      "SSC",
+      "SSA",
+      "WMG"
+    ],
+    "air": [
+      "SPE",
+      "SWB",
+      "SCB",
+      "SRJ",
+      "WSP"
+    ],
+    "canals": []
+  },
+  "SNC": {
+    "name": "Northern Chile",
+    "x": 554,
+    "y": 895,
+    "surface": [
+      "SPE",
+      "SBO",
+      "SNA",
+      "SSC",
+      "WSP"
+    ],
+    "air": [
+      "SED",
+      "SWC",
+      "SWB",
+      "SCB",
+      "SPA",
+      "SSP",
+      "SUR",
+      "SSA",
+      "WMG"
+    ],
+    "canals": []
+  },
+  "SPA": {
+    "name": "Paraguay",
+    "x": 609,
+    "y": 877,
+    "surface": [
+      "SSP",
+      "SNA",
+      "SBO",
+      "SCB"
+    ],
+    "air": [
+      "SSC",
+      "SSA",
+      "SNC",
+      "SPE",
+      "SWB",
+      "SAM",
+      "SEB",
+      "SRJ",
+      "SUR",
+      "WMG"
+    ],
+    "canals": []
+  },
+  "SPE": {
+    "name": "Peru",
+    "x": 533,
+    "y": 813,
+    "surface": [
+      "SED",
+      "SWC",
+      "SWB",
+      "SBO",
+      "SNC",
+      "WSP"
+    ],
+    "air": [
+      "SEC",
+      "SAM",
+      "SVE",
+      "SCB",
+      "SPA",
+      "SNA",
+      "SSC",
+      "NPA",
+      "WCP"
+    ],
+    "canals": []
+  },
+  "SRJ": {
+    "name": "Rio de Janeiro",
+    "x": 680,
+    "y": 859,
+    "surface": [
+      "SSP",
+      "SCB",
+      "SEB",
+      "WMG"
+    ],
+    "air": [
+      "SAM",
+      "SWB",
+      "SBO",
+      "SPA",
+      "SNA",
+      "SUR",
+      "WWA"
+    ],
+    "canals": []
+  },
+  "SSA": {
+    "name": "Southern Argentina",
+    "x": 563,
+    "y": 1020,
+    "surface": [
+      "SSC",
+      "SNA",
+      "WMG",
+      "WSP"
+    ],
+    "air": [
+      "SFA",
+      "SNC",
+      "SBO",
+      "SPA",
+      "SSP",
+      "SUR"
+    ],
+    "canals": []
+  },
+  "SSC": {
+    "name": "Southern Chile",
+    "x": 554,
+    "y": 1088,
+    "surface": [
+      "SNC",
+      "SNA",
+      "SSA",
+      "WSP"
+    ],
+    "air": [
+      "SPE",
+      "SBO",
+      "SPA",
+      "SSP",
+      "SUR",
+      "SFA",
+      "WMG"
+    ],
+    "canals": []
+  },
+  "SSP": {
+    "name": "Sao Paulo",
+    "x": 643,
+    "y": 916,
+    "surface": [
+      "SRJ",
+      "SCB",
+      "SPA",
+      "SNA",
+      "SUR",
+      "WMG"
+    ],
+    "air": [
+      "SEB",
+      "SAM",
+      "SWB",
+      "SBO",
+      "SNC",
+      "SSC",
+      "SSA"
+    ],
+    "canals": []
+  },
+  "SSU": {
+    "name": "Surinam",
+    "x": 625,
+    "y": 741,
+    "surface": [
+      "SGU",
+      "SAM",
+      "SFG",
+      "WWA"
+    ],
+    "air": [
+      "SVE",
+      "SWB",
+      "SCB",
+      "SEB",
+      "WCR"
+    ],
+    "canals": []
+  },
+  "SUR": {
+    "name": "Uruguay",
+    "x": 609,
+    "y": 936,
+    "surface": [
+      "SNA",
+      "SSP",
+      "WMG"
+    ],
+    "air": [
+      "SSA",
+      "SSC",
+      "SNC",
+      "SBO",
+      "SPA",
+      "SCB",
+      "SRJ"
+    ],
+    "canals": []
+  },
+  "SVE": {
+    "name": "Venezuela",
+    "x": 580,
+    "y": 730,
+    "surface": [
+      "SEC",
+      "SWB",
+      "SAM",
+      "SGU",
+      "WCR"
+    ],
+    "air": [
+      "SWC",
+      "SPE",
+      "SBO",
+      "SCB",
+      "SEB",
+      "SFG",
+      "SSU",
+      "NPA",
+      "NEN",
+      "NHO",
+      "NBE",
+      "NYC",
+      "NCU",
+      "NJA",
+      "NHA",
+      "NPR",
+      "WWA"
+    ],
+    "canals": []
+  },
+  "SWB": {
+    "name": "West Brazil",
+    "x": 578,
+    "y": 795,
+    "surface": [
+      "SAM",
+      "SVE",
+      "SEC",
+      "SWC",
+      "SPE",
+      "SBO",
+      "SCB"
+    ],
+    "air": [
+      "NPA",
+      "SED",
+      "SNC",
+      "SNA",
+      "SPA",
+      "SSP",
+      "SRJ",
+      "SEB",
+      "SFG",
+      "SSU",
+      "SGU",
+      "WCR",
+      "WWA",
+      "WCP",
+      "WSP"
+    ],
+    "canals": []
+  },
+  "SWC": {
+    "name": "Western Colombia",
+    "x": 545,
+    "y": 758,
+    "surface": [
+      "SED",
+      "SPE",
+      "SWB",
+      "SEC",
+      "NPA",
+      "WCP",
+      "WSP"
+    ],
+    "air": [
+      "NWN",
+      "NEN",
+      "SVE",
+      "SAM",
+      "SCB",
+      "SBO",
+      "SNC",
+      "WCR"
+    ],
+    "canals": []
+  },
+  "WAN": {
+    "name": "Antarctic Sea",
+    "x": 1000,
+    "y": 1170,
+    "surface": [
+      "WSP",
+      "WMG",
+      "WSA",
+      "WIN",
+      "WTI",
+      "WCO"
+    ],
+    "air": [],
+    "canals": []
+  },
+  "WAR": {
+    "name": "Arabian Sea",
+    "x": 1218,
+    "y": 665,
+    "surface": [
+      "IMA",
+      "IRA",
+      "IPK",
+      "MIN",
+      "MIQ",
+      "MES",
+      "MOM",
+      "MYE",
+      "WRS",
+      "WIN"
+    ],
+    "air": [
+      "MWS",
+      "MJO",
+      "MSY",
+      "ETU",
+      "RCA",
+      "RTU",
+      "IAF",
+      "RSA",
+      "CXU",
+      "IPU",
+      "IBE",
+      "WBB"
+    ],
+    "canals": []
+  },
+  "WBB": {
+    "name": "Bay of Bengal",
+    "x": 1338,
+    "y": 679,
+    "surface": [
+      "IMA",
+      "IBE",
+      "IBD",
+      "CBU",
+      "CTH",
+      "PMP",
+      "PSU",
+      "ISL",
+      "WTI",
+      "WIN",
+      "WSC"
+    ],
+    "air": [
+      "IRA",
+      "IPU",
+      "INE",
+      "CTI",
+      "CYU",
+      "CLA",
+      "CCA",
+      "WAR"
+    ],
+    "canals": []
+  },
+  "WBE": {
+    "name": "Bering Sea",
+    "x": 1825,
+    "y": 291,
+    "surface": [
+      "RKM",
+      "NAK",
+      "WOK",
+      "WNP"
+    ],
+    "air": [
+      "RCH",
+      "NYK",
+      "NBC",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "WJA",
+      "WBF",
+      "WGR",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "WBF": {
+    "name": "Baffin Bay",
+    "x": 656,
+    "y": 444,
+    "surface": [
+      "NBF",
+      "NNF",
+      "NGR",
+      "WGR",
+      "WNA",
+      "WWA"
+    ],
+    "air": [
+      "NKE",
+      "NQU",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WNS",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "WBK": {
+    "name": "Black Sea",
+    "x": 1078,
+    "y": 527,
+    "surface": [
+      "EBU",
+      "ERO",
+      "RUK",
+      "RCA",
+      "ETU"
+    ],
+    "air": [
+      "EGR",
+      "EYU",
+      "EHU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RKZ",
+      "RTU",
+      "MIN",
+      "MIQ",
+      "MSY"
+    ],
+    "canals": [
+      {
+        "target": "WEM",
+        "gate": "ETU"
+      }
+    ]
+  },
+  "WBR": {
+    "name": "Barents Sea",
+    "x": 958,
+    "y": 245,
+    "surface": [
+      "RMU",
+      "ENO",
+      "WNS"
+    ],
+    "air": [
+      "ESW",
+      "EFI",
+      "RBA",
+      "RRU",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WBF",
+      "WGR"
+    ],
+    "canals": []
+  },
+  "WBT": {
+    "name": "Baltic Sea",
+    "x": 992,
+    "y": 415,
+    "surface": [
+      "ESW",
+      "EFI",
+      "RBA",
+      "EPD",
+      "EEG",
+      "EWG",
+      "EDE",
+      "WNS"
+    ],
+    "air": [
+      "ENO",
+      "RMU",
+      "RRU",
+      "ECZ",
+      "EAU",
+      "ESZ",
+      "EFR",
+      "ELU",
+      "EBE",
+      "ENE"
+    ],
+    "canals": []
+  },
+  "WCA": {
+    "name": "Central Atlantic",
+    "x": 720,
+    "y": 602,
+    "surface": [
+      "EAZ",
+      "ACI",
+      "WNA",
+      "WMA",
+      "WSA",
+      "WMG",
+      "WWA"
+    ],
+    "air": [],
+    "canals": []
+  },
+  "WCO": {
+    "name": "Coral Sea",
+    "x": 1694,
+    "y": 865,
+    "surface": [
+      "PPG",
+      "PSM",
+      "PNZ",
+      "PSZ",
+      "PTS",
+      "PVI",
+      "PSW",
+      "PQU",
+      "WTI",
+      "WPI",
+      "WMP",
+      "WSP",
+      "WAN"
+    ],
+    "air": [
+      "PIG",
+      "PNT",
+      "PSO"
+    ],
+    "canals": []
+  },
+  "WCP": {
+    "name": "Central Pacific",
+    "x": 290,
+    "y": 726,
+    "surface": [
+      "PHI",
+      "NCA",
+      "NBJ",
+      "NSO",
+      "NJL",
+      "NOA",
+      "NGU",
+      "NES",
+      "NWN",
+      "NPA",
+      "SWC",
+      "WNP",
+      "WMP",
+      "WSP"
+    ],
+    "air": [
+      "NGW",
+      "NDA",
+      "NTX",
+      "NCH",
+      "NMX",
+      "NTB",
+      "NVC",
+      "NYC",
+      "NBE",
+      "NHO",
+      "NEN",
+      "SEC",
+      "SWB",
+      "SPE",
+      "SED"
+    ],
+    "canals": [
+      {
+        "target": "WCR",
+        "gate": "NPA"
+      }
+    ]
+  },
+  "WCR": {
+    "name": "Caribbean Sea",
+    "x": 523,
+    "y": 702,
+    "surface": [
+      "NCU",
+      "NJA",
+      "NHA",
+      "NPR",
+      "SGU",
+      "SVE",
+      "SEC",
+      "NPA",
+      "NEN",
+      "NHO",
+      "NBE",
+      "NYC",
+      "WGM",
+      "WWA"
+    ],
+    "air": [
+      "NWN",
+      "NES",
+      "NGU",
+      "NOA",
+      "NTB",
+      "SSU",
+      "SAM",
+      "SWB",
+      "SWC"
+    ],
+    "canals": [
+      {
+        "target": "WCP",
+        "gate": "NPA"
+      }
+    ]
+  },
+  "WEM": {
+    "name": "Eastern Mediterranean",
+    "x": 989,
+    "y": 580,
+    "surface": [
+      "ESI",
+      "EIT",
+      "EYU",
+      "EAL",
+      "EGR",
+      "ETU",
+      "ECR",
+      "ECY",
+      "MSY",
+      "MIS",
+      "AEG",
+      "ALI",
+      "ATU",
+      "WWM"
+    ],
+    "air": [
+      "ELY",
+      "ESZ",
+      "EAU",
+      "EHU",
+      "ERO",
+      "EBU",
+      "RCA",
+      "MIN",
+      "MIQ",
+      "MJO",
+      "MWS",
+      "ASU",
+      "ACH",
+      "ANR",
+      "AAL"
+    ],
+    "canals": [
+      {
+        "target": "WBK",
+        "gate": "ETU"
+      },
+      {
+        "target": "WRS",
+        "gate": "AEG"
+      }
+    ]
+  },
+  "WGM": {
+    "name": "Gulf of Mexico",
+    "x": 477,
+    "y": 646,
+    "surface": [
+      "NDS",
+      "NTX",
+      "NVC",
+      "NTB",
+      "NYC",
+      "NCU",
+      "WWA",
+      "WCR"
+    ],
+    "air": [
+      "NVA",
+      "NMW",
+      "NDA",
+      "NCA",
+      "NSO",
+      "NCH",
+      "NMX",
+      "NOA",
+      "NGU",
+      "NBE"
+    ],
+    "canals": []
+  },
+  "WGR": {
+    "name": "Greenland Sea",
+    "x": 762,
+    "y": 419,
+    "surface": [
+      "EIC",
+      "NGR",
+      "ENI",
+      "EIR",
+      "WNS",
+      "WMA",
+      "WNA",
+      "WBF"
+    ],
+    "air": [
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "RMU",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WBR"
+    ],
+    "canals": []
+  },
+  "WIN": {
+    "name": "Indian Ocean",
+    "x": 1215,
+    "y": 770,
+    "surface": [
+      "ASO",
+      "AKE",
+      "ATA",
+      "AMZ",
+      "ASA",
+      "AMD",
+      "ISL",
+      "IMA",
+      "WAR",
+      "WRS",
+      "WBB",
+      "WTI",
+      "WAN",
+      "WSA"
+    ],
+    "air": [
+      "ANM",
+      "ABO",
+      "AZI",
+      "AZA",
+      "AMW",
+      "AZR",
+      "AUG",
+      "ASU",
+      "AET",
+      "IRA",
+      "IBE"
+    ],
+    "canals": []
+  },
+  "WJA": {
+    "name": "Sea of Japan",
+    "x": 1558,
+    "y": 553,
+    "surface": [
+      "RKM",
+      "RCH",
+      "RYA",
+      "CMA",
+      "CKO",
+      "CSH",
+      "CKY",
+      "CJA",
+      "CHO",
+      "WPI",
+      "WOK"
+    ],
+    "air": [
+      "RVE",
+      "RIR",
+      "CMO",
+      "CIM",
+      "CHE",
+      "CHU",
+      "CFU",
+      "WBE"
+    ],
+    "canals": []
+  },
+  "WMA": {
+    "name": "Mid Atlantic",
+    "x": 808,
+    "y": 578,
+    "surface": [
+      "EAZ",
+      "EIR",
+      "EGB",
+      "EFR",
+      "ENA",
+      "EPR",
+      "AMO",
+      "AWS",
+      "ACI",
+      "WNS",
+      "WGR",
+      "WNA",
+      "WCA",
+      "WSA"
+    ],
+    "air": [
+      "ENI",
+      "ESC",
+      "EBE",
+      "ELU",
+      "EWG",
+      "ESZ",
+      "ELY",
+      "EAR",
+      "EGI",
+      "AAL",
+      "AMR"
+    ],
+    "canals": [
+      {
+        "target": "WWM",
+        "gate": "EGI"
+      }
+    ]
+  },
+  "WMG": {
+    "name": "Magellan Sea",
+    "x": 673,
+    "y": 983,
+    "surface": [
+      "SEB",
+      "SRJ",
+      "SSP",
+      "SUR",
+      "SNA",
+      "SSA",
+      "SFA",
+      "WWA",
+      "WCA",
+      "WSA",
+      "WAN",
+      "WSP"
+    ],
+    "air": [
+      "SSC",
+      "SNC",
+      "SBO",
+      "SPA",
+      "SCB",
+      "SAM"
+    ],
+    "canals": []
+  },
+  "WMP": {
+    "name": "Mid Pacific",
+    "x": 1770,
+    "y": 724,
+    "surface": [
+      "PMD",
+      "PHI",
+      "PSM",
+      "WNP",
+      "WOK",
+      "WPI",
+      "WCO",
+      "WSP",
+      "WCP"
+    ],
+    "air": [],
+    "canals": []
+  },
+  "WNA": {
+    "name": "North Atlantic",
+    "x": 704,
+    "y": 544,
+    "surface": [
+      "EAZ",
+      "WMA",
+      "WGR",
+      "WBF",
+      "WWA",
+      "WCA"
+    ],
+    "air": [],
+    "canals": []
+  },
+  "WNP": {
+    "name": "North Pacific",
+    "x": 1854,
+    "y": 500,
+    "surface": [
+      "PMD",
+      "PHI",
+      "NAK",
+      "NBC",
+      "NGW",
+      "NCA",
+      "WBE",
+      "WOK",
+      "WPI",
+      "WMP",
+      "WCP"
+    ],
+    "air": [
+      "NYK",
+      "NMK",
+      "NAL",
+      "NDA",
+      "NTX",
+      "NSO",
+      "NBJ"
+    ],
+    "canals": []
+  },
+  "WNS": {
+    "name": "North Sea",
+    "x": 872,
+    "y": 362,
+    "surface": [
+      "EIC",
+      "ENO",
+      "ESW",
+      "EDE",
+      "ENE",
+      "EWG",
+      "EBE",
+      "EFR",
+      "EGB",
+      "ESC",
+      "EIR",
+      "ENI",
+      "WBR",
+      "WBT",
+      "WMA",
+      "WGR"
+    ],
+    "air": [
+      "EFI",
+      "RMU",
+      "EEG",
+      "ECZ",
+      "EAU",
+      "ESZ",
+      "ELU",
+      "ELY",
+      "ENA",
+      "NAK",
+      "NYK",
+      "NMK",
+      "NVI",
+      "NKE",
+      "NBF",
+      "NGR",
+      "RRU",
+      "RUR",
+      "RWS",
+      "RCS",
+      "RVE",
+      "RCH",
+      "RKM",
+      "WBE",
+      "WBF"
+    ],
+    "canals": []
+  },
+  "WOK": {
+    "name": "Sea of Okhotsk",
+    "x": 1655,
+    "y": 525,
+    "surface": [
+      "RKM",
+      "CHO",
+      "CJA",
+      "WPI",
+      "WJA",
+      "WNP",
+      "WBE",
+      "WMP"
+    ],
+    "air": [
+      "RCH"
+    ],
+    "canals": []
+  },
+  "WPI": {
+    "name": "Philippine Sea",
+    "x": 1576,
+    "y": 655,
+    "surface": [
+      "CKY",
+      "PMD",
+      "PMI",
+      "PLU",
+      "CTA",
+      "CGU",
+      "CFU",
+      "CSH",
+      "WJA",
+      "WOK",
+      "WNP",
+      "WMP",
+      "WCO",
+      "WTI",
+      "WSC"
+    ],
+    "air": [
+      "CVN",
+      "CYU",
+      "CSI",
+      "CHU",
+      "CHE",
+      "CIM",
+      "CMA"
+    ],
+    "canals": []
+  },
+  "WRS": {
+    "name": "Red Sea",
+    "x": 1096,
+    "y": 665,
+    "surface": [
+      "MYE",
+      "MWS",
+      "AEG",
+      "ASU",
+      "AET",
+      "ASO",
+      "WAR",
+      "WIN"
+    ],
+    "air": [
+      "AKE",
+      "AUG",
+      "AZR",
+      "ACA",
+      "ACH",
+      "ALI",
+      "MIS",
+      "MJO",
+      "MIQ",
+      "MES",
+      "MOM"
+    ],
+    "canals": [
+      {
+        "target": "WEM",
+        "gate": "AEG"
+      }
+    ]
+  },
+  "WSA": {
+    "name": "South Atlantic",
+    "x": 866,
+    "y": 826,
+    "surface": [
+      "ACI",
+      "AWS",
+      "AMR",
+      "ASE",
+      "AGU",
+      "ASL",
+      "AIV",
+      "AGH",
+      "ATO",
+      "ANA",
+      "ACM",
+      "AGA",
+      "ACO",
+      "AZR",
+      "AAN",
+      "ANM",
+      "ASA",
+      "WIN",
+      "WAN",
+      "WMG",
+      "WCA",
+      "WMA"
+    ],
+    "air": [
+      "AMO",
+      "AAL",
+      "AMI",
+      "ABF",
+      "ANR",
+      "ACH",
+      "ACA",
+      "ASU",
+      "AUG",
+      "ATA",
+      "AZA",
+      "AZI",
+      "ABO",
+      "AMZ"
+    ],
+    "canals": []
+  },
+  "WSC": {
+    "name": "South China Sea",
+    "x": 1434,
+    "y": 730,
+    "surface": [
+      "CTA",
+      "PLU",
+      "PMI",
+      "PCE",
+      "PJA",
+      "PSU",
+      "PMP",
+      "CTH",
+      "CCA",
+      "CVN",
+      "CGU",
+      "PSA",
+      "PBO",
+      "WBB",
+      "WTI",
+      "WPI"
+    ],
+    "air": [
+      "CBU",
+      "CLA",
+      "CYU",
+      "CSI",
+      "CHU",
+      "CFU"
+    ],
+    "canals": []
+  },
+  "WSP": {
+    "name": "South Pacific",
+    "x": 1870,
+    "y": 935,
+    "surface": [
+      "PSM",
+      "SWC",
+      "SED",
+      "SPE",
+      "SNC",
+      "SSA",
+      "SSC",
+      "SFA",
+      "WAN",
+      "WCO",
+      "WMP",
+      "WCP",
+      "WMG"
+    ],
+    "air": [
+      "NPA",
+      "SEC",
+      "SWB",
+      "SBO",
+      "SNA"
+    ],
+    "canals": []
+  },
+  "WTI": {
+    "name": "Timor Sea",
+    "x": 1358,
+    "y": 835,
+    "surface": [
+      "ISL",
+      "PSU",
+      "PJA",
+      "PCE",
+      "PIG",
+      "PPG",
+      "PQU",
+      "PNT",
+      "PWA",
+      "PSO",
+      "PVI",
+      "PTS",
+      "WIN",
+      "WBB",
+      "WSC",
+      "WPI",
+      "WCO",
+      "WAN"
+    ],
+    "air": [
+      "PSW"
+    ],
+    "canals": []
+  },
+  "WWA": {
+    "name": "West Atlantic",
+    "x": 578,
+    "y": 602,
+    "surface": [
+      "NNF",
+      "NQU",
+      "NNB",
+      "NNE",
+      "NNY",
+      "NPE",
+      "NVA",
+      "NDS",
+      "NCU",
+      "NHA",
+      "NPR",
+      "SGU",
+      "SSU",
+      "SFG",
+      "SAM",
+      "SEB",
+      "WCR",
+      "WGM",
+      "WBF",
+      "WNA",
+      "WCA",
+      "WMG"
+    ],
+    "air": [
+      "NBF",
+      "NON",
+      "NGL",
+      "NMW",
+      "NTX",
+      "SVE",
+      "SWB",
+      "SCB",
+      "SRJ"
+    ],
+    "canals": []
+  },
+  "WWM": {
+    "name": "Western Mediterranean",
+    "x": 916,
+    "y": 548,
+    "surface": [
+      "EGI",
+      "EAR",
+      "ELY",
+      "EIT",
+      "ESA",
+      "ESI",
+      "ATU",
+      "AAL",
+      "AMO",
+      "WEM"
+    ],
+    "air": [
+      "ENA",
+      "EFR",
+      "ESZ",
+      "EAU",
+      "EYU",
+      "ALI",
+      "ANR",
+      "AMI",
+      "AMR",
+      "AWS"
+    ],
+    "canals": [
+      {
+        "target": "WMA",
+        "gate": "EGI"
+      }
+    ]
+  }
+}
