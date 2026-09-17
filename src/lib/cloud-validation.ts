@@ -1,4 +1,5 @@
 import {decodeWorkspace,createCampaign,importReports} from './workspace';
+import {manageCampaign} from './campaign-management';
 import type {Workspace} from './wwbp/types';
 export const MAX_CLOUD_BYTES=3_500_000;
 export function validateCloudSave(input:unknown):{workspace:Workspace;revision:number}{
@@ -13,7 +14,7 @@ export function validateCloudSave(input:unknown):{workspace:Workspace;revision:n
 export function mergeLocalWorkspace(cloud:Workspace,local:Workspace):Workspace {
  let result=cloud;
  for(const c of local.campaigns){let target=result.campaigns.find(x=>x.game===c.game&&x.player===c.player);
-  if(!target){const id=crypto.randomUUID();result=createCampaign(result,c.name,c.game,c.player,id);target=result.campaigns.find(x=>x.id===id)!;}
+  if(!target){const id=crypto.randomUUID();result=createCampaign(result,c.name,c.game,c.player,id);target=result.campaigns.find(x=>x.id===id)!;if(c.archived)result=manageCampaign(result,id,{kind:'archive',archived:true});}
   result=importReports(result,target.id,c.reports).state;
  }
  return {...result,selectedId:cloud.selectedId??result.selectedId};

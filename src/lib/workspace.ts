@@ -30,6 +30,10 @@ export function decodeWorkspace(raw:string):Workspace {
  for(const c of data.campaigns){
   if(typeof c.name!=='string'||typeof c.game!=='string'||typeof c.id!=='string'||!Array.isArray(c.reports))throw Error('Saved campaign is invalid.');
   state=createCampaign(state,c.name,c.game,c.player,c.id);
+  if(c.archived!==undefined){
+   if(typeof c.archived!=='boolean')throw Error('Saved archive status is invalid.');
+   state={...state,campaigns:state.campaigns.map(x=>x.id===c.id?{...x,archived:c.archived}:x)};
+  }
   for(const r of c.reports)if(typeof r.text!=='string'||typeof r.filename!=='string')throw Error('Saved report is invalid.');
   state=importReports(state,c.id,c.reports).state;
  }

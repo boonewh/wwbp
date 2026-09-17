@@ -41,3 +41,11 @@ Added paste-first import dialog with optional file selection. Four additional te
 - Live Supabase, email delivery, actual session expiry, cross-device persistence and hosted deployment remain unverified because project settings have not been supplied.
 - Browser automation was unavailable during this milestone; no new visual/browser verification is claimed. HTTP checks cover the unconfigured setup page and unauthenticated/cross-site denial.
 - Storage deliberately starts with an atomic workspace document. The normalization plan before alliance sharing and pilot size limits are documented in SUPABASE-SETUP.md.
+
+## Campaign management and map key
+
+Added campaign rename, reversible archive/restore, confirmed per-turn report removal, and a player legend using the map marker palette. Existing version-1 workspaces remain compatible; optional archive metadata passes through cloud validation and local transfer. No database migration is required.
+
+User confirmed hosted email sign-in, campaign persistence, and normal account isolation with separate accounts before this change. These checks do not replace direct hostile-access testing.
+
+Validation: 23 tests pass and the production build succeeds. Isolated fictional-demo UI checks covered rename, archive/restore, removal confirmation/cancel, map legend, and 390px/1440px layouts with no horizontal page overflow. No real campaigns were changed during these checks.
