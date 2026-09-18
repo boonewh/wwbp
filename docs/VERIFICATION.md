@@ -49,3 +49,6 @@ Added campaign rename, reversible archive/restore, confirmed per-turn report rem
 User confirmed hosted email sign-in, campaign persistence, and normal account isolation with separate accounts before this change. These checks do not replace direct hostile-access testing.
 
 Validation: 23 tests pass and the production build succeeds. Isolated fictional-demo UI checks covered rename, archive/restore, removal confirmation/cancel, map legend, and 390px/1440px layouts with no horizontal page overflow. No real campaigns were changed during these checks.
+
+## Multipliers
+Added an always-visible multiplier section below summary totals, shared across all campaign views. It reads existing raw reports and follows the selected comparison report (default: previous imported turn). Covers I/A/N/F/X/M/S/C; absent values remain unreported. Four regression tests cover extraction, signed changes, missing/zero values, and exclusion of order echoes. All 27 tests and the production build pass.
