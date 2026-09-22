@@ -52,3 +52,6 @@ Validation: 23 tests pass and the production build succeeds. Isolated fictional-
 
 ## Multipliers
 Added an always-visible multiplier section below summary totals, shared across all campaign views. It reads existing raw reports and follows the selected comparison report (default: previous imported turn). Covers I/A/N/F/X/M/S/C; absent values remain unreported. Four regression tests cover extraction, signed changes, missing/zero values, and exclusion of order echoes. All 27 tests and the production build pass.
+
+## Turn-change map overlay
+Added optional shape-coded markers for captures, losses, minor control changes, intelligence visibility changes, and other ownership changes. The overlay and selected-space details follow the Compare selector. A clickable changed-space list and the Turn changes roster filter provide alternatives to selecting small map markers. Regression checks cover overlapping capture/intelligence events, missing baselines, and distinct loss/control/ownership classifications. All 29 tests and the production build pass; browser visual verification remains pending.
