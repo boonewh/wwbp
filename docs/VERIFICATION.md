@@ -55,3 +55,6 @@ Added an always-visible multiplier section below summary totals, shared across a
 
 ## Turn-change map overlay
 Added optional shape-coded markers for captures, losses, minor control changes, intelligence visibility changes, and other ownership changes. The overlay and selected-space details follow the Compare selector. A clickable changed-space list and the Turn changes roster filter provide alternatives to selecting small map markers. Regression checks cover overlapping capture/intelligence events, missing baselines, and distinct loss/control/ownership classifications. All 29 tests and the production build pass; browser visual verification remains pending.
+
+## Forces in range
+Added a dedicated dialog from the selected map space with fixed header/Close, target search and selector, player filters, and Player / Source / Forces / What they can do tables. Local forces are separated from incoming candidates. Uses standard WWBP surface/explicit air connections and conditional canal routes. Multiple sea contingents remain separated by player; unknown forces are listed as intelligence gaps; suppressed air and unbuilt fractions are excluded. No combat outcome or future order prediction. All 35 tests and the production build pass; all 255 atlas nodes have valid connection targets. Browser visual verification was unavailable in this session.
