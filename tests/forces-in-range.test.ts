@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {forcesInRange} from '../src/lib/forces-in-range';
+import {forcesInRange,rangeTotals} from '../src/lib/forces-in-range';
 import {parseReport} from '../src/lib/wwbp/parser';
 import {demoReport} from '../src/lib/demo';
 import atlasData from '../src/data/atlas.json';
@@ -44,4 +44,20 @@ test('unknown controllers are unassigned and unbuilt fractions do not inflate fo
  const r=parseReport(demoReport());r.spaces.AMO={...space('AMO',0,3.99),kind:'minor',owner:null,controller:null};
  const row=forcesInRange(r,atlas,'AAL').rows.find(x=>x.source==='AMO'&&x.force==='A')!;
  assert.equal(row.count,3);assert.equal(row.player,null);assert.match(row.action,/fraction excluded/);
+});
+
+test('player totals separate defenders, minors, players, and conditional canal forces',()=>{
+ const r=parseReport(demoReport());
+ r.spaces.AMO={...space('AMO',1,25),kind:'minor',owner:null,controller:1};
+ r.spaces.WWM={...space('WWM',0),fleets:[{player:1,values:{Army:40,Navy:20,AirF:10}},{player:2,values:{Army:90,Navy:80,AirF:70}}]};
+ let totals=rangeTotals(forcesInRange(r,atlas,'AAL').rows,1);
+ assert.deepEqual(totals.known,{A:65,N:20,F:10});assert.equal(totals.conquer,40);assert.equal(totals.hasMinorArmy,true);
+ assert.deepEqual(totals.conditional,{A:0,N:0,F:0});
+ r.spaces.WMA={...space('WMA',0),fleets:[{player:2,values:{Army:0,Navy:20,AirF:0}}]};
+ totals=rangeTotals(forcesInRange(r,atlas,'WWM').rows,2);
+ assert.deepEqual(totals.known,{A:0,N:0,F:0});assert.deepEqual(totals.conditional,{A:0,N:20,F:0});
+ r.spaces.EGI=space('EGI',2);
+ totals=rangeTotals(forcesInRange(r,atlas,'WWM').rows,2);
+ assert.equal(totals.known.N,20);assert.equal(totals.conditional.N,0);
+ assert.deepEqual(rangeTotals([],3).known,{A:0,N:0,F:0});
 });

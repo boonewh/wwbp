@@ -1,5 +1,5 @@
 import type {Geography,Report} from './wwbp/types';
-export type RangeRow={source:string;player:number|null;force:'A'|'N'|'F';count:number;action:string;local:boolean};
+export type RangeRow={source:string;player:number|null;force:'A'|'N'|'F';count:number;action:string;local:boolean;conditional:boolean;canConquer:boolean};
 export type IntelligenceGap={source:string;player:number|null;message:string};
 export function forcesInRange(report:Report,atlas:Record<string,Geography>,target:string){
  const rows:RangeRow[]=[],gaps:IntelligenceGap[]=[];
@@ -21,19 +21,32 @@ export function forcesInRange(report:Report,atlas:Record<string,Geography>,targe
    const value=entry.player===report.player&&report.own[source]?report.own[source].values[field]:entry.values[field];
    if(value==null){gaps.push({source,player:entry.player,message:force+' unknown.'});continue;}
    const count=Math.floor(value);if(count<=0)continue;
-   let action='';
+   let action='';let conditional=false;
    if(local)action=sea?(force==='A'?'At target; takes naval/air hits, cannot fight at sea.':'At target; fights enemies according to declarations.'):'At target; potential defender.';
    else if(force==='A')action=(space?.kind==='minor'?'Bombard or support; minor cannot conquer.':'Bombard, conquer, or support defense.')+(sea?' Landing faces coastal air/navy before defending army.':'');
    else if(force==='N')action=targetSea?'Support sea; fights enemies according to declarations.':'Attack coastal navy or support defense.';
    else action=targetSea?'Support sea; fights enemies according to declarations.':'Attack A/N/Industry/Air Base, or support defense.';
    if(!local&&force==='F')action+=' '+(surface?'Adjacent.':'Listed air range.');
-   if(!local&&force==='N'&&canal&&!surface){const gate=report.spaces[canal.gate],controller=gate?.owner||gate?.controller;action+=' Canal '+canal.gate+': '+(controller&&controller===entry.player?'controlled by this player.':'permission/control required; access not confirmed.');}
+   if(!local&&force==='N'&&canal&&!surface){const gate=report.spaces[canal.gate],controller=gate?.owner||gate?.controller;conditional=!(controller&&controller===entry.player);action+=' Canal '+canal.gate+': '+(controller&&controller===entry.player?'controlled by this player.':'permission/control required; access not confirmed.');}
    if(!sea&&space?.kind==='minor')action+=entry.player==null?' Minor source; controller unassigned.':' Controlled-minor source.';
    if(force==='F'&&(space?.suppressed.AirF||0)>0&&!sea)action+=' '+space!.suppressed.AirF+'F suppressed, excluded.';
    if(value!==count)action+=' Unbuilt fraction excluded.';
-   rows.push({source,player:entry.player,force,count,action,local});
+   rows.push({source,player:entry.player,force,count,action,local,conditional,canConquer:!local&&!targetSea&&force==='A'&&space?.kind!=='minor'});
   }
  }
  rows.sort((a,b)=>(a.player===report.player?-1:a.player??10000)-(b.player===report.player?-1:b.player??10000)||a.source.localeCompare(b.source)||a.force.localeCompare(b.force));
  return {rows,gaps};
+}
+
+export function rangeTotals(rows:RangeRow[],player:number|null){
+ const known={A:0,N:0,F:0},conditional={A:0,N:0,F:0};let conquer=0,hasMinorArmy=false;
+ for(const row of rows){
+  if(row.local||row.player!==player)continue;
+  (row.conditional?conditional:known)[row.force]+=row.count;
+  if(row.force==='A'){
+   if(row.canConquer&&!row.conditional)conquer+=row.count;
+   if(!row.canConquer)hasMinorArmy=true;
+  }
+ }
+ return {known,conditional,conquer,hasMinorArmy};
 }
