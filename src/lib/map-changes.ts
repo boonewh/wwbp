@@ -1,4 +1,5 @@
 import {compare} from './wwbp/parser';
+import {turnInformation} from './turn-information';
 import type {Report} from './wwbp/types';
 export const changeKinds=[['captures','Captured','gain'],['lost','Lost occupation','loss'],['controlGained','Minor control gained','gain'],['controlLost','Minor control lost','loss'],['intelGained','Newly visible intelligence','intel'],['intelLost','Intelligence no longer visible','hidden'],['ownership','Ownership changed','ownership']] as const;
 export type MapChange={label:string;style:typeof changeKinds[number][2]};
@@ -8,5 +9,8 @@ export function mapChanges(previous:Report|null,current:Report):Record<string,Ma
   if(key==='ownership'&&(changes.captures.includes(code)||changes.lost.includes(code)))continue;
   (result[code]??=[]).push({label,style});
  }
+ const details=turnInformation(previous,current);
+ for(const row of details.ownership)if(!result[row.code]?.some(c=>['gain','loss','ownership'].includes(c.style)))(result[row.code]??=[]).push({label:row.type,style:'ownership'});
+ for(const code of details.information)(result[code]??=[]).push({label:'Reported forces or intelligence changed',style:'intel'});
  return result;
 }

@@ -18,3 +18,5 @@
 .range-totals{padding:12px;background:var(--soft);border-top:2px solid var(--line);display:grid;gap:4px;font-variant-numeric:tabular-nums}.range-totals strong{font-weight:650;color:var(--ink)}.range-total-note{font-size:.875rem}@media(max-width:760px){.range-total-note{font-size:1rem}}
 
 .changed-spaces-title{margin-top:12px;margin-bottom:4px;font-size:.875rem}@media(max-width:760px){.changed-spaces-title{font-size:1rem}}
+
+.change-explanation{font-size:.875rem;margin-bottom:12px}.ownership-table th,.ownership-table td{text-align:left;white-space:normal;vertical-align:top}.ownership-table th:first-child{width:20%}.ownership-table td{overflow-wrap:anywhere}.ownership-table{min-width:580px}@media(max-width:760px){.change-explanation{font-size:1rem}}
