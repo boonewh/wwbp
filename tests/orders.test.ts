@@ -14,7 +14,7 @@ const errors=(s:string,r=fixture())=>{const result=checkOrders(s,r,atlas);return
 test('order count excludes context and wrappers; explanations and export preserve orders',()=>{
  const result=checkOrders('ORDERS\n@ 2A\n@AAL BA5 AC3ALI\nEND',fixture(),atlas);
  assert.equal(result.count,3);assert.equal(result.rows[2].source,'AAL');assert.match(result.rows[2].description,/Conquer: 3A/);
- assert.equal(result.exportText,'ORDERS\r\n@\r\n2A\r\n@AAL\r\nBA5\r\nAC3ALI\r\nEND\r\n');
+ assert.equal(result.exportText,'ORDERS\r\n@     2A\r\n@AAL  BA5 AC3ALI\r\nEND\r\n');
  assert.deepEqual(errors(result.exportText),[]);assert.ok(result.exportText.split('\r\n').every(l=>l.length<=76));
 });
 test('combined orders cannot reuse units or industry; new builds do not increase available force',()=>{
@@ -88,4 +88,23 @@ test('browser transfer preserves private drafts and refuses silent conflict over
  const local=saveOrderDraft(original,'demo-a',draft),merged=mergeLocalWorkspace(original,local);
  assert.deepEqual(merged.campaigns[0].orderDrafts,[draft]);
  assert.throws(()=>mergeLocalWorkspace(saveOrderDraft(original,'demo-a',{...draft,text:'@ 2E'}),local),/Conflicting order drafts/);
+});
+
+test('export groups repeated sources, keeps each source order, and places player orders first',()=>{
+ const result=checkOrders('@AAL BA2\n@AMO BF1\n@AAL AC3ALI\n@ 2A',fixture(),atlas);
+ assert.equal(result.exportText,'ORDERS\r\n@     2A\r\n@AAL  BA2 AC3ALI\r\n@AMO  BF1\r\nEND\r\n');
+ const roundtrip=checkOrders(result.exportText,fixture(),atlas);
+ assert.equal(roundtrip.count,result.count);
+ assert.deepEqual(roundtrip.rows.filter(r=>r.source==='AAL').map(r=>r.token),['BA2','AC3ALI']);
+ assert.deepEqual(errors(result.exportText),[]);
+});
+test('long export groups wrap at 76 characters without splitting or losing orders',()=>{
+ const text='@ '+Array.from({length:40},(_,i)=>(i+2)+'A').join(' ')+'\n@AAL BA2 AC3ALI';
+ const result=checkOrders(text,fixture(),atlas);
+ assert.ok(result.exportText.split('\r\n').every(line=>line.length<=76));
+ assert.match(result.exportText,/\r\n {6}\d+A/);
+ const parsed=checkOrders(result.exportText,fixture(),atlas);
+ assert.deepEqual(parsed.rows.map(r=>[r.source,r.token]),result.rows.map(r=>[r.source,r.token]));
+ assert.equal(parsed.count,42);
+ assert.equal(parsed.exportText,result.exportText);
 });

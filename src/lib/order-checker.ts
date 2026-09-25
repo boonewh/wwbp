@@ -139,7 +139,28 @@ export function checkOrders(text:string,report:Report,atlas:Record<string,Geogra
   if(conflict){const level=attack.standing||other.standing?'warning':'error';issue(attack,level,`Conflicts with ${other.token} from the same source to ${other.target} (rule 12B).`);issue(other,level,`Conflicts with ${attack.token} (rule 12B).`);}
  }
  if(rows.some(row=>row.standing))issues.push({level:'warning',message:'Standing-order execution, trimming, and priority are not simulated. Review them against your report and explicit orders.'});
- // One token per line preserves context and stays below the email processor’s 76-character limit.
+ // Group by context, preserving the order of instructions within each source.
  if(normalized.some(token=>token.length>76))issues.push({level:'error',message:'An order exceeds the 76-character email line limit.'});
- return {rows,issues,budgets,count:rows.length,exportText:['ORDERS',...normalized,'END',''].join('\r\n')};
+ return {rows,issues,budgets,count:rows.length,exportText:formatOrderBlock(normalized)};
+}
+
+function formatOrderBlock(tokens:string[]):string {
+ const groups=new Map<string,string[]>();let context='@';
+ for(const token of tokens){
+  if(token.startsWith('@')){context=token;continue;}
+  if(!groups.has(context))groups.set(context,[]);
+  groups.get(context)!.push(token);
+ }
+ const lines=['ORDERS'];
+ const contexts=[...(groups.has('@')?['@']:[]),...Array.from(groups.keys()).filter(key=>key!=='@')];
+ for(const key of contexts){
+  let line=key.padEnd(6,' ');
+  for(const token of groups.get(key)!){
+   const candidate=line+(line.endsWith(' ')?'':' ')+token;
+   if(candidate.length<=76)line=candidate;
+   else {lines.push(line.trimEnd());line=(token.length<=70?'      ':'')+token;}
+  }
+  lines.push(line.trimEnd());
+ }
+ return [...lines,'END',''].join('\r\n');
 }

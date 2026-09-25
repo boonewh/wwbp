@@ -18,7 +18,7 @@ Save draft stores text against the campaign and base report turn through the exi
 
 This is an assistant to the official order-check service, not a replacement processor. Standing orders are syntax/range checked but their execution, priority, trimming and inherited orders are NOT simulated or counted in explicit budgets. Existing standing source records and defaults are shown for review. Default production, research outcomes, combat, incoming transfers, game-specific rules and alternate shorthand order syntax are not simulated. Standard WWBP is assumed; not the 1939 variant. Quantities use whole-number full syntax.
 
-The editor reports errors and review warnings rather than certifying legality. Export is blocked on detected errors. The ORDERS/END block has one token per line, preserving context and the 76-character line limit. The UI shows the order count, excluding context markers. Players copy/download the block, add the required identity/security heading in their email, verify the turn number, and submit themselves. No orders or email are sent automatically.
+The editor reports errors and review warnings rather than certifying legality. Export is blocked on detected errors. The ORDERS/END block groups orders by source, with player orders first and the order within each source preserved. Long groups wrap at 76 characters without splitting an order. The UI shows the order count, excluding context markers. Players copy/download the block, add the required identity/security heading in their email, verify the turn number, and submit themselves. No orders or email are sent automatically.
 
 ## Validation
 
