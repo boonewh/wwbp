@@ -1,3 +1,4 @@
+import {saveOrderDraft} from './order-drafts';
 import {decodeWorkspace,createCampaign,importReports} from './workspace';
 import {manageCampaign} from './campaign-management';
 import type {Workspace} from './wwbp/types';
@@ -16,6 +17,11 @@ export function mergeLocalWorkspace(cloud:Workspace,local:Workspace):Workspace {
  for(const c of local.campaigns){let target=result.campaigns.find(x=>x.game===c.game&&x.player===c.player);
   if(!target){const id=crypto.randomUUID();result=createCampaign(result,c.name,c.game,c.player,id);target=result.campaigns.find(x=>x.id===id)!;if(c.archived)result=manageCampaign(result,id,{kind:'archive',archived:true});}
   result=importReports(result,target.id,c.reports).state;
+  for(const draft of c.orderDrafts||[]){
+   const existing=result.campaigns.find(x=>x.id===target!.id)?.orderDrafts?.find(d=>d.baseTurn===draft.baseTurn);
+   if(existing&&existing.text!==draft.text)throw Error('Conflicting order drafts for '+c.game+' after turn '+draft.baseTurn+'. Both workspaces were preserved.');
+   if(!existing)result=saveOrderDraft(result,target.id,draft);
+  }
  }
  return {...result,selectedId:cloud.selectedId??result.selectedId};
 }

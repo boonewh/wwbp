@@ -1,3 +1,4 @@
+import {validateDrafts} from './order-drafts';
 import {parseReport} from './wwbp/parser';
 import type {Campaign,RawReport,Workspace} from './wwbp/types';
 export const emptyWorkspace:Workspace={version:1,campaigns:[],selectedId:null};
@@ -34,6 +35,7 @@ export function decodeWorkspace(raw:string):Workspace {
    if(typeof c.archived!=='boolean')throw Error('Saved archive status is invalid.');
    state={...state,campaigns:state.campaigns.map(x=>x.id===c.id?{...x,archived:c.archived}:x)};
   }
+  if(c.orderDrafts!==undefined)state={...state,campaigns:state.campaigns.map(x=>x.id===c.id?{...x,orderDrafts:validateDrafts(c.orderDrafts)}:x)};
   for(const r of c.reports)if(typeof r.text!=='string'||typeof r.filename!=='string')throw Error('Saved report is invalid.');
   state=importReports(state,c.id,c.reports).state;
  }
