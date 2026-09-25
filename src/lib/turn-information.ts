@@ -8,7 +8,7 @@ function facts(s:Space){
  return JSON.stringify([ordered(s.values),ordered(s.suppressed),ordered(s.popularity),s.HPI??null,s.MaxInd??null,s.fleets.map(f=>[f.player,ordered(f.values)]).sort((a,b)=>JSON.stringify(a).localeCompare(JSON.stringify(b)))]);
 }
 export function turnInformation(previous:Report|null,current:Report){
- const ownership:{code:string;before:string;after:string;type:string}[]=[],information:string[]=[],visible:string[]=[],hidden:string[]=[];
+ const ownership:{code:string;before:string;after:string;type:string;capturedBy:string|null}[]=[],information:string[]=[],visible:string[]=[],hidden:string[]=[];
  if(!previous)return {ownership,information,visible,hidden};
  for(const code of new Set([...Object.keys(previous.spaces),...Object.keys(current.spaces)])){
   const a=previous.spaces[code],b=current.spaces[code];
@@ -19,11 +19,12 @@ export function turnInformation(previous:Report|null,current:Report){
   const old=control(a),now=control(b);
   if(old.kind===now.kind&&old.player===now.player)continue;
   let type:string;
-  if(now.kind==='occupied')type=old.kind==='occupied'?'Occupation changed (conquest/transfer)':old.kind==='minor'?'Minor conquered / now occupied':'Occupation newly reported';
-  else if(old.kind==='unknown'||now.kind==='unknown')type=now.kind==='unknown'?'Minor control no longer reported':'Minor control newly reported';
+  if(now.kind==='occupied')type='Conquered';
+  else if(old.kind==='unknown'||now.kind==='unknown')type=now.kind==='unknown'?'Minor control no longer reported':'Minor controller now visible';
   else if(old.kind==='occupied')type='Now a minor (occupation ended)';
   else type=old.player==null?'Minor control gained':now.player==null?'Minor control lost':'Minor control changed';
-  ownership.push({code,before:holder(previous,code),after:holder(current,code),type});
+  const capturedBy=now.kind==='occupied'?'Captured by Player '+now.player+' · '+(current.players[String(now.player)]||'Position name not reported'):null;
+  ownership.push({code,before:holder(previous,code),after:holder(current,code),type,capturedBy});
  }
  ownership.sort((a,b)=>a.code.localeCompare(b.code));information.sort();visible.sort();hidden.sort();
  return {ownership,information,visible,hidden};
