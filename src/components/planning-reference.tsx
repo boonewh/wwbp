@@ -1,0 +1,26 @@
+"use client";
+import {useState} from 'react';
+import type {Geography,Report} from '../lib/wwbp/types';
+import type {OrderBudget} from '../lib/order-checker';
+import OperationsMap from './operations-map';
+
+const columns=[['Army','A'],['Navy','N'],['AirF','F'],['Missiles','M'],['ABMs','X'],['Industry','I']] as const;
+export function SourceBudget({source,report,budgets}:{source:string;report:Report;budgets:OrderBudget[]}){
+ const own=report.own[source];if(!own)return null;
+ return <div className="planning-source"><h3>{source} · {own.kind==='minor'?'Controlled minor':own.kind==='sea'?'Your forces at sea':'Occupied country'}</h3><div className="table-scroll"><table><thead><tr><th>Forces</th>{columns.map(([,abbr])=><th key={abbr}>{abbr}</th>)}</tr></thead><tbody>{['Available','Allocated','Unallocated'].map(label=><tr key={label}><th>{label}</th>{columns.map(([field,abbr])=>{const available=Math.floor(own.values[field]??0),used=budgets.find(b=>b.source===source&&b.resource===field)?.used??0,value=label==='Available'?available:label==='Allocated'?used:available-used;return <td key={abbr} className={value<0?'order-error':''}>{value}</td>;})}</tr>)}</tbody></table></div><p>Report {report.turn}; whole usable units. Allocation includes explicit draft orders only, not standing orders or defaults.</p></div>;
+}
+export function DestinationInfo({code,report,atlas}:{code:string;report:Report;atlas:Record<string,Geography>}){
+ if(!atlas[code])return null;
+ const s=report.spaces[code],player=s?.owner||s?.controller;
+ const owner=player?`Player ${player} · ${report.players[String(player)]||'Position name not reported'} (${s?.owner?'occupied':'minor control'})`:code.startsWith('W')?'Sea space':s?.kind==='minor'?'Minor · controller unknown':'Ownership not reported';
+ return <div className="planning-destination"><h3>{code} · {atlas[code].name}</h3><p>{owner}</p>{s?.visible?<>{code.startsWith('W')?<>{s.fleets.map((fleet,i)=><p key={i}>Player {fleet.player}: {['Army','Navy','AirF'].map((field,j)=>`${fleet.values[field as 'Army']??0}${['A','N','F'][j]}`).join(' · ')}</p>)}{!s.fleets.length&&<p>No complete fleet listing reported.</p>}</>:<p className="order-meaning">{columns.map(([field,abbr])=>`${s.values[field]??0}${abbr}`).join(' · ')}</p>}{Object.values(s.suppressed).some(v=>v>0)&&<p>Suppressed assets are separate; see the full report.</p>}</>:<p>Forces unknown in this report—not zero.</p>}</div>;
+}
+export default function PlanningReference({report,atlas,source,onSource,onTarget}:{report:Report;atlas:Record<string,Geography>;source:string;onSource:(code:string)=>void;onTarget:(code:string)=>void}){
+ const [view,setView]=useState('forces'),[query,setQuery]=useState(''),[selected,setSelected]=useState(Object.keys(report.own)[0]||'AAL');
+ const codes=Object.keys(report.own).sort().filter(code=>`${code} ${atlas[code]?.name||''}`.toLowerCase().includes(query.toLowerCase()));
+ return <details open className="planning-reference"><summary>Turn information · Report {report.turn}</summary><div className="planning-reference-body"><div className="planning-reference-tools"><div className="change-toolbar" role="group" aria-label="Planning reference views">{[['forces','Forces'],['report','Full report'],['map','Map']].map(([id,label])=><button type="button" key={id} aria-pressed={view===id} onClick={()=>setView(id)}>{label}</button>)}</div><p>{report.game} · Player {report.player} · Report {report.turn}</p></div>
+ {view==='forces'&&<><p>Choose a space to use it as your order source. A · Army, N · Navy, F · Air force, M · Missiles, X · Anti-missiles, I · Industry.</p><label className="planning-search">Find your space<input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Code or country name"/></label><div className="table-scroll"><table className="planning-forces"><thead><tr><th>Source</th>{columns.map(([,abbr])=><th key={abbr}>{abbr}</th>)}</tr></thead><tbody>{codes.map(code=><tr key={code} className={source===code?'planning-selected':''}><td><button type="button" aria-pressed={source===code} className="text-button" onClick={()=>onSource(code)}>{code} · {atlas[code]?.name||code}</button>{report.own[code].kind==='minor'&&<small>Controlled minor</small>}</td>{columns.map(([field,abbr])=><td key={abbr}>{report.own[code].values[field]??0}</td>)}</tr>)}</tbody></table></div>{!codes.length&&<p>No matching spaces.</p>}</>}
+ {view==='report'&&<pre className="planning-raw" tabIndex={0} aria-label={`Full report ${report.turn}`}>{report.raw}</pre>}
+ {view==='map'&&<div className="planning-map"><DestinationInfo code={selected} report={report} atlas={atlas}/><div className="actions"><button type="button" disabled={!report.own[selected]} onClick={()=>onSource(selected)}>Use {selected} as source</button><button type="button" onClick={()=>onTarget(selected)}>Use {selected} as target</button></div><OperationsMap atlas={atlas} report={report} previous={null} selected={selected} onSelect={setSelected}/></div>}
+ </div></details>;
+}

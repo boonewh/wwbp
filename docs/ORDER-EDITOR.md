@@ -23,3 +23,8 @@ The editor reports errors and review warnings rather than certifying legality. E
 ## Validation
 
 53 automated tests pass, including 11 new rule, export, draft round-trip, and transfer-conflict tests. Production build and TypeScript check pass. Fictional browser preview exercised a resource error, correction, draft save, and export preview; desktop and 390px phone layouts inspected. Live authenticated draft save still needs pilot confirmation.
+
+## Report-and-orders planning view
+
+Desktop uses independently scrolling reference and editor panes. The reference switches between clickable Forces, the full report, and the map. Force rows set the builder source; map selections can set a source or destination explicitly. The builder opens first and shows usable source forces, explicit draft allocations, and destination intelligence (unknown remains unknown). Save/export actions stay above the panes. On narrow screens, turn information stacks above the builder and can be collapsed. General checker coverage is collapsed; actual issues remain visible. Browser verification covered source selection, allocation updates, save/export, and phone collapse behavior.
+
