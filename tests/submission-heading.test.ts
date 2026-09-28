@@ -1,6 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {validateHeading,headingForTurn,saveHeading} from '../src/lib/submission-heading';
+import {saveOrderDraft} from '../src/lib/order-drafts';
 import {demoWorkspace} from '../src/lib/demo';
 import {decodeWorkspace} from '../src/lib/workspace';
 import {validateCloudSave,mergeLocalWorkspace} from '../src/lib/cloud-validation';
@@ -29,4 +30,16 @@ test('transfer carries headings and stops on conflicts without changing original
  const other=saveHeading(cloud,'demo-a','DEMO-A T-9 [1] Different Player, #456 <OTHER>');
  assert.throws(()=>mergeLocalWorkspace(other,local),/Conflicting submission headings/);
  assert.equal(other.campaigns[0].submissionHeading,'DEMO-A T-9 [1] Different Player, #456 <OTHER>');
+});
+
+test('compact turn headings save with empty and populated drafts and retain their format on export',()=>{
+ for(const text of ['', '@\n2A']){
+  const compact='DEMO-A T5 [1] #123 FICTIONAL';
+  const original=demoWorkspace();
+  const saved=saveOrderDraft(saveHeading(original,'demo-a',compact),'demo-a',{baseTurn:5,text,updatedAt:'2026-09-27T12:00:00Z'});
+  const reloaded=decodeWorkspace(JSON.stringify(validateCloudSave({workspace:saved,revision:0}).workspace));
+  assert.equal(reloaded.campaigns[0].submissionHeading,compact);
+  assert.equal(reloaded.campaigns[0].orderDrafts?.find(d=>d.baseTurn===5)?.text,text);
+  assert.equal(headingForTurn(reloaded.campaigns[0].submissionHeading!,6),'DEMO-A T6 [1] #123 FICTIONAL');
+ }
 });
