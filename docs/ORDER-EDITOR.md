@@ -28,3 +28,8 @@ The editor reports errors and review warnings rather than certifying legality. E
 
 Desktop uses independently scrolling reference and editor panes. The reference switches between clickable Forces, the full report, and the map. Force rows set the builder source; map selections can set a source or destination explicitly. The builder opens first and shows usable source forces, explicit draft allocations, and destination intelligence (unknown remains unknown). Save/export actions stay above the panes. On narrow screens, turn information stacks above the builder and can be collapsed. General checker coverage is collapsed; actual issues remain visible. Browser verification covered source selection, allocation updates, save/export, and phone collapse behavior.
 
+
+## Saved submission heading
+
+Submission heading above Your orders stores one private heading per campaign. Paste the standard GAME T-number [player] name/account/security line, then Save draft. Copy/download prepend it to the order block and update only the T- turn number for the selected base report. Empty headings preserve order-block-only export. Headings are validated for campaign identity, single-line text, and the 76-character limit, survive cloud saves and backups, and are protected by the existing account workspace policies. Browser-to-cloud transfers stop on conflicting headings.
+

@@ -1,3 +1,4 @@
+import {saveHeading} from './submission-heading';
 import {saveOrderDraft} from './order-drafts';
 import {decodeWorkspace,createCampaign,importReports} from './workspace';
 import {manageCampaign} from './campaign-management';
@@ -17,6 +18,10 @@ export function mergeLocalWorkspace(cloud:Workspace,local:Workspace):Workspace {
  for(const c of local.campaigns){let target=result.campaigns.find(x=>x.game===c.game&&x.player===c.player);
   if(!target){const id=crypto.randomUUID();result=createCampaign(result,c.name,c.game,c.player,id);target=result.campaigns.find(x=>x.id===id)!;if(c.archived)result=manageCampaign(result,id,{kind:'archive',archived:true});}
   result=importReports(result,target.id,c.reports).state;
+  if(c.submissionHeading){
+   if(target.submissionHeading&&target.submissionHeading!==c.submissionHeading)throw Error('Conflicting submission headings for '+c.game+'. Both workspaces were preserved.');
+   if(!target.submissionHeading)result=saveHeading(result,target.id,c.submissionHeading);
+  }
   for(const draft of c.orderDrafts||[]){
    const existing=result.campaigns.find(x=>x.id===target!.id)?.orderDrafts?.find(d=>d.baseTurn===draft.baseTurn);
    if(existing&&existing.text!==draft.text)throw Error('Conflicting order drafts for '+c.game+' after turn '+draft.baseTurn+'. Both workspaces were preserved.');
