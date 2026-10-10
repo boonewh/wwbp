@@ -94,3 +94,17 @@
 .battle-scenarios summary{padding:10px 0;cursor:pointer;font-weight:600;min-height:38px}.battle-scenarios details>p{margin:8px 0 16px}.battle-scenarios :is(summary,textarea,input):focus-visible{outline:2px solid var(--green);outline-offset:2px}.scenario-result{border-top:2px solid var(--line);padding-top:24px;display:grid;gap:16px;min-width:0}.scenario-outcome{font-size:1.35rem;color:var(--ink);font-weight:550}.scenario-stages{display:grid;gap:20px;padding-left:24px}.scenario-stages li{padding-left:8px}.scenario-stages h3{margin-bottom:4px}.scenario-comparison>label{max-width:640px}.scenario-comparison-result{display:grid;gap:16px;min-width:0}.scenario-comparison-result .scenario-result{border-top:0;padding-top:0}
 @media(max-width:1050px){.scenario-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.scenario-grid{grid-template-columns:1fr}.battle-scenarios,.scenario-grid small{font-size:1rem}.scenario-table th{white-space:normal}.scenario-table th[scope=row]{min-width:150px}.scenario-save .actions{gap:16px}.scenario-evidence-status{align-items:flex-start}.scenario-stages{padding-left:20px}.scenario-stages li{padding-left:0}}
+
+/* Coordinated order plans: compact overview, expandable inputs and traceable evidence. */
+.coordinated-orders .turn-player,.turn-engagement{border-top:1px solid var(--line);padding:16px 0;min-width:0}
+.turn-player[open]>:not(summary),.turn-engagement[open]>:not(summary){margin-top:16px}
+.coordinated-orders .turn-player>label:first-of-type{max-width:400px}.coordinated-orders textarea[spellcheck=false]{font-family:ui-monospace,Consolas,monospace;line-height:1.6}
+.turn-report{max-height:360px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere}
+.turn-order-links{display:flex;flex-wrap:wrap;gap:8px 20px;overflow-wrap:anywhere}.turn-order-links a{font-variant-numeric:tabular-nums}
+.turn-findings{list-style:none;margin:0;padding:0;display:grid;gap:0}.turn-findings li{padding:16px 0;border-bottom:1px solid var(--line);display:grid;gap:8px}.turn-findings p{margin:0}
+.turn-contribution{display:grid;gap:16px;padding:20px 0;border-top:1px solid var(--line)}.turn-contribution>button{justify-self:start}.turn-contribution-row{display:flex;gap:16px;align-items:center;justify-content:space-between}.turn-contribution-row p{overflow-wrap:anywhere}.turn-contribution-row button{flex-shrink:0}
+.turn-assumptions{background:var(--soft);padding:16px;display:grid;gap:16px}.turn-engagement>summary{overflow-wrap:anywhere}
+.coordinated-orders [id]{scroll-margin-top:24px}.coordinated-orders [tabindex="-1"]:focus{outline:2px solid var(--green);outline-offset:3px}
+@media(max-width:760px){.turn-contribution-row{align-items:flex-start}.turn-order-links{display:grid;gap:12px}.turn-assumptions{padding:12px}.coordinated-orders textarea{font-size:1rem}}
+
+.coordinated-orders details.turn-assumptions{display:block}.turn-assumptions[open]>:not(summary){margin-top:16px}

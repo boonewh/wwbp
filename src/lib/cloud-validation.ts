@@ -1,3 +1,4 @@
+import {saveTurnPlan} from './turn-plan-storage';
 import {saveScenario} from './scenario-storage';
 import {importAlliedReports} from './allied-reports';
 import {saveHeading} from './submission-heading';
@@ -24,6 +25,11 @@ export function mergeLocalWorkspace(cloud:Workspace,local:Workspace):Workspace {
   if(c.submissionHeading){
    if(target.submissionHeading&&target.submissionHeading!==c.submissionHeading)throw Error('Conflicting submission headings for '+c.game+'. Both workspaces were preserved.');
    if(!target.submissionHeading)result=saveHeading(result,target.id,c.submissionHeading);
+  }
+  for(const plan of c.turnPlans||[]){
+   const existing=result.campaigns.find(x=>x.id===target!.id)?.turnPlans?.find(p=>p.id===plan.id);
+   if(existing&&JSON.stringify(existing)!==JSON.stringify(plan))throw Error('Conflicting coordinated turn plans for '+c.game+'. Both workspaces were preserved.');
+   if(!existing)result=saveTurnPlan(result,target.id,plan);
   }
   for(const scenario of c.battleScenarios||[]){
    const existing=result.campaigns.find(x=>x.id===target!.id)?.battleScenarios?.find(s=>s.id===scenario.id);
