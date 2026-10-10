@@ -42,3 +42,22 @@
 .planning-editor-pane>.order-builder[open]>summary,.planning-editor-pane>.order-coverage[open]>summary,.planning-editor-pane>.order-help-guide[open]>summary{margin:0 -12px 12px}
 .planning-editor-pane textarea{scroll-margin-top:150px}.planning-editor-pane>.planning-checks{border:1px solid var(--line);padding:0;margin:8px 0}
 @media(max-width:900px){.planning-header{position:static}.order-summary{top:0}.order-cash dt{font-size:.875rem}.order-summary-note{font-size:.8rem}}
+
+/* Allied report library: always distinct from the player's turn and order editor. */
+.allied-reports{padding:24px 0;display:grid;gap:20px;min-width:0}
+.allied-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.allied-heading>div{min-width:0}.allied-heading>button{flex-shrink:0}
+.allied-heading h1,.allied-heading h2{margin-bottom:8px;text-wrap:balance;overflow-wrap:anywhere}
+.allied-heading p{max-width:75ch;text-wrap:pretty}.allied-context,.allied-age{padding:12px 16px;background:var(--soft);border-left:3px solid var(--green)}
+.allied-empty{padding:24px 0;display:grid;gap:12px;max-width:65ch}
+.allied-filters{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:16px}
+.allied-filters label{display:grid;gap:6px;min-width:0}.allied-filters select{width:100%;min-width:0}
+.allied-report-detail{display:grid;gap:16px;min-width:0;border-top:1px solid var(--line);padding-top:24px}
+.allied-filename{overflow-wrap:anywhere}.allied-reserves{display:flex;flex-wrap:wrap;gap:24px;margin:0;font-variant-numeric:tabular-nums}
+.allied-reserves dt{font-weight:600}.allied-reserves dd{margin:4px 0 0;color:var(--muted)}
+.allied-table{margin:0;min-width:0}.allied-table table{min-width:680px}.allied-table th{white-space:nowrap}.allied-table th[scope=row]{text-align:left}.allied-table small{display:block;color:var(--muted)}
+.allied-import-list{list-style:none;padding:0;margin:16px 0;max-height:35dvh;overflow:auto}
+.allied-import-list li{padding:12px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.allied-import-list p{margin:4px 0}
+.allied-reports :is(button,select,[tabindex]):focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.nav-row nav{min-width:0;max-width:100%;overflow-x:auto}.nav-row nav button{flex-shrink:0}
+@media(max-width:760px){.allied-filters{grid-template-columns:1fr}.allied-heading .actions{width:100%}.allied-reports{font-size:1rem}.allied-import-list{font-size:1rem}.allied-table small{font-size:1rem}}

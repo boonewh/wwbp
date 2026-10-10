@@ -1,3 +1,4 @@
+import {importAlliedReports} from './allied-reports';
 import {saveHeading} from './submission-heading';
 import {saveOrderDraft} from './order-drafts';
 import {decodeWorkspace,createCampaign,importReports} from './workspace';
@@ -10,7 +11,7 @@ export function validateCloudSave(input:unknown):{workspace:Workspace;revision:n
  if(typeof revision!=='number'||!Number.isSafeInteger(revision)||revision<0||revision>=2147483647)throw Error('Invalid workspace revision.');
  const serialized=JSON.stringify(workspace);if(!serialized||new TextEncoder().encode(serialized).length>MAX_CLOUD_BYTES)throw Error('Workspace is too large for this pilot. Export a backup and contact the administrator.');
  const state=decodeWorkspace(serialized);
- if(state.campaigns.length>100||state.campaigns.some(c=>c.reports.length>500||c.reports.some(r=>r.filename.length>255)))throw Error('Workspace exceeds pilot limits.');
+ if(state.campaigns.length>100||state.campaigns.some(c=>c.reports.length>500||(c.alliedReports||[]).length>500||[...c.reports,...(c.alliedReports||[])].some(r=>r.filename.length>255)))throw Error('Workspace exceeds pilot limits.');
  return {workspace:state,revision};
 }
 export function mergeLocalWorkspace(cloud:Workspace,local:Workspace):Workspace {
@@ -18,6 +19,7 @@ export function mergeLocalWorkspace(cloud:Workspace,local:Workspace):Workspace {
  for(const c of local.campaigns){let target=result.campaigns.find(x=>x.game===c.game&&x.player===c.player);
   if(!target){const id=crypto.randomUUID();result=createCampaign(result,c.name,c.game,c.player,id);target=result.campaigns.find(x=>x.id===id)!;if(c.archived)result=manageCampaign(result,id,{kind:'archive',archived:true});}
   result=importReports(result,target.id,c.reports).state;
+  if(c.alliedReports!==undefined)result=importAlliedReports(result,target.id,c.alliedReports).state;
   if(c.submissionHeading){
    if(target.submissionHeading&&target.submissionHeading!==c.submissionHeading)throw Error('Conflicting submission headings for '+c.game+'. Both workspaces were preserved.');
    if(!target.submissionHeading)result=saveHeading(result,target.id,c.submissionHeading);

@@ -1,3 +1,4 @@
+import {importAlliedReports} from './allied-reports';
 import {saveHeading} from './submission-heading';
 import {validateDrafts} from './order-drafts';
 import {parseReport} from './wwbp/parser';
@@ -40,6 +41,10 @@ export function decodeWorkspace(raw:string):Workspace {
   if(c.orderDrafts!==undefined)state={...state,campaigns:state.campaigns.map(x=>x.id===c.id?{...x,orderDrafts:validateDrafts(c.orderDrafts)}:x)};
   for(const r of c.reports)if(typeof r.text!=='string'||typeof r.filename!=='string')throw Error('Saved report is invalid.');
   state=importReports(state,c.id,c.reports).state;
+  if(c.alliedReports!==undefined){
+   if(!Array.isArray(c.alliedReports))throw Error('Saved allied reports are invalid.');
+   state=importAlliedReports(state,c.id,c.alliedReports).state;
+  }
  }
  return {...state,selectedId:state.campaigns.some(c=>c.id===data.selectedId)?data.selectedId:state.campaigns[0]?.id??null};
 }

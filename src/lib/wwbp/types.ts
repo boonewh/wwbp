@@ -7,6 +7,6 @@ export interface Report { multipliers:Partial<Record<MultiplierCode,number>>; ga
 export interface Geography { name:string; x:number; y:number; surface:string[]; air:string[]; canals:{target:string;gate:string}[]; }
 export interface RawReport { filename:string; text:string; }
 export interface OrderDraft { baseTurn:number; text:string; updatedAt:string; }
-export interface Campaign { submissionHeading?:string; orderDrafts?:OrderDraft[]; id:string; name:string; game:string; player:number; reports:RawReport[]; archived?:boolean; }
+export interface Campaign { alliedReports?:RawReport[]; submissionHeading?:string; orderDrafts?:OrderDraft[]; id:string; name:string; game:string; player:number; reports:RawReport[]; archived?:boolean; }
 export interface Workspace { version:1; campaigns:Campaign[]; selectedId:string|null; }
 export interface Changes { captures:string[]; lost:string[]; controlGained:string[]; controlLost:string[]; intelGained:string[]; intelLost:string[]; ownership:string[]; }
