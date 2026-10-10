@@ -1,3 +1,4 @@
+import {saveScenario} from './scenario-storage';
 import {importAlliedReports} from './allied-reports';
 import {saveHeading} from './submission-heading';
 import {saveOrderDraft} from './order-drafts';
@@ -23,6 +24,11 @@ export function mergeLocalWorkspace(cloud:Workspace,local:Workspace):Workspace {
   if(c.submissionHeading){
    if(target.submissionHeading&&target.submissionHeading!==c.submissionHeading)throw Error('Conflicting submission headings for '+c.game+'. Both workspaces were preserved.');
    if(!target.submissionHeading)result=saveHeading(result,target.id,c.submissionHeading);
+  }
+  for(const scenario of c.battleScenarios||[]){
+   const existing=result.campaigns.find(x=>x.id===target!.id)?.battleScenarios?.find(s=>s.id===scenario.id);
+   if(existing&&JSON.stringify(existing)!==JSON.stringify(scenario))throw Error('Conflicting battle scenarios for '+c.game+'. Both workspaces were preserved.');
+   if(!existing)result=saveScenario(result,target.id,scenario);
   }
   for(const draft of c.orderDrafts||[]){
    const existing=result.campaigns.find(x=>x.id===target!.id)?.orderDrafts?.find(d=>d.baseTurn===draft.baseTurn);
