@@ -11,6 +11,37 @@ const node=(name:string,surface:string[],air:string[]=[]):Geography=>({name,x:0,
 const atlas={AAL:node('Algeria',['AMO','ALI','WWM']),AMO:node('Morocco',['AAL','WWM']),ALI:node('Libya',['AAL','WWM'],['AMO']),WWM:node('West Mediterranean',['AAL','AMO','ALI']),WMA:node('Mid Atlantic',[]),ERO:node('Romania',[])};
 function fixture(){const r=parseReport(demoReport());r.own.AMO={code:'AMO',kind:'minor',values:{Army:8,Navy:4,AirF:5,Industry:3,Missiles:2,ABMs:2}};r.own.AAL.values={Army:12,Navy:4,AirF:5,Industry:10,Missiles:3,ABMs:2};r.players['2']='OPPONENT';return r;}
 const errors=(s:string,r=fixture())=>{const result=checkOrders(s,r,atlas);return [...result.issues,...result.rows.flatMap(row=>row.issues)].filter(i=>i.level==='error').map(i=>i.message);};
+test('empty drafts budget every controlled space and player resource from the selected report',()=>{
+ const r=fixture();
+ r.own.WWM={code:'WWM',kind:'sea',values:{Army:2.9,Navy:5,AirF:0}};
+ r.own.ERO={code:'ERO',kind:'occupied',values:{}};
+ r.own.AAL.values.Army=12.9;r.spaces.AAL.suppressed.Army=50;
+ const result=checkOrders('',r,atlas);
+ assert.deepEqual([...new Set(result.budgets.map(b=>b.source))],['Player','AAL','AMO','ERO','WWM']);
+ assert.ok(result.budgets.every(b=>b.used===0));
+ assert.equal(result.budgets.find(b=>b.source==='AAL'&&b.resource==='Army')?.available,12);
+ assert.equal(result.budgets.find(b=>b.source==='AMO'&&b.resource==='Industry')?.available,3);
+ assert.equal(result.budgets.find(b=>b.source==='WWM'&&b.resource==='Army')?.available,2);
+ assert.ok(result.budgets.filter(b=>b.source==='ERO').every(b=>b.available===0));
+ assert.deepEqual(result.budgets.filter(b=>b.source==='Player').map(b=>[b.resource,b.available]),[['Dollars',100],['Spies',5],['CounterSpies',2]]);
+ assert.equal(result.count,0);assert.equal(result.exportText,'ORDERS\r\nEND\r\n');
+});
+test('allocations update existing budget rows and clearing orders keeps all controlled spaces',()=>{
+ const r=fixture(),blank=checkOrders('',r,atlas),draft=checkOrders('@AAL AC3ALI BA2\n@ P10AMO',r,atlas);
+ assert.deepEqual(draft.budgets.map(b=>[b.source,b.resource,b.available]),blank.budgets.map(b=>[b.source,b.resource,b.available]));
+ assert.deepEqual(draft.budgets.filter(b=>b.used>0).map(b=>[b.source,b.resource,b.used]),[['Player','Dollars',10],['AAL','Army',3],['AAL','Industry',2]]);
+ assert.ok(draft.budgets.filter(b=>b.source==='AMO').every(b=>b.used===0));
+ assert.deepEqual(checkOrders('',r,atlas).budgets,blank.budgets);
+});
+test('budgets follow the selected report command table without retaining previously controlled spaces',()=>{
+ const previous=fixture(),current=fixture();
+ current.player=2;current.turn=previous.turn+1;
+ current.own={ALI:{code:'ALI',kind:'occupied',values:{Army:7}}};
+ checkOrders('@AAL AC3ALI',previous,atlas);
+ const result=checkOrders('',current,atlas);
+ assert.deepEqual([...new Set(result.budgets.map(b=>b.source))],['Player','ALI']);
+ assert.equal(result.budgets.find(b=>b.source==='ALI'&&b.resource==='Army')?.available,7);
+});
 test('order count excludes context and wrappers; explanations and export preserve orders',()=>{
  const result=checkOrders('ORDERS\n@ 2A\n@AAL BA5 AC3ALI\nEND',fixture(),atlas);
  assert.equal(result.count,3);assert.equal(result.rows[2].source,'AAL');assert.match(result.rows[2].description,/Conquer: 3A/);
@@ -50,7 +81,7 @@ test('defaults use proportions while standing orders are explicit manual-review 
  assert.deepEqual(errors('@ BF0 BA100'),[]);
  const result=checkOrders('@AAL /1/BA999 /2/',fixture(),atlas);
  assert.deepEqual(errors('@AAL /1/BA999 /2/'),[]);
- assert.equal(result.budgets.length,0);assert.ok(result.issues.some(i=>i.message.includes('not simulated')));
+ assert.ok(result.budgets.length>0);assert.ok(result.budgets.every(b=>b.used===0));assert.ok(result.issues.some(i=>i.message.includes('not simulated')));
  assert.ok(errors('@WWM /1/BA5').length>0);
 });
 test('conflicts and gift warnings identify easy-to-miss order semantics',()=>{

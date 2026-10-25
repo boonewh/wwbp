@@ -1,4 +1,5 @@
 import type {Field,Geography,Report} from './wwbp/types';
+import {fields} from './wwbp/types';
 
 export type OrderIssue={level:'error'|'warning';message:string};
 export type CheckedOrder={line:number;token:string;source:string|null;description:string;issues:OrderIssue[];action?:string;target?:string;quantity?:number;standing?:number};
@@ -14,11 +15,17 @@ export function checkOrders(text:string,report:Report,atlas:Record<string,Geogra
  const error=(row:CheckedOrder,message:string)=>issue(row,'error',message);
  const warn=(row:CheckedOrder,message:string)=>issue(row,'warning',message);
  const budgetMap=new Map<string,{budget:OrderBudget;rows:CheckedOrder[]}>();
- const charge=(row:CheckedOrder,source:string,resource:string,available:number,amount:number)=>{
-  if(row.standing)return;
+ const ensureBudget=(source:string,resource:string,available:number)=>{
   const key=source+':'+resource;
   if(!budgetMap.has(key)){const budget={source,resource,available:Math.floor(available),used:0};budgets.push(budget);budgetMap.set(key,{budget,rows:[]});}
-  const entry=budgetMap.get(key)!;entry.budget.used+=amount;entry.rows.push(row);
+  return budgetMap.get(key)!;
+ };
+ // Start with the selected report's entire command table, even for an empty draft.
+ for(const resource of ['Dollars','Spies','CounterSpies'] as const)ensureBudget('Player',resource,report[resource]);
+ for(const source of Object.keys(report.own).sort())for(const resource of fields)ensureBudget(source,resource,report.own[source].values[resource]??0);
+ const charge=(row:CheckedOrder,source:string,resource:string,available:number,amount:number)=>{
+  if(row.standing)return;
+  const entry=ensureBudget(source,resource,available);entry.budget.used+=amount;entry.rows.push(row);
  };
  if(text.length>100_000||text.trim().split(/\s+/).length>2000)return {rows,issues:[{level:'error' as const,message:'Draft exceeds the checker limit of 100,000 characters or 2,000 tokens.'}],budgets,count:0,exportText:''};
  let source:string|null=null,seenSpace=false,opened=false,ended=false;

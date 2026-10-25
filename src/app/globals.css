@@ -38,6 +38,7 @@
 .planning-editor-pane>details[open]>summary{border-bottom:1px solid var(--line);background:var(--soft)}
 .planning-editor-pane>details>summary:focus-visible{outline:2px solid var(--green);outline-offset:-2px}
 .order-section-body{padding:12px;min-width:0}.order-section-body>.table-scroll{margin-top:12px}
+.order-budget-unallocated>td{background:#fff4d6}.order-budget-unallocated>td:first-child{box-shadow:inset 3px 0 #a66a10;font-weight:650}.order-budget-unallocated>td:last-child{color:#79510b;font-weight:700}
 .planning-editor-pane>.order-builder[open],.planning-editor-pane>.order-coverage[open],.planning-editor-pane>.order-help-guide[open]{padding:0 12px 12px}
 .planning-editor-pane>.order-builder[open]>summary,.planning-editor-pane>.order-coverage[open]>summary,.planning-editor-pane>.order-help-guide[open]>summary{margin:0 -12px 12px}
 .planning-editor-pane textarea{scroll-margin-top:150px}.planning-editor-pane>.planning-checks{border:1px solid var(--line);padding:0;margin:8px 0}
