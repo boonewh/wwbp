@@ -6,6 +6,8 @@ out/
 !.env.example
 private/
 coverage/
+test-results/
+playwright-report/
 *.log
 
 # Local build metadata and private prototype fixtures
