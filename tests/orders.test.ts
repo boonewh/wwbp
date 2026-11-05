@@ -48,6 +48,35 @@ test('order count excludes context and wrappers; explanations and export preserv
  assert.equal(result.exportText,'ORDERS\r\n@     2A\r\n@AAL  BA5 AC3ALI\r\nEND\r\n');
  assert.deepEqual(errors(result.exportText),[]);assert.ok(result.exportText.split('\r\n').every(l=>l.length<=76));
 });
+test('all six World Opinion orders are accepted, explained, and preserved on export',()=>{
+ for(const list of ['G','B'])for(const points of [1,2,3]){
+  const token=`2${list}${points}`;
+  for(const text of [token,`@ ${token.toLowerCase()}`]){
+   const result=checkOrders(text,fixture(),atlas),row=result.rows[0];
+   assert.deepEqual(errors(text),[],token);
+   assert.equal(row.action,`${list}${points}`);assert.equal(row.target,'2');
+   assert.match(row.description,new RegExp(`${list==='G'?'gains':'loses'} ${points} HPI per occupied country each turn`));
+   assert.ok(result.budgets.every(b=>b.used===0));
+   assert.equal(result.exportText,`ORDERS\r\n@     ${token}\r\nEND\r\n`);
+   assert.deepEqual(errors(result.exportText),[]);
+  }
+ }
+ assert.deepEqual(errors('5G3'),[]);
+ const both=checkOrders('@ 2G3 2B3',fixture(),atlas);
+ assert.deepEqual([...both.issues,...both.rows.flatMap(row=>row.issues)],[]);
+});
+
+test('World Opinion slots can be cleared and reject self, invalid players, slots, and context',()=>{
+ const r=fixture();
+ for(const list of ['G','B'])for(const points of [1,2,3]){
+  const token=`0${list}${points}`,result=checkOrders(`@ ${token}`,r,atlas);
+  assert.deepEqual([...result.issues,...result.rows.flatMap(row=>row.issues)],[]);
+  assert.match(result.rows[0].description,new RegExp(`Clear ${list==='G'?'Good Guy':'Bad Guy'} list slot ${points}`));
+  assert.ok(errors(`@ ${r.player}${list}${points}`).some(e=>e.includes('another valid player')));
+ }
+ for(const token of ['2G0','2G4','2B0','2B4','2G33','-2G3','1000G3','999999999999999999999B1','@AAL 2G3','@AAL /1/2B3'])assert.ok(errors(token).length>0,token);
+});
+
 test('combined orders cannot reuse units or industry; new builds do not increase available force',()=>{
  assert.ok(errors('@AAL AC8ALI AB7ALI').some(e=>e.includes('15 Army')));
  assert.ok(errors('@AAL BA8 BF5').some(e=>e.includes('13 Industry')));

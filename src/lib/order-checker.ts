@@ -99,6 +99,15 @@ export function checkOrders(text:string,report:Report,atlas:Record<string,Geogra
    }
    if(source){error(row,'Not a recognized space order. Use @ before player orders, or check the syntax reference.');continue;}
    if(row.standing){error(row,'Standing orders cannot apply to a player.');continue;}
+   const opinion=command.match(/^(\d+)([GB])([1-3])$/);
+   if(opinion){
+    const [,n,list,points]=opinion,player=+n,label=list==='G'?'Good Guy':'Bad Guy';
+    row.action=list+points;row.target=String(player);
+    row.description=player===0?`Clear ${label} list slot ${points}`:`${label} list: Player ${player} · ${report.players[String(player)]||'name not reported'} ${list==='G'?'gains':'loses'} ${points} HPI per occupied country each turn`;
+    if(player>999||player===report.player)error(row,'Choose another valid player number, or 0 to clear this World Opinion slot.');
+    else if(player!==0&&!report.players[String(player)])warn(row,'This player number is not named in the selected report. Verify it.');
+    continue;
+   }
    let match=command.match(/^(\d+)([ANEKXFHZ])$/);
    if(match){
     const player=+match[1],verb=match[2];

@@ -49,6 +49,7 @@ const groups=[
   ['Allow canal passage','@ 7K','Permit Player 7 to use canals you control.','7X withdraws that permission.'],
   ['Share your spy information','@ 7F','Share full spy information with Player 7 in the game.','7H shares partial information; 7Z stops sharing. This does not share your app workspace.'],
   ['Give another player cash','@ 7D20','Give Player 7 twenty dollars.','The dollars come from your reserve.'],
+  ['World Opinion: Good Guy / Bad Guy lists','@ 5G3 7B2','Give Player 5 +3 HPI and Player 7 −2 HPI per occupied country each turn.','Use nG1 / nG2 / nG3 to add HPI, or nB1 / nB2 / nB3 to subtract it; n is the player number. Use 0 to clear a slot (0G3). Lists persist while you keep submitting turns. You cannot list yourself. A player may be on both lists, but only once per list; a new entry replaces the previous player in that slot or moves an already-listed player.'],
  ]},
  {title:'Spies, propaganda, and research',intro:'These also go under player orders (@). Quantities refer to agents or dollars, depending on the action.',examples:[
   ['Send spies','@ S2ACH','Send 2 spies from your reserve to Chad.','Spies cannot go to sea or a country you occupy. C2ACH sends 2 counterspies instead.'],
