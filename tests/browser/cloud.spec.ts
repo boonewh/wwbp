@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test';
-import {fixture,guardNetwork,seedSession,noOverflow} from './helpers';
+import {fixture,guardNetwork,seedSession,noOverflow,openNav,campaignTitle} from './helpers';
 
 test.beforeEach(async({context,request})=>{await guardNetwork(context);await request.post(fixture+'/__fixture/reset');});
 
@@ -10,15 +10,15 @@ test('invited email-code login establishes cookies and reloads the correct accou
  await expect(page.getByLabel('Email code',{exact:true})).toBeVisible();
  await page.getByLabel('Email code',{exact:true}).fill('123456');
  await page.getByRole('button',{name:'Sign in',exact:true}).click();
- await expect(page.getByRole('heading',{name:'Account A fictional campaign',exact:true})).toBeVisible();
- await page.reload();await expect(page.getByRole('heading',{name:'Account A fictional campaign',exact:true})).toBeVisible();
+ await expect(campaignTitle(page)).toHaveText('Account A fictional campaign');
+ await page.reload();await expect(campaignTitle(page)).toHaveText('Account A fictional campaign');
  expect((await request.get(fixture+'/__fixture/stats').then(r=>r.json())).events.filter((e:{path:string})=>e.path==='/auth/v1/otp')).toEqual([expect.objectContaining({createUser:false})]);
  await noOverflow(page);
 });
 
 test('expired cookies refresh through the proxy without caching private responses',async({page,context,request})=>{
  await seedSession(context,request,'a',true);const response=await page.goto('/');
- await expect(page.getByRole('heading',{name:'Account A fictional campaign',exact:true})).toBeVisible();
+ await expect(campaignTitle(page)).toHaveText('Account A fictional campaign');
  // Next manages HTML Vary; confidentiality depends on private/no-store, not
  // a literal Cookie entry on a response that must never enter a shared cache.
  expect(response?.headers()['cache-control']).toContain('no-store');expect(response?.headers()['cache-control']).toContain('private');
@@ -29,12 +29,13 @@ test('expired cookies refresh through the proxy without caching private response
  expect(renewed.expires_at).toBeGreaterThan(Date.now()/1000);
  const state=await request.get(fixture+'/__fixture/stats').then(r=>r.json());
  expect(state.events.some((e:{path:string})=>e.path==='/auth/v1/token')).toBe(true);
- await page.reload();await expect(page.getByRole('heading',{name:'Account A fictional campaign',exact:true})).toBeVisible();
+ await page.reload();await expect(campaignTitle(page)).toHaveText('Account A fictional campaign');
 });
 
 test('sign out removes account access without deleting the saved workspace',async({page,context,request})=>{
  await seedSession(context,request);await page.goto('/');
- await expect(page.getByRole('heading',{name:'Account A fictional campaign',exact:true})).toBeVisible();
+ await expect(campaignTitle(page)).toHaveText('Account A fictional campaign');
+ await openNav(page);await page.getByRole('button',{name:'Account & data',exact:true}).click();
  await page.getByRole('button',{name:'Sign out',exact:true}).click();await expect(page).toHaveURL(/\/login$/);
  expect((await context.request.get('/api/workspace')).status()).toBe(401);
  const state=await request.get(fixture+'/__fixture/stats').then(r=>r.json());
