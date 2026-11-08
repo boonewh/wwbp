@@ -1,15 +1,15 @@
 "use client";
-import {useMemo,useRef,useState} from 'react';
+import {useEffect,useMemo,useRef,useState} from 'react';
 import {fields,type Campaign,type Geography,type RawReport,type Report} from '../lib/wwbp/types';
 import {parseReport} from '../lib/wwbp/parser';
 import {pastedReport} from '../lib/pasted-report';
 import {reportAge,reviewAlliedReports,type AlliedImportRow} from '../lib/allied-reports';
 
-type Props={campaign:Campaign;referenceTurn:number|null;atlas:Record<string,Geography>;busy:boolean;onImport:(files:RawReport[])=>Promise<{added:number;duplicates:number}>;onRemove:(player:number,turn:number)=>Promise<void>;onExport:()=>void};
+type Props={campaign:Campaign;referenceTurn:number|null;atlas:Record<string,Geography>;busy:boolean;onImport:(files:RawReport[])=>Promise<{added:number;duplicates:number}>;onRemove:(player:number,turn:number)=>Promise<void>;onExport:()=>void;importRequest?:number};
 const reportKey=(r:Report)=>`${r.player}:${r.turn}`;
 const number=(value:number|undefined)=>value==null?'Unknown':value.toLocaleString('en-US',{maximumFractionDigits:2});
 
-export default function AlliedReports({campaign,referenceTurn,atlas,busy,onImport,onRemove,onExport}:Props){
+export default function AlliedReports({campaign,referenceTurn,atlas,busy,onImport,onRemove,onExport,importRequest=0}:Props){
  const reports=useMemo(()=>(campaign.alliedReports||[]).map(raw=>parseReport(raw.text,raw.filename)).sort((a,b)=>a.player-b.player||b.turn-a.turn),[campaign.alliedReports]);
  const players=[...new Set(reports.map(r=>r.player))];
  const [player,setPlayer]=useState('all'),[selected,setSelected]=useState('');
@@ -20,6 +20,7 @@ export default function AlliedReports({campaign,referenceTurn,atlas,busy,onImpor
  const filtered=reports.filter(r=>player==='all'||!players.includes(+player)||r.player===+player);
  const report=filtered.find(r=>reportKey(r)===selected)||filtered[0];
  const locked=busy||working;
+ useEffect(()=>{if(!importRequest)return;setError('');setPending(null);importDialog.current?.showModal();},[importRequest]);
  const selectedPlayer=report?reports.filter(r=>r.player===report.player).map(r=>r.turn).sort((a,b)=>a-b):[];
  const gaps=selectedPlayer.slice(1).flatMap((turn,i)=>turn-selectedPlayer[i]>1?[turn-selectedPlayer[i]===2?String(turn-1):`${selectedPlayer[i]+1}–${turn-1}`]:[]);
 

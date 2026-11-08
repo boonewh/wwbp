@@ -8,7 +8,7 @@ export default function CampaignManager({campaign,busy,onChange,onExport}:{campa
  const [name,setName]=useState(campaign.name),[error,setError]=useState(''),[notice,setNotice]=useState(''),[removing,setRemoving]=useState<number|null>(null);
  const [working,setWorking]=useState(false);const locked=busy||working;
  async function save(change:CampaignChange){setError('');setNotice('');setWorking(true);try{await onChange(change);setRemoving(null);setNotice(change.kind==='rename'?'Campaign renamed.':change.kind==='archive'?(change.archived?'Campaign archived. All reports are preserved.':'Campaign restored to active games.'):'Report removed. You can import a replacement.');}catch(e){setError((e as Error).message);}finally{setWorking(false);}}
- return <><button type="button" disabled={busy} onClick={()=>{setName(campaign.name);setError('');setNotice('');setRemoving(null);dialog.current?.showModal();}}>Manage campaign</button>
+ return <><button type="button" disabled={busy} onClick={()=>{setName(campaign.name);setError('');setNotice('');setRemoving(null);dialog.current?.showModal();}}>Manage</button>
  <dialog ref={dialog} className="manage-dialog" aria-labelledby="manage-title" onCancel={e=>{if(locked)e.preventDefault();}}>
  <div className="table-heading"><div><h2 id="manage-title">Manage campaign</h2><p>{campaign.game} · Player {campaign.player}</p></div><button type="button" disabled={locked} onClick={()=>dialog.current?.close()}>Close</button></div>
  {error&&<p role="alert" className="import-error">{error}</p>}{notice&&<p role="status" className="manage-notice">{notice}</p>}
