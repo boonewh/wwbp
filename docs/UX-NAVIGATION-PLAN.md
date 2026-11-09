@@ -142,7 +142,7 @@ Put a small byline at the bottom of the sidebar, under Account: `by PathSix Solu
 2. **Orders workspace** (implemented November 8, 2026): three-pane layout, checks rail, builder popover, sticky export.
 3. **Map** (implemented November 8, 2026): full-height map, overlay panels, global space inspector, quick find.
 4. **Alliance polish** (first pass implemented November 8, 2026) (after Allied Reports and Analysis are finished): flatten into four pages, one shared turn control, guided empty states.
-5. **Onboarding and phone:** welcome flow, richer demo, bottom bar, copy diet.
+5. **Onboarding and phone** (implemented November 8, 2026): welcome flow, richer demo, bottom bar, copy diet.
 
 Each phase ends with the existing tests, a typecheck, and a browser pass at desktop and phone widths.
 

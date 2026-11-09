@@ -136,3 +136,26 @@ body{background:var(--surface)}
 .alliance-hint p{font-size:.85rem;margin-top:2px}
 .alliance-hint .primary{flex-shrink:0}
 .alliance-hint+div>section{padding-top:16px}
+
+/* Phone bottom bar: the three most-used pages plus the full menu */
+.bottom-bar{display:none}
+@media(max-width:600px){
+ .bottom-bar{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:22;background:var(--navy);border-top:1px solid var(--navy-line);padding:4px 4px calc(4px + env(safe-area-inset-bottom))}
+ .bottom-bar button{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;border:0;background:transparent;color:var(--on-navy);font-size:.72rem;font-weight:550;padding:6px 2px;min-height:52px;border-radius:8px}
+ .bottom-bar button[aria-current=page]{color:white;background:var(--navy-raised)}
+ .bottom-bar button[aria-current=page] .icon{color:var(--gold)}
+ .bottom-bar .nav-dot{position:absolute;top:6px;left:calc(50% + 8px);margin:0}
+ .bottom-bar :focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+ .app-main main{padding-bottom:88px}
+ .toast{bottom:76px}
+}
+
+/* Info tips: caveats on demand */
+.with-tip{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.info-tip{position:relative;display:inline-block;vertical-align:middle}
+.info-tip-button{display:inline-grid;place-items:center;width:18px;height:18px;min-height:0;padding:0;border-radius:50%;border:1px solid var(--line);background:white;color:var(--muted);font:italic 700 11px/1 Georgia,serif}
+.info-tip-button:hover,.info-tip[data-open=true] .info-tip-button{border-color:var(--gold);color:var(--gold-ink);background:#fbf6e7}
+.info-tip-button:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+.info-tip-body{display:block;position:absolute;z-index:40;top:calc(100% + 6px);left:-8px;width:min(280px,70vw);padding:10px 12px;background:var(--navy);color:white;border-radius:8px;box-shadow:0 8px 24px #0d162a40;font:400 .8rem/1.5 InterVariable,Arial,sans-serif;text-transform:none;letter-spacing:0;text-align:left}
+.info-tip-body[hidden]{display:none}
+.ow-rail .info-tip-body,.detail .info-tip-body,.drawer-body .info-tip-body{left:auto;right:-8px}

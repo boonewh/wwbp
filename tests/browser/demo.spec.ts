@@ -8,7 +8,7 @@ test.beforeEach(async({context})=>guardNetwork(context));
 test('fictional demo navigation and coordinated analysis remain available',async({page},info)=>{
  const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
  await page.goto('/');await page.getByRole('button',{name:'Explore the fictional demo'}).click();
- await expect(campaignTitle(page)).toHaveText('Practice campaign A');
+ await expect(campaignTitle(page)).toHaveText('Demo world campaign');
  await view(page,'Coordinated orders');
  await expect(page.getByRole('heading',{name:'Coordinated orders',exact:true})).toBeVisible();
  await openNav(page);await page.locator('select[name=campaign]').selectOption('demo-b');

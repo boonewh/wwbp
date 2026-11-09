@@ -2,6 +2,7 @@
 import {fields,type Geography,type Report} from '../lib/wwbp/types';
 import {mapChanges} from '../lib/map-changes';
 import ForcesInRange from './forces-in-range';
+import InfoTip from './info-tip';
 
 const num=(n:number|undefined)=>n==null?'—':n.toLocaleString('en-US',{maximumFractionDigits:2});
 export function ownership(r:Report,code:string){const s=r.spaces[code];return code.startsWith('W')?'Sea space':!s?'Not reported':s.owner?`Occupied by player ${s.owner}`:s.controller?`Minor · player ${s.controller} control`:'Minor · control unknown';}
@@ -19,9 +20,8 @@ export default function SpaceInspector({report:r,previous,atlas,code,onSpace,hea
   <ForcesInRange key={code} report={r} atlas={atlas} selected={code}/>
   {previous&&<section className="selected-changes"><h3>Changes since turn {previous.turn}</h3>{changes?.length?<><ul>{changes.map(change=><li key={change.label}>{change.label}</li>)}</ul><p>Before: {ownership(previous,code)}.</p><p>Now: {ownership(r,code)}.</p></>:<p>No ownership, control, visibility, or reported-force change.</p>}</section>}
   {s?.visible?<><h3>Known forces · Turn {r.turn}</h3><dl className="force-grid">{fields.map(f=><div key={f}><dt>{f}</dt><dd>{num(s.values[f])}{(s.suppressed[f]??0)>0&&<small> + {num(s.suppressed[f])} suppressed</small>}</dd></div>)}</dl>{s.fleets.length>0&&<><h3>Reported fleets</h3>{s.fleets.map((f,i)=><p key={i}>Player {f.player}: Army {num(f.values.Army)}, Navy {num(f.values.Navy)}, Air {num(f.values.AirF)}</p>)}</>}</>:<p className="inspector-unknown">Forces unknown in this report.</p>}
-  <h3>Surface connections</h3><div className="chips">{links(geo.surface)}</div>
+  <h3 className="with-tip">Surface connections <InfoTip label="About connections">Connections describe geography only. Unit rules, canal control, and permissions still apply.</InfoTip></h3><div className="chips">{links(geo.surface)}</div>
   <h3>Air connections</h3><div className="chips">{links(geo.air)}</div>
   {geo.canals.map(c=><p key={c.target}>Canal to {atlas[c.target]?.name||c.target} via {atlas[c.gate]?.name||c.gate}.</p>)}
-  <p className="inspector-note">Connections describe geography. Unit rules, canal control, and permissions still apply.</p>
  </div>;
 }
