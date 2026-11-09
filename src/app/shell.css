@@ -126,3 +126,13 @@ body{background:var(--surface)}
  .page-head h1{font-size:1.3rem}
 }
 @media(prefers-reduced-motion:reduce){.sidebar{transition:none}}
+
+/* Alliance pages: match the page-head scale and guide first use */
+:is(.allied-heading,.intel-heading,div:has(>#scenario-title),div:has(>#turn-plan-title))>div>.eyebrow,div:has(>#scenario-title)>.eyebrow,div:has(>#turn-plan-title)>.eyebrow{display:none}
+:is(#allied-title,#analysis-title,#scenario-title,#turn-plan-title){font-size:1.5rem;letter-spacing:-.02em;margin-bottom:4px}
+.allied-reports,.combined-intelligence,.battle-scenarios,.coordinated-orders{padding-top:22px}
+.alliance-hint{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap;margin:18px 0 0;padding:14px 16px;background:#fbf6e7;border:1px solid #d4a72c55;border-left:4px solid var(--gold);border-radius:8px}
+.alliance-hint strong{color:var(--ink)}
+.alliance-hint p{font-size:.85rem;margin-top:2px}
+.alliance-hint .primary{flex-shrink:0}
+.alliance-hint+div>section{padding-top:16px}

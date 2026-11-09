@@ -11,8 +11,8 @@ function status(row:ResolvedGroup){return row.historical?'Historical':row.confli
 export default function CombinedIntelligenceView({campaign,referenceTurn,atlas}:{campaign:Campaign;referenceTurn:number|null;atlas:Record<string,Geography>}){
  const reports=useMemo(()=>[...campaign.reports,...(campaign.alliedReports||[])].map(raw=>parseReport(raw.text,raw.filename)),[campaign.reports,campaign.alliedReports]);
  const turns=[...new Set(reports.map(r=>r.turn))].sort((a,b)=>b-a);
- const [requestedTurn,setRequestedTurn]=useState<number|null>(null),[excluded,setExcluded]=useState<number[]>([]);
- const turn=requestedTurn!==null&&turns.includes(requestedTurn)?requestedTurn:referenceTurn??turns[0]??null;
+ const [excluded,setExcluded]=useState<number[]>([]);
+ const turn=referenceTurn!==null&&turns.includes(referenceTurn)?referenceTurn:turns.find(t=>referenceTurn===null||t<=referenceTurn)??turns[0]??null;
  const eligible=reports.filter(r=>turn!==null&&r.turn<=turn);
  const reporters=[...new Set(eligible.map(r=>r.player))].sort((a,b)=>a-b);
  const result=useMemo(()=>{
@@ -22,7 +22,7 @@ export default function CombinedIntelligenceView({campaign,referenceTurn,atlas}:
  },[reports,excluded,campaign.game,turn]);
 
  return <section className="combined-intelligence" aria-labelledby="analysis-title">
-  <div className="intel-heading"><div><p className="eyebrow">{campaign.game} · Analysis</p><h1 id="analysis-title">Combined intelligence</h1><p>Your reports and allied reports, reconciled by location and player. Matching sightings count once.</p></div>{turn!==null&&<label>Intelligence turn<select name="intelligence-turn" value={turn} onChange={e=>setRequestedTurn(+e.target.value)}>{turns.map(t=><option key={t} value={t}>Turn {t}</option>)}</select></label>}</div>
+  <div className="intel-heading"><div><p className="eyebrow">{campaign.game} · Analysis</p><h1 id="analysis-title">Combined intelligence</h1><p>Your reports and allied reports, reconciled by location and player. Matching sightings count once.</p></div></div>
   {turn===null?<p className="allied-empty">Import your report or an allied report to start combining intelligence.</p>:<>
    <p className="allied-context">Viewing turn {turn}. Later reports are excluded. Older observations are historical and never enter current totals. This view does not change your reports or order drafts.</p>
    <details className="intel-sources"><summary>Included reporting players · {reporters.filter(p=>!excluded.includes(p)).length} of {reporters.length}</summary><p>Choose whose reports to use. Including a report does not establish an alliance or canal permission.</p><div className="intel-source-options">{reporters.map(player=>{

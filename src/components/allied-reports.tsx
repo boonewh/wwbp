@@ -63,7 +63,7 @@ export default function AlliedReports({campaign,referenceTurn,atlas,busy,onImpor
  }
 
  return <section className="allied-reports" aria-labelledby="allied-title">
-  <div className="allied-heading"><div><p className="eyebrow">{campaign.game} · Shared intelligence</p><h1 id="allied-title">Allied Reports</h1><p>Reports sent to you by other players, kept separate from your own turns and orders.</p></div><button type="button" className="primary" disabled={locked} onClick={()=>{setError('');setPending(null);importDialog.current?.showModal();}}>Import allied reports</button></div>
+  <div className="allied-heading"><div><p className="eyebrow">{campaign.game} · Shared intelligence</p><h1 id="allied-title">Allied reports</h1><p>Reports sent to you by other players, kept separate from your own turns and orders.</p></div><button type="button" className="primary" disabled={locked} onClick={()=>{setError('');setPending(null);importDialog.current?.showModal();}}>Import allied reports</button></div>
   <p className="allied-context">Your position: Player {campaign.player} · {reports.length} allied report{reports.length===1?'':'s'} from {players.length} player{players.length===1?'':'s'}. Imports stay in your private workspace; they do not change diplomatic declarations.</p>
   {notice&&<p role="status" className="manage-notice">{notice}</p>}
   {!report?<div className="allied-empty"><h2>No allied reports yet</h2><p>Paste a complete report from an ally’s email or choose their text files. You’ll review the game, player, and turn before saving.</p><p>You can import allied reports even before adding your own turn.</p></div>:<>
