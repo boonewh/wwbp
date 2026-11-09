@@ -15,6 +15,7 @@ const paths={
  menu:<path d="M4 6h16M4 12h16M4 18h16"/>,
  close:<path d="M6 6l12 12M18 6 6 18"/>,
  plus:<path d="M12 5v14M5 12h14"/>,
+ search:<><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></>,
 } as const;
 export type IconName=keyof typeof paths;
 export default function Icon({name,size=18}:{name:IconName;size?:number}){
