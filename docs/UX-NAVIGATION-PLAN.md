@@ -139,7 +139,7 @@ Put a small byline at the bottom of the sidebar, under Account: `by PathSix Solu
 ## Phases
 
 1. **Shell** (implemented November 8, 2026, not yet committed): navy/gold tokens and byline, sidebar, top bar with global turn context and status pill, Turn summary page (metrics + multipliers + briefing), import dialog with mine/ally choice, `?view=` URLs. Split `campaign-room.tsx` into `AppShell`, `Sidebar`, `TopBar` and per-page components. This is the biggest win and changes layout only.
-2. **Orders workspace:** three-pane layout, checks rail, builder popover, sticky export.
+2. **Orders workspace** (implemented November 8, 2026): three-pane layout, checks rail, builder popover, sticky export.
 3. **Map:** full-height map, overlay panels, global space inspector, quick find.
 4. **Alliance polish** (after Allied Reports and Analysis are finished): flatten into four pages, one shared turn control, guided empty states.
 5. **Onboarding and phone:** welcome flow, richer demo, bottom bar, copy diet.
