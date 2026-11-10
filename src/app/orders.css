@@ -81,3 +81,7 @@
  .ow-header .actions{width:100%}
  .ow-header .actions .primary{margin-left:auto}
 }
+/* Forces reference: keep the A N F M X I header visible while scrolling the list */
+.planning-reference-body .table-scroll:has(>.planning-forces){overflow:visible}
+.planning-forces thead th{position:sticky;top:-16px;z-index:2;background:white;box-shadow:inset 0 -1px var(--line)}
+@media(max-width:900px){.planning-forces thead th{top:-12px}}
